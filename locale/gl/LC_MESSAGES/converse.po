@@ -1782,3 +1782,6 @@ msgstr "Descargar"
 #, javascript-format
 msgid "Download video file \"%1$s\""
 msgstr "Descargar ficheiro de vídeo \"%1$s\""
+
+msgid "Groupchats"
+msgstr "Salas"

@@ -40,19 +40,22 @@
   src: url("webfonts/fa-solid-900.eot");
   src: url("webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("webfonts/fa-solid-900.woff2") format("woff2"), url("webfonts/fa-solid-900.woff") format("woff"), url("webfonts/fa-solid-900.ttf") format("truetype"), url("webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
 
-.far {
+#conversejs .far {
   font-family: 'ConverseFontAwesomeRegular' !important;
   font-weight: 400; }
 
-.fa,
-.fas {
+#conversejs .fa,
+#conversejs .fas {
   font-family: 'ConverseFontAwesomeSolid' !important;
   font-weight: 900; }
 
-.fab {
+#conversejs .fab {
   font-family: 'ConverseFontAwesomeBrands'; }
 
-.fa, .far, .fas, .fab {
+#conversejs .fa,
+#conversejs .far,
+#conversejs .fas,
+#conversejs .fab {
   display: inline-block;
   font-size: inherit;
   text-rendering: auto;
@@ -9319,8 +9322,8 @@ readers do not read off random characters that represent icons */
   --text-color: #666;
   --text-color-lighten-15-percent: #8c8c8c;
   --message-text-color: #555;
-  --message-receipt-color: #3AA569;
-  --save-button-color: #3AA569;
+  --message-receipt-color: #787878;
+  --save-button-color: #787878;
   --message-avatar-width: 36px;
   --message-avatar-height: 36px;
   --chat-textarea-color: #666;
@@ -9332,9 +9335,9 @@ readers do not read off random characters that represent icons */
   --inline-action-margin: 0.75em;
   --roster-height: 194px;
   --flyout-padding: 1.2em;
-  --chat-head-color: #3AA569;
-  --chat-head-color-dark: #1E9652;
-  --chat-head-color-darker: #0E763B;
+  --chat-head-color: #787878;
+  --chat-head-color-dark: #787878;
+  --chat-head-color-darker: #787878;
   --chat-head-color-lighten-50-percent: #e7f7ee;
   --chat-head-text-color: white;
   --chat-correcting-color: var(--chat-head-color-lighten-50-percent);
@@ -9364,13 +9367,13 @@ readers do not read off random characters that represent icons */
   --minimized-chats-width: 130px;
   --mobile-chat-width: 100%;
   --mobile-chat-height: 400px;
-  --normal-font: "Helvetica", "Arial", sans-serif;
-  --heading-font: 'Muli', normal;
+  --normal-font: "source-sans-pro-regular", sans-serif;
+  --heading-font: 'roboto-medium', sans-serif;
   --branding-font: 'Baumans', cursive;
   --heading-display: block;
   --heading-color: white;
-  --chatroom-head-color: #E77051;
-  --chatroom-head-color-dark: #D24E2B;
+  --chatroom-head-color: rgb(70, 70, 70);
+  --chatroom-head-color-dark: rgb(70, 70, 70);
   --chatroom-head-color-lighten-25-percent: #f6ccc1;
   --chatroom-head-button-color: var(--chatroom-head-color);
   --chatroom-head-title-font-weight: normal;
@@ -9409,7 +9412,7 @@ readers do not read off random characters that represent icons */
   --occupants-border-bottom: 1px solid lightgrey;
   --occupants-features-display: block;
   --embedded-emoji-picker-height: 200px;
-  --avatar-border-radius: 10%;
+  --avatar-border-radius: 50%;
   --avatar-border: 1px solid lightgrey;
   --avatar-background-color: white;
   --fullpage-chat-head-height: 62px;
@@ -10899,7 +10902,7 @@ body.converse-fullscreen {
     left: 0;
     text-align: left;
     overflow-x: hidden;
-    padding: 1em 0 1em 0; }
+    padding: 0 0 1em 0; }
     #conversejs #controlbox .controlbox-pane .controlbox-padded {
       padding-left: 1em;
       padding-right: 1em;
@@ -11964,7 +11967,7 @@ body.converse-fullscreen {
       white-space: nowrap;
       font-family: var(--heading-font);
       font-size: 115%;
-      font-weight: bold; }
+      font-weight: 400; }
       #conversejs .message.chat-msg .chat-msg__heading .chat-msg__author .badge {
         font-size: 80%;
         font-family: var(--normal_font); }

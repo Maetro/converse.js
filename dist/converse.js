@@ -69758,21 +69758,21 @@ var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 __p += '<!-- src/headless/templates/field.html -->\n<field var="' +
 __e(o.name) +
-'">\n';
+'">\r\n';
  if (o.value.constructor === Array) { ;
-__p += '\n    ';
+__p += '\r\n    ';
  o.value.forEach(function (arrayValue) { ;
 __p += '<value>' +
 __e(arrayValue) +
 '</value>';
  }); ;
-__p += '\n';
+__p += '\r\n';
  } else { ;
-__p += '\n    <value>' +
+__p += '\r\n    <value>' +
 __e(o.value) +
-'</value>\n';
+'</value>\r\n';
  } ;
-__p += '</field>\n';
+__p += '</field>\r\n';
 return __p
 };
 
@@ -69788,21 +69788,21 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
-__p += '<!-- src/headless/templates/vcard.html -->\n<vCard xmlns="vcard-temp">\n    <FN>' +
+__p += '<!-- src/headless/templates/vcard.html -->\n<vCard xmlns="vcard-temp">\r\n    <FN>' +
 __e(o.fn) +
-'</FN>\n    <NICKNAME>' +
+'</FN>\r\n    <NICKNAME>' +
 __e(o.nickname) +
-'</NICKNAME>\n    <URL>' +
+'</NICKNAME>\r\n    <URL>' +
 __e(o.url) +
-'</URL>\n    <ROLE>' +
+'</URL>\r\n    <ROLE>' +
 __e(o.role) +
-'</ROLE>\n    <EMAIL><INTERNET/><PREF/><USERID>' +
+'</ROLE>\r\n    <EMAIL><INTERNET/><PREF/><USERID>' +
 __e(o.email) +
-'</USERID></EMAIL>\n    <PHOTO>\n      <TYPE>' +
+'</USERID></EMAIL>\r\n    <PHOTO>\r\n      <TYPE>' +
 __e(o.image_type) +
-'</TYPE>\n      <BINVAL>' +
+'</TYPE>\r\n      <BINVAL>' +
 __e(o.image) +
-'</BINVAL>\n    </PHOTO>\n</vCard>\n';
+'</BINVAL>\r\n    </PHOTO>\r\n</vCard>\r\n';
 return __p
 };
 
@@ -91980,19 +91980,19 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*global define 
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
-__p += '<!-- src/templates/add_chatroom_modal.html -->\n<div class="modal fade" id="add-chatroom-modal" tabindex="-1" role="dialog" aria-labelledby="add-chatroom-modal-label" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title"\n                    id="add-chatroom-modal-label">' +
+__p += '<!-- src/templates/add_chatroom_modal.html -->\n<div class="modal fade" id="add-chatroom-modal" tabindex="-1" role="dialog" aria-labelledby="add-chatroom-modal-label" aria-hidden="true">\r\n    <div class="modal-dialog" role="document">\r\n        <div class="modal-content">\r\n            <div class="modal-header">\r\n                <h5 class="modal-title"\r\n                    id="add-chatroom-modal-label">' +
 __e(o.heading_new_chatroom) +
-'</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="Close">\n                    <span aria-hidden="true">×</span>\n                </button>\n            </div>\n            <div class="modal-body">\n                <form class="converse-form add-chatroom">\n                    <div class="form-group">\n                        <label for="chatroom">' +
+'</h5>\r\n                <button type="button" class="close" data-dismiss="modal" aria-label="Close">\r\n                    <span aria-hidden="true">×</span>\r\n                </button>\r\n            </div>\r\n            <div class="modal-body">\r\n                <form class="converse-form add-chatroom">\r\n                    <div class="form-group">\r\n                        <label for="chatroom">' +
 __e(o.label_room_address) +
-':</label>\n                        <input type="text" required="required" name="chatroom" class="form-control" placeholder="' +
+':</label>\r\n                        <input type="text" required="required" name="chatroom" class="form-control" placeholder="' +
 __e(o.chatroom_placeholder) +
-'"/>\n                    </div>\n                    <div class="form-group">\n                        <label for="nickname">' +
+'"/>\r\n                    </div>\r\n                    <div class="form-group">\r\n                        <label for="nickname">' +
 __e(o.label_nickname) +
-':</label>\n                        <input type="text" name="nickname" value="' +
+':</label>\r\n                        <input type="text" name="nickname" value="' +
 __e(o.nick) +
-'" class="form-control"/>\n                    </div>\n                    <input type="submit" class="btn btn-primary" name="join" value="' +
+'" class="form-control"/>\r\n                    </div>\r\n                    <input type="submit" class="btn btn-primary" name="join" value="' +
 __e(o.label_join) +
-'"/>\n                </form>\n            </div>\n        </div>\n    </div>\n</div>\n';
+'"/>\r\n                </form>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n';
 return __p
 };
 
@@ -92009,29 +92009,29 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/add_contact_modal.html -->\n<!-- Add contact Modal -->\n<div class="modal fade" id="add-contact-modal" tabindex="-1" role="dialog" aria-labelledby="addContactModalLabel" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title" id="addContactModalLabel">' +
+__p += '<!-- src/templates/add_contact_modal.html -->\n<!-- Add contact Modal -->\r\n<div class="modal fade" id="add-contact-modal" tabindex="-1" role="dialog" aria-labelledby="addContactModalLabel" aria-hidden="true">\r\n    <div class="modal-dialog" role="document">\r\n        <div class="modal-content">\r\n            <div class="modal-header">\r\n                <h5 class="modal-title" id="addContactModalLabel">' +
 __e(o.heading_new_contact) +
-'</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>\n            </div>\n            <form class="converse-form add-xmpp-contact">\n                <div class="modal-body">\n                    <div class="form-group ';
+'</h5>\r\n                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>\r\n            </div>\r\n            <form class="converse-form add-xmpp-contact">\r\n                <div class="modal-body">\r\n                    <div class="form-group ';
  if (o._converse.xhr_user_search_url) { ;
 __p += ' hidden ';
  } ;
-__p += '">\n                        <label class="clearfix" for="jid">' +
+__p += '">\r\n                        <label class="clearfix" for="jid">' +
 __e(o.label_xmpp_address) +
-':</label>\n                        <input type="text" name="jid" required="required" value="' +
+':</label>\r\n                        <input type="text" name="jid" required="required" value="' +
 __e(o.jid) +
-'"\n                               class="form-control"\n                               placeholder="' +
+'"\r\n                               class="form-control"\r\n                               placeholder="' +
 __e(o.contact_placeholder) +
-'"/>\n                        <div class="invalid-feedback">' +
+'"/>\r\n                        <div class="invalid-feedback">' +
 __e(o.error_message) +
-'</div>\n                    </div>\n                    <div class="form-group">\n                        <label class="clearfix" for="name">' +
+'</div>\r\n                    </div>\r\n                    <div class="form-group">\r\n                        <label class="clearfix" for="name">' +
 __e(o.label_nickname) +
-':</label>\n                        <input type="text" name="name" value="' +
+':</label>\r\n                        <input type="text" name="name" value="' +
 __e(o.nickname) +
-'"\n                               class="form-control"\n                               placeholder="' +
+'"\r\n                               class="form-control"\r\n                               placeholder="' +
 __e(o.nickname_placeholder) +
-'"/>\n                    </div>\n                    <button type="submit" class="btn btn-primary">' +
+'"/>\r\n                    </div>\r\n                    <button type="submit" class="btn btn-primary">' +
 __e(o.label_add) +
-'</button>\n                </div>\n            </form>\n        </div>\n    </div>\n</div>\n';
+'</button>\r\n                </div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>\r\n';
 return __p
 };
 
@@ -92051,7 +92051,7 @@ __p += '<!-- src/templates/alert.html -->\n<div class="alert ' +
 __e(o.type) +
 '" role="alert"><p>' +
 __e(o.message) +
-'</p></div>\n';
+'</p></div>\r\n';
 return __p
 };
 
@@ -92068,17 +92068,17 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/alert_modal.html -->\n<div class="modal" tabindex="-1" role="dialog">\n  <div class="modal-dialog" role="document">\n    <div class="modal-content">\n      <div class="modal-header ' +
+__p += '<!-- src/templates/alert_modal.html -->\n<div class="modal" tabindex="-1" role="dialog">\r\n  <div class="modal-dialog" role="document">\r\n    <div class="modal-content">\r\n      <div class="modal-header ' +
 __e(o.type) +
-'">\n        <h5 class="modal-title">' +
+'">\r\n        <h5 class="modal-title">' +
 __e(o.title) +
-'</h5>\n        <button type="button" class="close" data-dismiss="modal" aria-label="Close">\n          <span aria-hidden="true">×</span>\n        </button>\n      </div>\n      <div class="modal-body">';
+'</h5>\r\n        <button type="button" class="close" data-dismiss="modal" aria-label="Close">\r\n          <span aria-hidden="true">×</span>\r\n        </button>\r\n      </div>\r\n      <div class="modal-body">';
 o.messages.forEach(function (message) { ;
-__p += '\n          <p>' +
+__p += '\r\n          <p>' +
 __e(message) +
-'</p>\n      ';
+'</p>\r\n      ';
  }) ;
-__p += '\n      </div>\n    </div>\n  </div>\n</div>\n';
+__p += '\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n';
 return __p
 };
 
@@ -92096,11 +92096,11 @@ module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
 __p += '<!-- src/templates/audio.html -->\n<audio controls src="' +
 __e(o.url) +
-'"></audio>\n<a target="_blank" rel="noopener" href="' +
+'"></audio>\r\n<a target="_blank" rel="noopener" href="' +
 __e(o.url) +
 '">' +
 __e(o.label_download) +
-'</a>\n';
+'</a>\r\n';
 return __p
 };
 
@@ -92122,13 +92122,13 @@ __e(o.classes) +
 __e(o.width) +
 '" height="' +
 __e(o.height) +
-'">\n    <image width="' +
+'">\r\n    <image width="' +
 __e(o.width) +
 '" height="' +
 __e(o.height) +
 '" preserveAspectRatio="xMidYMid meet" xlink:href="' +
 __e(o.image) +
-'"/>\n</svg>\n';
+'"/>\r\n</svg>\r\n';
 return __p
 };
 
@@ -92144,7 +92144,7 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '';
-__p += '<!-- src/templates/background_logo.html -->\n<div class="inner-content converse-brand row">\n    <div class="converse-brand__padding"></div>\n    <div class="converse-brand__heading">\n        <svg height="200px"\n            xmlns="http://www.w3.org/2000/svg"\n            xmlns:xlink="http://www.w3.org/1999/xlink"\n            viewBox="0 0 364 364"\n            version="1.1">\n            <title>Logo Converse</title>\n            <defs>\n                <linearGradient id="gradient" x1="92.14" y1="27.64" x2="267.65" y2="331.62" gradientUnits="userSpaceOnUse">\n                    <stop offset="0" stop-color="#fff1d1"/>\n                    <stop offset="0.05" stop-color="#fae8c1"/>\n                    <stop offset="0.15" stop-color="#f0d5a1"/>\n                    <stop offset="0.27" stop-color="#e7c687"/>\n                    <stop offset="0.4" stop-color="#e1bb72"/>\n                    <stop offset="0.54" stop-color="#dcb264"/>\n                    <stop offset="0.71" stop-color="#daad5c"/>\n                    <stop offset="1" stop-color="#d9ac59"/>\n                </linearGradient>\n                <filter id="shadow">\n                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.3" result="blur1"/>\n                    <feOffset in="blur1" dx="3" dy="3" result="blur2"/>\n                    <feColorMatrix in="blur2" type="matrix" result="blur3"\n                        values="1 0 0 0 0.1\n                                0 1 0 0 0.1\n                                0 0 1 0 0.1\n                                0 0 0 1 0"/>\n                    <feMerge>\n                        <feMergeNode in="blur3"/>\n                        <feMergeNode in="SourceGraphic"/>\n                    </feMerge>\n                </filter>\n            </defs>\n            <g filter="url(#shadow)">\n                <path d="M221.46,103.71c0,18.83-29.36,18.83-29.12,0C192.1,84.88,221.46,84.88,221.46,103.71Z" fill="#d9ac59"/>\n                <path d="M179.9,4.15A175.48,175.48,0,1,0,355.38,179.63,175.48,175.48,0,0,0,179.9,4.15Zm-40.79,264.5c-.23-17.82,27.58-17.82,27.58,0S138.88,286.48,139.11,268.65ZM218.6,168.24A79.65,79.65,0,0,1,205.15,174a12.76,12.76,0,0,0-6.29,4.65L167.54,222a1.36,1.36,0,0,1-2.46-.8v-35.8a2.58,2.58,0,0,0-3.06-2.53c-15.43,3-30.23,7.7-42.73,19.94-38.8,38-29.42,105.69,16.09,133.16a162.25,162.25,0,0,1-91.47-67.27C-3.86,182.26,34.5,47.25,138.37,25.66c46.89-9.75,118.25,5.16,123.73,62.83C265.15,120.64,246.56,152.89,218.6,168.24Z" fill="url(#gradient)"/>\n            </g>\n        </svg>\n        <span class="converse-brand__text">\n            <span>converse<span class="subdued">.js</span></span>\n            <p class="byline">messaging freedom</p>\n        </span>\n    </div>\n</div>\n';
+__p += '<!-- src/templates/background_logo.html -->\n<div class="inner-content converse-brand row">\r\n    <div class="converse-brand__padding"></div>\r\n    <div class="converse-brand__heading">\r\n        <svg height="200px"\r\n            xmlns="http://www.w3.org/2000/svg"\r\n            xmlns:xlink="http://www.w3.org/1999/xlink"\r\n            viewBox="0 0 364 364"\r\n            version="1.1">\r\n            <title>Logo Converse</title>\r\n            <defs>\r\n                <linearGradient id="gradient" x1="92.14" y1="27.64" x2="267.65" y2="331.62" gradientUnits="userSpaceOnUse">\r\n                    <stop offset="0" stop-color="#fff1d1"/>\r\n                    <stop offset="0.05" stop-color="#fae8c1"/>\r\n                    <stop offset="0.15" stop-color="#f0d5a1"/>\r\n                    <stop offset="0.27" stop-color="#e7c687"/>\r\n                    <stop offset="0.4" stop-color="#e1bb72"/>\r\n                    <stop offset="0.54" stop-color="#dcb264"/>\r\n                    <stop offset="0.71" stop-color="#daad5c"/>\r\n                    <stop offset="1" stop-color="#d9ac59"/>\r\n                </linearGradient>\r\n                <filter id="shadow">\r\n                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.3" result="blur1"/>\r\n                    <feOffset in="blur1" dx="3" dy="3" result="blur2"/>\r\n                    <feColorMatrix in="blur2" type="matrix" result="blur3"\r\n                        values="1 0 0 0 0.1\r\n                                0 1 0 0 0.1\r\n                                0 0 1 0 0.1\r\n                                0 0 0 1 0"/>\r\n                    <feMerge>\r\n                        <feMergeNode in="blur3"/>\r\n                        <feMergeNode in="SourceGraphic"/>\r\n                    </feMerge>\r\n                </filter>\r\n            </defs>\r\n            <g filter="url(#shadow)">\r\n                <path d="M221.46,103.71c0,18.83-29.36,18.83-29.12,0C192.1,84.88,221.46,84.88,221.46,103.71Z" fill="#d9ac59"/>\r\n                <path d="M179.9,4.15A175.48,175.48,0,1,0,355.38,179.63,175.48,175.48,0,0,0,179.9,4.15Zm-40.79,264.5c-.23-17.82,27.58-17.82,27.58,0S138.88,286.48,139.11,268.65ZM218.6,168.24A79.65,79.65,0,0,1,205.15,174a12.76,12.76,0,0,0-6.29,4.65L167.54,222a1.36,1.36,0,0,1-2.46-.8v-35.8a2.58,2.58,0,0,0-3.06-2.53c-15.43,3-30.23,7.7-42.73,19.94-38.8,38-29.42,105.69,16.09,133.16a162.25,162.25,0,0,1-91.47-67.27C-3.86,182.26,34.5,47.25,138.37,25.66c46.89-9.75,118.25,5.16,123.73,62.83C265.15,120.64,246.56,152.89,218.6,168.24Z" fill="url(#gradient)"/>\r\n            </g>\r\n        </svg>\r\n        <span class="converse-brand__text">\r\n            <span>converse<span class="subdued">.js</span></span>\r\n            <p class="byline">messaging freedom</p>\r\n        </span>\r\n    </div>\r\n</div>\r\n';
 return __p
 };
 
@@ -92167,23 +92167,23 @@ __p += ' hidden ';
  } ;
 __p += '" data-room-jid="' +
 __e(o.jid) +
-'">\n    <a class="list-item-link open-room w-100" data-room-jid="' +
+'">\r\n    <a class="list-item-link open-room w-100" data-room-jid="' +
 __e(o.jid) +
 '" title="' +
 __e(o.open_title) +
 '" href="#">' +
 __e(o.name) +
-'</a>\n    <a class="list-item-action remove-bookmark fa fa-bookmark align-self-center ';
+'</a>\r\n    <a class="list-item-action remove-bookmark fa fa-bookmark align-self-center ';
  if (o.bookmarked) { ;
 __p += ' button-on ';
  } ;
-__p += '"\n        data-room-jid="' +
+__p += '"\r\n        data-room-jid="' +
 __e(o.jid) +
 '" data-bookmark-name="' +
 __e(o.name) +
-'"\n        title="' +
+'"\r\n        title="' +
 __e(o.info_remove_bookmark) +
-'" href="#"></a>\n</div>\n';
+'" href="#"></a>\r\n</div>\r\n';
 return __p
 };
 
@@ -92202,19 +92202,19 @@ var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 __p += '<!-- src/templates/bookmarks_list.html -->\n<a href="#" class="list-toggle bookmarks-toggle controlbox-padded" title="' +
 __e(o.desc_bookmarks) +
-'">\n    <span class="fa ';
+'">\r\n    <span class="fa ';
  if (o.toggle_state === o._converse.OPENED) { ;
 __p += ' fa-caret-down ';
  } else { ;
 __p += ' fa-caret-right ';
  } ;
-__p += '">\n    </span> ' +
+__p += '">\r\n    </span> ' +
 __e(o.label_bookmarks) +
-'</a>\n<div class="items-list bookmarks rooms-list ';
+'</a>\r\n<div class="items-list bookmarks rooms-list ';
  if (o.toggle_state !== o._converse.OPENED) { ;
 __p += ' hidden ';
  } ;
-__p += '"></div>\n';
+__p += '"></div>\r\n';
 return __p
 };
 
@@ -92231,45 +92231,45 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/chat_status_modal.html -->\n<!-- Change status Modal -->\n<div class="modal fade" id="modal-status-change" tabindex="-1" role="dialog" aria-labelledby="changeStatusModalLabel" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title" id="changeStatusModalLabel">' +
+__p += '<!-- src/templates/chat_status_modal.html -->\n<!-- Change status Modal -->\r\n<div class="modal fade" id="modal-status-change" tabindex="-1" role="dialog" aria-labelledby="changeStatusModalLabel" aria-hidden="true">\r\n    <div class="modal-dialog" role="document">\r\n        <div class="modal-content">\r\n            <div class="modal-header">\r\n                <h5 class="modal-title" id="changeStatusModalLabel">' +
 __e(o.modal_title) +
-'</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="' +
+'</h5>\r\n                <button type="button" class="close" data-dismiss="modal" aria-label="' +
 __e(o.label_close) +
-'">\n                    <span aria-hidden="true">×</span>\n                </button>\n            </div>\n            <div class="modal-body">\n                <form class="converse-form set-xmpp-status" id="set-xmpp-status">\n                    <div class="form-group">\n                        <div class="custom-control custom-radio">\n                            <input ';
+'">\r\n                    <span aria-hidden="true">×</span>\r\n                </button>\r\n            </div>\r\n            <div class="modal-body">\r\n                <form class="converse-form set-xmpp-status" id="set-xmpp-status">\r\n                    <div class="form-group">\r\n                        <div class="custom-control custom-radio">\r\n                            <input ';
  if (o.status === 'online') { ;
 __p += ' checked="checked" ';
  } ;
-__p += '\n                                   type="radio" id="radio-online" value="online" name="chat_status" class="custom-control-input"/>\n                            <label class="custom-control-label" for="radio-online">\n                                <span class="fa fa-circle chat-status chat-status--online"></span>' +
+__p += '\r\n                                   type="radio" id="radio-online" value="online" name="chat_status" class="custom-control-input"/>\r\n                            <label class="custom-control-label" for="radio-online">\r\n                                <span class="fa fa-circle chat-status chat-status--online"></span>' +
 __e(o.label_online) +
-'</label>\n                        </div>\n                        <div class="custom-control custom-radio">\n                            <input ';
+'</label>\r\n                        </div>\r\n                        <div class="custom-control custom-radio">\r\n                            <input ';
  if (o.status === 'busy') { ;
 __p += ' checked="checked" ';
  } ;
-__p += '\n                                   type="radio" id="radio-busy" value="dnd" name="chat_status" class="custom-control-input"/>\n                            <label class="custom-control-label" for="radio-busy">\n                                <span class="fa fa-minus-circle  chat-status chat-status--busy"></span>' +
+__p += '\r\n                                   type="radio" id="radio-busy" value="dnd" name="chat_status" class="custom-control-input"/>\r\n                            <label class="custom-control-label" for="radio-busy">\r\n                                <span class="fa fa-minus-circle  chat-status chat-status--busy"></span>' +
 __e(o.label_busy) +
-'</label>\n                        </div>\n                        <div class="custom-control custom-radio">\n                            <input ';
+'</label>\r\n                        </div>\r\n                        <div class="custom-control custom-radio">\r\n                            <input ';
  if (o.status === 'away') { ;
 __p += ' checked="checked" ';
  } ;
-__p += '\n                                   type="radio" id="radio-away" value="away" name="chat_status" class="custom-control-input"/>\n                            <label class="custom-control-label" for="radio-away">\n                                <span class="fa fa-circle chat-status chat-status--away"></span>' +
+__p += '\r\n                                   type="radio" id="radio-away" value="away" name="chat_status" class="custom-control-input"/>\r\n                            <label class="custom-control-label" for="radio-away">\r\n                                <span class="fa fa-circle chat-status chat-status--away"></span>' +
 __e(o.label_away) +
-'</label>\n                        </div>\n                        <div class="custom-control custom-radio">\n                            <input ';
+'</label>\r\n                        </div>\r\n                        <div class="custom-control custom-radio">\r\n                            <input ';
  if (o.status === 'xa') { ;
 __p += ' checked="checked" ';
  } ;
-__p += '\n                                   type="radio" id="radio-xa" value="xa" name="chat_status" class="custom-control-input"/>\n                            <label class="custom-control-label" for="radio-xa">\n                                <span class="far fa-circle chat-status chat-status--xa"></span>' +
+__p += '\r\n                                   type="radio" id="radio-xa" value="xa" name="chat_status" class="custom-control-input"/>\r\n                            <label class="custom-control-label" for="radio-xa">\r\n                                <span class="far fa-circle chat-status chat-status--xa"></span>' +
 __e(o.label_xa) +
-'</label>\n                        </div>\n                    </div>\n                    <div class="form-group">\n                        <div class="btn-group w-100">\n                            <input name="status_message" type="text" class="form-control" \n                                value="' +
+'</label>\r\n                        </div>\r\n                    </div>\r\n                    <div class="form-group">\r\n                        <div class="btn-group w-100">\r\n                            <input name="status_message" type="text" class="form-control" \r\n                                value="' +
 __e(o.status_message) +
 '" placeholder="' +
 __e(o.placeholder_status_message) +
-'"/>\n                            <span class="clear-input fa fa-times ';
+'"/>\r\n                            <span class="clear-input fa fa-times ';
  if (!o.status_message) { ;
 __p += ' hidden ';
  } ;
-__p += '"></span>\n                        </div>\n                    </div>\n                    <button type="submit" class="btn btn-primary">' +
+__p += '"></span>\r\n                        </div>\r\n                    </div>\r\n                    <button type="submit" class="btn btn-primary">' +
 __e(o.label_save) +
-'</button>\n                </form>\n            </div>\n        </div>\n    </div>\n</div>\n';
+'</button>\r\n                </form>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n';
 return __p
 };
 
@@ -92286,11 +92286,11 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/chatarea.html -->\n<div class="chat-area col-md-9 col-8">\n    <div class="chat-content ';
+__p += '<!-- src/templates/chatarea.html -->\n<div class="chat-area col-md-9 col-8">\r\n    <div class="chat-content ';
  if (o.show_send_button) { ;
 __p += 'chat-content-sendbutton';
  } ;
-__p += '"></div>\n    <div class="message-form-container"/>\n</div>\n';
+__p += '"></div>\r\n    <div class="message-form-container"/>\r\n</div>\r\n';
 return __p
 };
 
@@ -92307,11 +92307,11 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/chatbox.html -->\n<div class="flyout box-flyout">\n    <div class="chat-body">\n        <div class="chat-content ';
+__p += '<!-- src/templates/chatbox.html -->\n<div class="flyout box-flyout">\r\n    <div class="chat-body">\r\n        <div class="chat-content ';
  if (o.show_send_button) { ;
 __p += 'chat-content-sendbutton';
  } ;
-__p += '"></div>\n        <div class="message-form-container"></div>\n    </div>\n</div>\n';
+__p += '"></div>\r\n        <div class="message-form-container"></div>\r\n    </div>\r\n</div>\r\n';
 return __p
 };
 
@@ -92328,27 +92328,27 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/chatbox_head.html -->\n<div class="chat-head chat-head-chatbox row no-gutters">\n    <div class="chatbox-navback"><i class="fa fa-arrow-left"></i></div>\n    <div class="chatbox-title">\n        <div class="row no-gutters">\n            <canvas class="avatar" height="36" width="36"></canvas>\n            <div class="col chat-title" title="' +
+__p += '<!-- src/templates/chatbox_head.html -->\n<div class="chat-head chat-head-chatbox row no-gutters">\r\n    <div class="chatbox-navback"><i class="fa fa-arrow-left"></i></div>\r\n    <div class="chatbox-title">\r\n        <div class="row no-gutters">\r\n            <canvas class="avatar" height="36" width="36"></canvas>\r\n            <div class="col chat-title" title="' +
 __e(o.jid) +
-'">\n                ';
+'">\r\n                ';
  if (o.url) { ;
-__p += '\n                    <a href="' +
+__p += '\r\n                    <a href="' +
 __e(o.url) +
-'" target="_blank" rel="noopener" class="user">\n                ';
+'" target="_blank" rel="noopener" class="user">\r\n                ';
  } ;
-__p += '\n                        ' +
+__p += '\r\n                        ' +
 __e( o.nickname || o.fullname || o.jid ) +
-'\n                ';
+'\r\n                ';
  if (o.url) { ;
-__p += '\n                    </a>\n                ';
+__p += '\r\n                    </a>\r\n                ';
  } ;
-__p += '\n                <p class="user-custom-message">' +
+__p += '\r\n                <p class="user-custom-message">' +
 __e( o.status ) +
-'</p>\n            </div>\n        </div>\n    </div>\n    <div class="chatbox-buttons row no-gutters">\n        <a class="chatbox-btn close-chatbox-button fa fa-times" title="' +
+'</p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class="chatbox-buttons row no-gutters">\r\n        <a class="chatbox-btn close-chatbox-button fa fa-times" title="' +
 __e(o.info_close) +
-'"></a>\n        <a class="chatbox-btn show-user-details-modal fa fa-id-card" title="' +
+'"></a>\r\n        <a class="chatbox-btn show-user-details-modal fa fa-id-card" title="' +
 __e(o.info_details) +
-'"></a>\n    </div>\n</div>\n';
+'"></a>\r\n    </div>\r\n</div>\r\n';
 return __p
 };
 
@@ -92365,39 +92365,39 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/chatbox_message_form.html -->\n<div class="message-form-container">\n<div class="new-msgs-indicator hidden">▼ ' +
+__p += '<!-- src/templates/chatbox_message_form.html -->\n<div class="message-form-container">\r\n<div class="new-msgs-indicator hidden">▼ ' +
 __e( o.unread_msgs ) +
-' ▼</div>\n<form class="sendXMPPMessage">\n    ';
+' ▼</div>\r\n<form class="sendXMPPMessage">\r\n    ';
  if (o.show_toolbar) { ;
-__p += '\n        <ul class="chat-toolbar no-text-select"></ul>\n    ';
+__p += '\r\n        <ul class="chat-toolbar no-text-select"></ul>\r\n    ';
  } ;
-__p += '\n    <input type="text" placeholder="' +
+__p += '\r\n    <input type="text" placeholder="' +
 ((__t = (o.label_spoiler_hint)) == null ? '' : __t) +
 '" value="' +
 ((__t = ( o.hint_value )) == null ? '' : __t) +
-'"\n           class="';
+'"\r\n           class="';
  if (!o.composing_spoiler) { ;
 __p += ' hidden ';
  } ;
-__p += ' spoiler-hint"/>\n\n    <div class="suggestion-box">\n        <ul class="suggestion-box__results suggestion-box__results--above" hidden=""></ul>\n        <textarea\n            type="text"\n            class="chat-textarea suggestion-box__input\n                ';
+__p += ' spoiler-hint"/>\r\n\r\n    <div class="suggestion-box">\r\n        <ul class="suggestion-box__results suggestion-box__results--above" hidden=""></ul>\r\n        <textarea\r\n            type="text"\r\n            class="chat-textarea suggestion-box__input\r\n                ';
  if (o.show_send_button) { ;
 __p += ' chat-textarea-send-button ';
  } ;
-__p += '\n                ';
+__p += '\r\n                ';
  if (o.composing_spoiler) { ;
 __p += ' spoiler ';
  } ;
-__p += '"\n            placeholder="' +
+__p += '"\r\n            placeholder="' +
 __e(o.label_message) +
 '">' +
 ((__t = ( o.message_value )) == null ? '' : __t) +
-'</textarea>\n        <span class="suggestion-box__additions visually-hidden" role="status" aria-live="assertive" aria-relevant="additions"></span>\n\n        ';
+'</textarea>\r\n        <span class="suggestion-box__additions visually-hidden" role="status" aria-live="assertive" aria-relevant="additions"></span>\r\n\r\n        ';
  if (o.show_send_button) { ;
-__p += '\n            <button type="submit" class="pure-button send-button">' +
+__p += '\r\n            <button type="submit" class="pure-button send-button">' +
 __e( o.label_send ) +
-'</button>\n        ';
+'</button>\r\n        ';
  } ;
-__p += '\n    </div>\n</form>\n</div>\n';
+__p += '\r\n    </div>\r\n</form>\r\n</div>\r\n';
 return __p
 };
 
@@ -92415,7 +92415,7 @@ module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
 __p += '<!-- src/templates/chatbox_minimize.html -->\n<a class="chatbox-btn toggle-chatbox-button fa fa-minus" title="' +
 __e(o.info_minimize) +
-'"></a>\n';
+'"></a>\r\n';
 return __p
 };
 
@@ -92431,7 +92431,7 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '';
-__p += '<!-- src/templates/chatboxes.html -->\n<div class="converse-chatboxes row no-gutters"></div>\n<div id="converse-modals" class="modals"></div>\n';
+__p += '<!-- src/templates/chatboxes.html -->\n<div class="converse-chatboxes row no-gutters"></div>\r\n<div id="converse-modals" class="modals"></div>\r\n';
 return __p
 };
 
@@ -92447,7 +92447,7 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '';
-__p += '<!-- src/templates/chatroom.html -->\n<div class="flyout box-flyout">\n    <div class="chat-head chat-head-chatroom row no-gutters"></div>\n    <div class="chat-body chatroom-body row no-gutters">\n        <div class="disconnect-container hidden"></div>\n    </div>\n</div>\n';
+__p += '<!-- src/templates/chatroom.html -->\n<div class="flyout box-flyout">\r\n    <div class="chat-head chat-head-chatroom row no-gutters"></div>\r\n    <div class="chat-body chatroom-body row no-gutters">\r\n        <div class="disconnect-container hidden"></div>\r\n    </div>\r\n</div>\r\n';
 return __p
 };
 
@@ -92463,23 +92463,23 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
-__p += '<!-- src/templates/chatroom_bookmark_form.html -->\n<div class="chatroom-form-container">\n    <form class="converse-form chatroom-form">\n        <legend>' +
+__p += '<!-- src/templates/chatroom_bookmark_form.html -->\n<div class="chatroom-form-container">\r\n    <form class="converse-form chatroom-form">\r\n        <legend>' +
 __e(o.heading) +
-'</legend>\n        <fieldset class="form-group">\n            <label for="converse_muc_bookmark_name">' +
+'</legend>\r\n        <fieldset class="form-group">\r\n            <label for="converse_muc_bookmark_name">' +
 __e(o.label_name) +
-'</label>\n            <input class="form-control" type="text" value="' +
+'</label>\r\n            <input class="form-control" type="text" value="' +
 __e(o.name) +
-'" name="name" required="required" id="converse_muc_bookmark_name"/>\n        </fieldset>\n        <fieldset class="form-group">\n            <label for="converse_muc_bookmark_nick">' +
+'" name="name" required="required" id="converse_muc_bookmark_name"/>\r\n        </fieldset>\r\n        <fieldset class="form-group">\r\n            <label for="converse_muc_bookmark_nick">' +
 __e(o.label_nick) +
-'</label>\n            <input class="form-control" type="text" name="nick" value="' +
+'</label>\r\n            <input class="form-control" type="text" name="nick" value="' +
 __e(o.default_nick) +
-'" id="converse_muc_bookmark_nick"/>\n        </fieldset>\n        <fieldset class="form-group form-check">\n            <input class="form-check-input" id="converse_muc_bookmark_autojoin" type="checkbox" name="autojoin"/>\n            <label class="form-check-label" for="converse_muc_bookmark_autojoin">' +
+'" id="converse_muc_bookmark_nick"/>\r\n        </fieldset>\r\n        <fieldset class="form-group form-check">\r\n            <input class="form-check-input" id="converse_muc_bookmark_autojoin" type="checkbox" name="autojoin"/>\r\n            <label class="form-check-label" for="converse_muc_bookmark_autojoin">' +
 __e(o.label_autojoin) +
-'</label>\n        </fieldset>\n        <fieldset class="form-group">\n            <input class="btn btn-primary" type="submit" value="' +
+'</label>\r\n        </fieldset>\r\n        <fieldset class="form-group">\r\n            <input class="btn btn-primary" type="submit" value="' +
 __e(o.label_submit) +
-'"/>\n            <input class="btn btn-secondary button-cancel" type="button" value="' +
+'"/>\r\n            <input class="btn btn-secondary button-cancel" type="button" value="' +
 __e(o.label_cancel) +
-'"/>\n        </fieldset>\n    </form>\n</div>\n';
+'"/>\r\n        </fieldset>\r\n    </form>\r\n</div>\r\n';
 return __p
 };
 
@@ -92496,13 +92496,13 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/chatroom_bookmark_toggle.html -->\n<a class="chatbox-btn toggle-bookmark fa fa-bookmark\n   ';
+__p += '<!-- src/templates/chatroom_bookmark_toggle.html -->\n<a class="chatbox-btn toggle-bookmark fa fa-bookmark\r\n   ';
  if (o.bookmarked) {;
 __p += ' button-on ';
  } ;
 __p += '" title="' +
 __e(o.info_toggle_bookmark) +
-'"></a>\n';
+'"></a>\r\n';
 return __p
 };
 
@@ -92519,19 +92519,19 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/chatroom_destroyed.html -->\n<div class="alert alert-danger">\n    <h3 class="alert-heading disconnect-msg">' +
+__p += '<!-- src/templates/chatroom_destroyed.html -->\n<div class="alert alert-danger">\r\n    <h3 class="alert-heading disconnect-msg">' +
 __e(o.__('This groupchat no longer exists')) +
-'</h3>\n\n    <p class="destroyed-reason">' +
+'</h3>\r\n\r\n    <p class="destroyed-reason">' +
 __e(o.reason) +
-'</p>\n\n    ';
+'</p>\r\n\r\n    ';
  if (o.jid) { ;
-__p += '\n    <p class="moved-label">\n        ' +
+__p += '\r\n    <p class="moved-label">\r\n        ' +
 __e(o.__('The conversation has moved. Click below to enter.') ) +
-'\n    </p>\n    <p class="moved-link"><a class="switch-chat" href="#">' +
+'\r\n    </p>\r\n    <p class="moved-link"><a class="switch-chat" href="#">' +
 __e(o.jid) +
-'</a></p>\n    ';
+'</a></p>\r\n    ';
  } ;
-__p += '\n</div>\n';
+__p += '\r\n</div>\r\n';
 return __p
 };
 
@@ -92548,147 +92548,147 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/chatroom_details_modal.html -->\n<div class="modal fade" id="room-details-modal" tabindex="-1" role="dialog" aria-labelledby="room-details-modal-label" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title" id="room-details-modal-label">' +
+__p += '<!-- src/templates/chatroom_details_modal.html -->\n<div class="modal fade" id="room-details-modal" tabindex="-1" role="dialog" aria-labelledby="room-details-modal-label" aria-hidden="true">\r\n    <div class="modal-dialog" role="document">\r\n        <div class="modal-content">\r\n            <div class="modal-header">\r\n                <h5 class="modal-title" id="room-details-modal-label">' +
 __e(o.display_name) +
-'</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="' +
+'</h5>\r\n                <button type="button" class="close" data-dismiss="modal" aria-label="' +
 __e(o.label_close) +
-'"><span aria-hidden="true">×</span></button>\n            </div>\n            <div class="modal-body">\n                <div class="room-info">\n                    <p class="room-info"><strong>' +
+'"><span aria-hidden="true">×</span></button>\r\n            </div>\r\n            <div class="modal-body">\r\n                <div class="room-info">\r\n                    <p class="room-info"><strong>' +
 __e(o.__('Name')) +
 '</strong>: ' +
 __e(o.name) +
-'</p>\n                    <p class="room-info"><strong>' +
+'</p>\r\n                    <p class="room-info"><strong>' +
 __e(o.__('Groupchat address (JID)')) +
 '</strong>: ' +
 __e(o.jid) +
-'</p>\n                    <p class="room-info"><strong>' +
+'</p>\r\n                    <p class="room-info"><strong>' +
 __e(o.__('Description')) +
 '</strong>: ' +
 __e(o.description) +
-'</p>\n                    ';
+'</p>\r\n                    ';
  if (o.subject) { ;
-__p += '\n                    <p class="room-info"><strong>' +
+__p += '\r\n                    <p class="room-info"><strong>' +
 __e(o.__('Topic')) +
 '</strong>: ' +
 ((__t = (o.topic)) == null ? '' : __t) +
-'</p> <!-- Sanitized in converse-muc-views. We want to render links. -->\n                        <p class="room-info"><strong>' +
+'</p> <!-- Sanitized in converse-muc-views. We want to render links. -->\r\n                        <p class="room-info"><strong>' +
 __e(o.__('Topic author')) +
 '</strong>: ' +
 __e(o._.get(o.subject, 'author')) +
-'</p>\n                    ';
+'</p>\r\n                    ';
  } ;
-__p += '\n                    <p class="room-info"><strong>' +
+__p += '\r\n                    <p class="room-info"><strong>' +
 __e(o.__('Online users')) +
 '</strong>: ' +
 __e(o.num_occupants) +
-'</p>\n                    <p class="room-info"><strong>' +
+'</p>\r\n                    <p class="room-info"><strong>' +
 __e(o.__('Features')) +
-'</strong>:\n                        <div class="chatroom-features">\n                        <ul class="features-list">\n                        ';
+'</strong>:\r\n                        <div class="chatroom-features">\r\n                        <ul class="features-list">\r\n                        ';
  if (o.features.passwordprotected) { ;
-__p += '\n                        <li class="feature" ><span class="fa fa-lock"></span>' +
+__p += '\r\n                        <li class="feature" ><span class="fa fa-lock"></span>' +
 __e( o.__('Password protected') ) +
 ' - <em>' +
 __e( o.__('This groupchat requires a password before entry') ) +
-'</em></li>\n                        ';
+'</em></li>\r\n                        ';
  } ;
-__p += '\n                        ';
+__p += '\r\n                        ';
  if (o.features.unsecured) { ;
-__p += '\n                        <li class="feature" ><span class="fa fa-unlock"></span>' +
+__p += '\r\n                        <li class="feature" ><span class="fa fa-unlock"></span>' +
 __e( o.__('No password required') ) +
 ' - <em>' +
 __e( o.__('This groupchat does not require a password upon entry') ) +
-'</em></li>\n                        ';
+'</em></li>\r\n                        ';
  } ;
-__p += '\n                        ';
+__p += '\r\n                        ';
  if (o.features.hidden) { ;
-__p += '\n                        <li class="feature" ><span class="fa fa-eye-slash"></span>' +
+__p += '\r\n                        <li class="feature" ><span class="fa fa-eye-slash"></span>' +
 __e( o.__('Hidden') ) +
 ' - <em>' +
 __e( o.__('This groupchat is not publicly searchable') ) +
-'</em></li>\n                        ';
+'</em></li>\r\n                        ';
  } ;
-__p += '\n                        ';
+__p += '\r\n                        ';
  if (o.features.public_room) { ;
-__p += '\n                        <li class="feature" ><span class="fa fa-eye"></span>' +
+__p += '\r\n                        <li class="feature" ><span class="fa fa-eye"></span>' +
 __e( o.__('Public') ) +
 ' - <em>' +
 __e( o.__('This groupchat is publicly searchable') ) +
-'</em></li>\n                        ';
+'</em></li>\r\n                        ';
  } ;
-__p += '\n                        ';
+__p += '\r\n                        ';
  if (o.features.membersonly) { ;
-__p += '\n                        <li class="feature" ><span class="fa fa-address-book"></span>' +
+__p += '\r\n                        <li class="feature" ><span class="fa fa-address-book"></span>' +
 __e( o.__('Members only') ) +
 ' - <em>' +
 __e( o.__('This groupchat is restricted to members only') ) +
-'</em></li>\n                        ';
+'</em></li>\r\n                        ';
  } ;
-__p += '\n                        ';
+__p += '\r\n                        ';
  if (o.features.open) { ;
-__p += '\n                        <li class="feature" ><span class="fa fa-globe"></span>' +
+__p += '\r\n                        <li class="feature" ><span class="fa fa-globe"></span>' +
 __e( o.__('Open') ) +
 ' - <em>' +
 __e( o.__('Anyone can join this groupchat') ) +
-'</em></li>\n                        ';
+'</em></li>\r\n                        ';
  } ;
-__p += '\n                        ';
+__p += '\r\n                        ';
  if (o.features.persistent) { ;
-__p += '\n                        <li class="feature" ><span class="fa fa-save"></span>' +
+__p += '\r\n                        <li class="feature" ><span class="fa fa-save"></span>' +
 __e( o.__('Persistent') ) +
 ' - <em>' +
 __e( o.__('This groupchat persists even if it\'s unoccupied') ) +
-'</em></li>\n                        ';
+'</em></li>\r\n                        ';
  } ;
-__p += '\n                        ';
+__p += '\r\n                        ';
  if (o.features.temporary) { ;
-__p += '\n                        <li class="feature" ><span class="fa fa-snowflake-o"></span>' +
+__p += '\r\n                        <li class="feature" ><span class="fa fa-snowflake-o"></span>' +
 __e( o.__('Temporary') ) +
 ' - <em>' +
 __e( o.__('This groupchat will disappear once the last person leaves') ) +
-'</em></li>\n                        ';
+'</em></li>\r\n                        ';
  } ;
-__p += '\n                        ';
+__p += '\r\n                        ';
  if (o.features.nonanonymous) { ;
-__p += '\n                        <li class="feature" ><span class="fa fa-id-card"></span>' +
+__p += '\r\n                        <li class="feature" ><span class="fa fa-id-card"></span>' +
 __e( o.__('Not anonymous') ) +
 ' - <em>' +
 __e( o.__('All other groupchat participants can see your XMPP username') ) +
-'</em></li>\n                        ';
+'</em></li>\r\n                        ';
  } ;
-__p += '\n                        ';
+__p += '\r\n                        ';
  if (o.features.semianonymous) { ;
-__p += '\n                        <li class="feature" ><span class="fa fa-user-secret"></span>' +
+__p += '\r\n                        <li class="feature" ><span class="fa fa-user-secret"></span>' +
 __e( o.__('Semi-anonymous') ) +
 ' - <em>' +
 __e( o.__('Only moderators can see your XMPP username') ) +
-'</em></li>\n                        ';
+'</em></li>\r\n                        ';
  } ;
-__p += '\n                        ';
+__p += '\r\n                        ';
  if (o.features.moderated) { ;
-__p += '\n                        <li class="feature" ><span class="fa fa-gavel"></span>' +
+__p += '\r\n                        <li class="feature" ><span class="fa fa-gavel"></span>' +
 __e( o.__('Moderated') ) +
 ' - <em>' +
 __e( o.__('Participants entering this groupchat need to request permission to write') ) +
-'</em></li>\n                        ';
+'</em></li>\r\n                        ';
  } ;
-__p += '\n                        ';
+__p += '\r\n                        ';
  if (o.features.unmoderated) { ;
-__p += '\n                        <li class="feature" ><span class="fa fa-info-circle"></span>' +
+__p += '\r\n                        <li class="feature" ><span class="fa fa-info-circle"></span>' +
 __e( o.__('Not moderated') ) +
 ' - <em>' +
 __e( o.__('Participants entering this groupchat can write right away') ) +
-'</em></li>\n                        ';
+'</em></li>\r\n                        ';
  } ;
-__p += '\n                        ';
+__p += '\r\n                        ';
  if (o.features.mam_enabled) { ;
-__p += '\n                        <li class="feature" ><span class="fa fa-database"></span>' +
+__p += '\r\n                        <li class="feature" ><span class="fa fa-database"></span>' +
 __e( o.__('Message archiving') ) +
 ' - <em>' +
 __e( o.__('Messages are archived on the server') ) +
-'</em></li>\n                        ';
+'</em></li>\r\n                        ';
  } ;
-__p += '\n                        </ul>\n                        </div>\n                    </p>\n                </div>\n            </div>\n            <div class="modal-footer">\n                <button type="button" class="btn btn-warning" data-dismiss="modal">' +
+__p += '\r\n                        </ul>\r\n                        </div>\r\n                    </p>\r\n                </div>\r\n            </div>\r\n            <div class="modal-footer">\r\n                <button type="button" class="btn btn-warning" data-dismiss="modal">' +
 __e(o.__('Close')) +
-'</button>\n            </div>\n        </div>\n    </div>\n</div>\n';
+'</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n';
 return __p
 };
 
@@ -92705,15 +92705,15 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/chatroom_disconnect.html -->\n<div class="alert alert-danger">\n    <h3 class="alert-heading disconnect-msg">' +
+__p += '<!-- src/templates/chatroom_disconnect.html -->\n<div class="alert alert-danger">\r\n    <h3 class="alert-heading disconnect-msg">' +
 __e(o.disconnect_messages[0]) +
-'</h3>\n\n    ';
+'</h3>\r\n\r\n    ';
  o._.forEach(o.disconnect_messages.slice(1), function (msg) { ;
-__p += '\n        <p class="disconnect-msg">' +
+__p += '\r\n        <p class="disconnect-msg">' +
 __e(msg) +
-'</p>\n    ';
+'</p>\r\n    ';
  }); ;
-__p += '\n</div>\n';
+__p += '\r\n</div>\r\n';
 return __p
 };
 
@@ -92732,111 +92732,111 @@ var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 __p += '<!-- src/templates/chatroom_features.html -->\n<p class="occupants-heading">' +
 __e(o.__('Features')) +
-'</p>\n<ul class="features-list">\n';
+'</p>\r\n<ul class="features-list">\r\n';
  if (o.passwordprotected) { ;
-__p += '\n<li class="feature" title="' +
+__p += '\r\n<li class="feature" title="' +
 __e( o.__('This groupchat requires a password before entry') ) +
 '"><span class="fa fa-lock"></span>' +
 __e( o.__('Password protected') ) +
-'</li>\n';
+'</li>\r\n';
  } ;
-__p += '\n';
+__p += '\r\n';
  if (o.unsecured) { ;
-__p += '\n<li class="feature" title="' +
+__p += '\r\n<li class="feature" title="' +
 __e( o.__('This groupchat does not require a password upon entry') ) +
 '"><span class="fa fa-unlock"></span>' +
 __e( o.__('No password') ) +
-'</li>\n';
+'</li>\r\n';
  } ;
-__p += '\n';
+__p += '\r\n';
  if (o.hidden) { ;
-__p += '\n<li class="feature" title="' +
+__p += '\r\n<li class="feature" title="' +
 __e( o.__('This groupchat is not publicly searchable') ) +
 '"><span class="fa fa-eye-slash"></span>' +
 __e( o.__('Hidden') ) +
-'</li>\n';
+'</li>\r\n';
  } ;
-__p += '\n';
+__p += '\r\n';
  if (o.public_room) { ;
-__p += '\n<li class="feature" title="' +
+__p += '\r\n<li class="feature" title="' +
 __e( o.__('This groupchat is publicly searchable') ) +
 '"><span class="fa fa-eye"></span>' +
 __e( o.__('Public') ) +
-'</li>\n';
+'</li>\r\n';
  } ;
-__p += '\n';
+__p += '\r\n';
  if (o.membersonly) { ;
-__p += '\n<li class="feature" title="' +
+__p += '\r\n<li class="feature" title="' +
 __e( o.__('this groupchat is restricted to members only') ) +
 '"><span class="fa fa-address-book"></span>' +
 __e( o.__('Members only') ) +
-'</li>\n';
+'</li>\r\n';
  } ;
-__p += '\n';
+__p += '\r\n';
  if (o.open) { ;
-__p += '\n<li class="feature" title="' +
+__p += '\r\n<li class="feature" title="' +
 __e( o.__('Anyone can join this groupchat') ) +
 '"><span class="fa fa-globe"></span>' +
 __e( o.__('Open') ) +
-'</li>\n';
+'</li>\r\n';
  } ;
-__p += '\n';
+__p += '\r\n';
  if (o.persistent) { ;
-__p += '\n<li class="feature" title="' +
+__p += '\r\n<li class="feature" title="' +
 __e( o.__('This groupchat persists even if it\'s unoccupied') ) +
 '"><span class="fa fa-save"></span>' +
 __e( o.__('Persistent') ) +
-'</li>\n';
+'</li>\r\n';
  } ;
-__p += '\n';
+__p += '\r\n';
  if (o.temporary) { ;
-__p += '\n<li class="feature" title="' +
+__p += '\r\n<li class="feature" title="' +
 __e( o.__('This groupchat will disappear once the last person leaves') ) +
 '"><span class="fa fa-snowflake"></span>' +
 __e( o.__('Temporary') ) +
-'</li>\n';
+'</li>\r\n';
  } ;
-__p += '\n';
+__p += '\r\n';
  if (o.nonanonymous) { ;
-__p += '\n<li class="feature" title="' +
+__p += '\r\n<li class="feature" title="' +
 __e( o.__('All other groupchat participants can see your XMPP username') ) +
 '"><span class="fa fa-id-card"></span>' +
 __e( o.__('Not anonymous') ) +
-'</li>\n';
+'</li>\r\n';
  } ;
-__p += '\n';
+__p += '\r\n';
  if (o.semianonymous) { ;
-__p += '\n<li class="feature" title="' +
+__p += '\r\n<li class="feature" title="' +
 __e( o.__('Only moderators can see your XMPP username') ) +
 '"><span class="fa fa-user-secret"></span>' +
 __e( o.__('Semi-anonymous') ) +
-'</li>\n';
+'</li>\r\n';
  } ;
-__p += '\n';
+__p += '\r\n';
  if (o.moderated) { ;
-__p += '\n<li class="feature" title="' +
+__p += '\r\n<li class="feature" title="' +
 __e( o.__('Participants entering this groupchat need to request permission to write') ) +
 '"><span class="fa fa-gavel"></span>' +
 __e( o.__('Moderated') ) +
-'</li>\n';
+'</li>\r\n';
  } ;
-__p += '\n';
+__p += '\r\n';
  if (o.unmoderated) { ;
-__p += '\n<li class="feature" title="' +
+__p += '\r\n<li class="feature" title="' +
 __e( o.__('Participants entering this groupchat can write right away') ) +
 '"><span class="fa fa-info-circle"></span>' +
 __e( o.__('Not moderated') ) +
-'</li>\n';
+'</li>\r\n';
  } ;
-__p += '\n';
+__p += '\r\n';
  if (o.mam_enabled) { ;
-__p += '\n<li class="feature" title="' +
+__p += '\r\n<li class="feature" title="' +
 __e( o.__('Messages are archived on the server') ) +
 '"><span class="fa fa-database"></span>' +
 __e( o.__('Message archiving') ) +
-'</li>\n';
+'</li>\r\n';
  } ;
-__p += '\n</ul>\n';
+__p += '\r\n</ul>\r\n';
 return __p
 };
 
@@ -92852,7 +92852,7 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '';
-__p += '<!-- src/templates/chatroom_form.html -->\n<div class="chatroom-form-container">\n    <form class="converse-form chatroom-form">\n        <fieldset class="form-group">\n            <span class="spinner fa fa-spinner centered"/>\n        </fieldset>\n    </form>\n</div>\n';
+__p += '<!-- src/templates/chatroom_form.html -->\n<div class="chatroom-form-container">\r\n    <form class="converse-form chatroom-form">\r\n        <fieldset class="form-group">\r\n            <span class="spinner fa fa-spinner centered"/>\r\n        </fieldset>\r\n    </form>\r\n</div>\r\n';
 return __p
 };
 
@@ -92869,33 +92869,39 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/chatroom_head.html -->\n<div class="chatbox-navback"><i class="fa fa-arrow-left"></i></div>\n<div class="chatbox-title">\n    <div class="chat-title" title="' +
+__p += '<!-- src/templates/chatroom_head.html -->\n<div class="chatbox-navback"><i class="fa fa-arrow-left"></i></div>\r\n<div class="chatbox-title">\r\n    <div class="chat-title" title="' +
 __e(o.jid) +
-'">\n        ';
+'">\r\n            ' +
+__e(o.name) +
+' --- ' +
+__e(o.Strophe.getNodeFromJid(o.jid)) +
+' --- ' +
+__e( o.Strophe.getDomainFromJid(o.jid) ) +
+'\r\n        ';
  if (o.name && o.name !== o.Strophe.getNodeFromJid(o.jid)) { ;
-__p += '\n            ' +
+__p += '\r\n            ' +
 __e( o.name ) +
-'\n        ';
+'\r\n        ';
  } else { ;
-__p += '\n            ' +
+__p += '\r\n            ' +
 __e( o.Strophe.getNodeFromJid(o.jid) ) +
 '@' +
 __e( o.Strophe.getDomainFromJid(o.jid) ) +
-'\n        ';
+'\r\n        ';
  } ;
-__p += '\n    </div>\n    <!-- Sanitized in converse-muc-views. We want to render links. -->\n    <p class="chatroom-description">' +
+__p += '\r\n    </div>\r\n    <!-- Sanitized in converse-muc-views. We want to render links. -->\r\n    <p class="chatroom-description">' +
 ((__t = (o.description)) == null ? '' : __t) +
-'</p>\n</div>\n<div class="chatbox-buttons row no-gutters">\n    <a class="chatbox-btn close-chatbox-button fa fa-sign-out-alt" title="' +
+'</p>\r\n</div>\r\n<div class="chatbox-buttons row no-gutters">\r\n    <a class="chatbox-btn close-chatbox-button fa fa-sign-out-alt" title="' +
 __e(o.info_close) +
-'"></a>\n    ';
+'"></a>\r\n    ';
  if (o.affiliation == 'owner') { ;
-__p += '\n    <a class="chatbox-btn configure-chatroom-button fa fa-wrench" title="' +
+__p += '\r\n    <a class="chatbox-btn configure-chatroom-button fa fa-wrench" title="' +
 __e(o.info_configure) +
-' "></a>\n    ';
+' "></a>\r\n    ';
  } ;
-__p += '\n    <a class="chatbox-btn show-room-details-modal fa fa-info-circle" title="' +
+__p += '\r\n    <a class="chatbox-btn show-room-details-modal fa fa-info-circle" title="' +
 __e(o.info_details) +
-'"></a>\n</div>\n';
+'"></a>\r\n</div>\r\n';
 return __p
 };
 
@@ -92912,15 +92918,15 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/chatroom_invite.html -->\n<form class="room-invite">\n    ';
+__p += '<!-- src/templates/chatroom_invite.html -->\n<form class="room-invite">\r\n    ';
  if (o.error_message) { ;
-__p += '\n        <span class="error">' +
+__p += '\r\n        <span class="error">' +
 __e(o.error_message) +
-'</span>\n    ';
+'</span>\r\n    ';
  } ;
-__p += '\n    <input class="form-control invited-contact" placeholder="' +
+__p += '\r\n    <input class="form-control invited-contact" placeholder="' +
 __e(o.label_invitation) +
-'" type="text"/>\n</form>\n';
+'" type="text"/>\r\n</form>\r\n';
 return __p
 };
 
@@ -92936,15 +92942,15 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
-__p += '<!-- src/templates/chatroom_nickname_form.html -->\n<div class="chatroom-form-container">\n    <form class="converse-form chatroom-form converse-centered-form">\n        <fieldset class="form-group">\n            <label>' +
+__p += '<!-- src/templates/chatroom_nickname_form.html -->\n<div class="chatroom-form-container">\r\n    <form class="converse-form chatroom-form converse-centered-form">\r\n        <fieldset class="form-group">\r\n            <label>' +
 __e(o.heading) +
-'</label>\n            <p class="validation-message">' +
+'</label>\r\n            <p class="validation-message">' +
 __e(o.validation_message) +
-'</p>\n            <input type="text" required="required" name="nick" class="form-control" placeholder="' +
+'</p>\r\n            <input type="text" required="required" name="nick" class="form-control" placeholder="' +
 __e(o.label_nickname) +
-'"/>\n        </fieldset>\n        <input type="submit" class="btn btn-primary" name="join" value="' +
+'"/>\r\n        </fieldset>\r\n        <input type="submit" class="btn btn-primary" name="join" value="' +
 __e(o.label_join) +
-'"/>\n    </form>\n</div>\n';
+'"/>\r\n    </form>\r\n</div>\r\n';
 return __p
 };
 
@@ -92960,13 +92966,13 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
-__p += '<!-- src/templates/chatroom_password_form.html -->\n<div class="chatroom-form-container">\n    <form class="pure-form converse-form chatroom-form">\n        <fieldset class="form-group">\n            <legend>' +
+__p += '<!-- src/templates/chatroom_password_form.html -->\n<div class="chatroom-form-container">\r\n    <form class="pure-form converse-form chatroom-form">\r\n        <fieldset class="form-group">\r\n            <legend>' +
 __e(o.heading) +
-'</legend>\n            <label>' +
+'</legend>\r\n            <label>' +
 __e(o.label_password) +
-'</label>\n            <input type="password" name="password"/>\n        </fieldset>\n        <input class="btn btn-primary" type="submit" value="' +
+'</label>\r\n            <input type="password" name="password"/>\r\n        </fieldset>\r\n        <input class="btn btn-primary" type="submit" value="' +
 __e(o.label_submit) +
-'"/>\n    </form>\n</div>\n';
+'"/>\r\n    </form>\r\n</div>\r\n';
 return __p
 };
 
@@ -92982,9 +92988,9 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
-__p += '<!-- src/templates/chatroom_sidebar.html -->\n<!-- <div class="occupants"> -->\n<div class="occupants-header">\n    <i class="hide-occupants fa fa-times"></i>\n    <p class="occupants-heading">' +
+__p += '<!-- src/templates/chatroom_sidebar.html -->\n<!-- <div class="occupants"> -->\r\n<div class="occupants-header">\r\n    <i class="hide-occupants fa fa-times"></i>\r\n    <p class="occupants-heading">' +
 __e(o.label_occupants) +
-'</p>\n</div>\n<ul class="occupant-list"></ul>\n<div class="chatroom-features"></div>\n<!-- </div> -->\n';
+'</p>\r\n</div>\r\n<ul class="occupant-list"></ul>\r\n<div class="chatroom-features"></div>\r\n<!-- </div> -->\r\n';
 return __p
 };
 
@@ -93000,7 +93006,7 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '';
-__p += '<!-- src/templates/chats_panel.html -->\n<a id="toggle-minimized-chats" href="#" class="row no-gutters"></a>\n<div class="flyout minimized-chats-flyout row no-gutters"></div>\n';
+__p += '<!-- src/templates/chats_panel.html -->\n<a id="toggle-minimized-chats" href="#" class="row no-gutters"></a>\r\n<div class="flyout minimized-chats-flyout row no-gutters"></div>\r\n';
 return __p
 };
 
@@ -93016,17 +93022,17 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
-__p += '<!-- src/templates/client_info_modal.html -->\n<!-- Change status Modal -->\n<div class="modal fade" id="modal-status-change" tabindex="-1" role="dialog" aria-labelledby="changeStatusModalLabel" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title" id="changeStatusModalLabel">' +
+__p += '<!-- src/templates/client_info_modal.html -->\n<!-- Change status Modal -->\r\n<div class="modal fade" id="modal-status-change" tabindex="-1" role="dialog" aria-labelledby="changeStatusModalLabel" aria-hidden="true">\r\n    <div class="modal-dialog" role="document">\r\n        <div class="modal-content">\r\n            <div class="modal-header">\r\n                <h5 class="modal-title" id="changeStatusModalLabel">' +
 __e(o.modal_title) +
-'</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="' +
+'</h5>\r\n                <button type="button" class="close" data-dismiss="modal" aria-label="' +
 __e(o.label_close) +
-'">\n                    <span aria-hidden="true">×</span>\n                </button>\n            </div>\n            <div class="modal-body">\n                <div class="container brand-heading-container">\n                    <h6 class="brand-heading">Converse</h6>\n                    <p class="brand-subtitle">' +
+'">\r\n                    <span aria-hidden="true">×</span>\r\n                </button>\r\n            </div>\r\n            <div class="modal-body">\r\n                <div class="container brand-heading-container">\r\n                    <h6 class="brand-heading">Converse</h6>\r\n                    <p class="brand-subtitle">' +
 __e(o.version_name) +
-'</p>\n                    <p class="brand-subtitle">' +
+'</p>\r\n                    <p class="brand-subtitle">' +
 ((__t = (o.first_subtitle)) == null ? '' : __t) +
-'</p>\n                    <p class="brand-subtitle">' +
+'</p>\r\n                    <p class="brand-subtitle">' +
 ((__t = (o.second_subtitle)) == null ? '' : __t) +
-'</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n';
+'</p>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n';
 return __p
 };
 
@@ -93043,11 +93049,11 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/controlbox.html -->\n<div class="flyout box-flyout">\n    <div class="chat-head controlbox-head">\n        ';
+__p += '<!-- src/templates/controlbox.html -->\n<div class="flyout box-flyout">\r\n    <div class="chat-head controlbox-head">\r\n        ';
  if (!o.sticky_controlbox) { ;
-__p += '\n            <a class="chatbox-btn close-chatbox-button fa fa-times"></a>\n        ';
+__p += '\r\n            <a class="chatbox-btn close-chatbox-button fa fa-times"></a>\r\n        ';
  } ;
-__p += '\n    </div>\n    <div class="controlbox-panes"></div>\n</div>\n';
+__p += '\r\n    </div>\r\n    <div class="controlbox-panes"></div>\r\n</div>\r\n';
 return __p
 };
 
@@ -93065,7 +93071,7 @@ module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
 __p += '<!-- src/templates/controlbox_toggle.html -->\n<span class="toggle-feedback">' +
 __e(o.label_toggle) +
-'</span>\n';
+'</span>\r\n';
 return __p
 };
 
@@ -93081,7 +93087,7 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '';
-__p += '<!-- src/templates/converse_brand_heading.html -->\n<span class="brand-heading-container">\n    <a class="brand-heading" href="https://conversejs.org" target="_blank" rel="noopener">\n        <svg class="converse-svg-logo"\n            xmlns:svg="http://www.w3.org/2000/svg"\n            xmlns="http://www.w3.org/2000/svg"\n            xmlns:xlink="http://www.w3.org/1999/xlink"\n            viewBox="0 0 364 364">\n            <title>Converse</title>\n            <g class="cls-1" id="g904">\n                <g data-name="Layer 2">\n                    <g data-name="Layer 7">\n                        <path\n                            class="cls-3"\n                            d="M221.46,103.71c0,18.83-29.36,18.83-29.12,0C192.1,84.88,221.46,84.88,221.46,103.71Z" />\n                        <path\n                            class="cls-4"\n                            d="M179.9,4.15A175.48,175.48,0,1,0,355.38,179.63,175.48,175.48,0,0,0,179.9,4.15Zm-40.79,264.5c-.23-17.82,27.58-17.82,27.58,0S138.88,286.48,139.11,268.65ZM218.6,168.24A79.65,79.65,0,0,1,205.15,174a12.76,12.76,0,0,0-6.29,4.65L167.54,222a1.36,1.36,0,0,1-2.46-.8v-35.8a2.58,2.58,0,0,0-3.06-2.53c-15.43,3-30.23,7.7-42.73,19.94-38.8,38-29.42,105.69,16.09,133.16a162.25,162.25,0,0,1-91.47-67.27C-3.86,182.26,34.5,47.25,138.37,25.66c46.89-9.75,118.25,5.16,123.73,62.83C265.15,120.64,246.56,152.89,218.6,168.24Z" />\n                    </g>\n                </g>\n            </g>\n        </svg>\n        <span class="brand-name">\n            <span class="brand-name__text">converse<span class="subdued">.js</span></span>\n        </span>\n    </a>\n</span>\n';
+__p += '<!-- src/templates/converse_brand_heading.html -->\n<span class="brand-heading-container">\r\n    <a class="brand-heading" href="https://conversejs.org" target="_blank" rel="noopener">\r\n        <svg class="converse-svg-logo"\r\n            xmlns:svg="http://www.w3.org/2000/svg"\r\n            xmlns="http://www.w3.org/2000/svg"\r\n            xmlns:xlink="http://www.w3.org/1999/xlink"\r\n            viewBox="0 0 364 364">\r\n            <title>Converse</title>\r\n            <g class="cls-1" id="g904">\r\n                <g data-name="Layer 2">\r\n                    <g data-name="Layer 7">\r\n                        <path\r\n                            class="cls-3"\r\n                            d="M221.46,103.71c0,18.83-29.36,18.83-29.12,0C192.1,84.88,221.46,84.88,221.46,103.71Z" />\r\n                        <path\r\n                            class="cls-4"\r\n                            d="M179.9,4.15A175.48,175.48,0,1,0,355.38,179.63,175.48,175.48,0,0,0,179.9,4.15Zm-40.79,264.5c-.23-17.82,27.58-17.82,27.58,0S138.88,286.48,139.11,268.65ZM218.6,168.24A79.65,79.65,0,0,1,205.15,174a12.76,12.76,0,0,0-6.29,4.65L167.54,222a1.36,1.36,0,0,1-2.46-.8v-35.8a2.58,2.58,0,0,0-3.06-2.53c-15.43,3-30.23,7.7-42.73,19.94-38.8,38-29.42,105.69,16.09,133.16a162.25,162.25,0,0,1-91.47-67.27C-3.86,182.26,34.5,47.25,138.37,25.66c46.89-9.75,118.25,5.16,123.73,62.83C265.15,120.64,246.56,152.89,218.6,168.24Z" />\r\n                    </g>\r\n                </g>\r\n            </g>\r\n        </svg>\r\n        <span class="brand-name">\r\n            <span class="brand-name__text">converse<span class="subdued">.js</span></span>\r\n        </span>\r\n    </a>\r\n</span>\r\n';
 return __p
 };
 
@@ -93097,13 +93103,13 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
-__p += '<!-- src/templates/csn.html -->\n<div class="message chat-info chat-state-notification"\n     data-isodate="' +
+__p += '<!-- src/templates/csn.html -->\n<div class="message chat-info chat-state-notification"\r\n     data-isodate="' +
 __e(o.isodate) +
-'"\n     data-csn="' +
+'"\r\n     data-csn="' +
 __e(o.from) +
 '">' +
 __e(o.message) +
-'</div>\n';
+'</div>\r\n';
 return __p
 };
 
@@ -93119,7 +93125,7 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '';
-__p += '<!-- src/templates/dragresize.html -->\n<div class="dragresize dragresize-top"></div>\n<div class="dragresize dragresize-topleft"></div>\n<div class="dragresize dragresize-left"></div>\n';
+__p += '<!-- src/templates/dragresize.html -->\n<div class="dragresize dragresize-top"></div>\r\n<div class="dragresize dragresize-topleft"></div>\r\n<div class="dragresize dragresize-left"></div>\r\n';
 return __p
 };
 
@@ -93136,59 +93142,59 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/emojis.html -->\n<div class="emoji-picker-container">\n';
+__p += '<!-- src/templates/emojis.html -->\n<div class="emoji-picker-container">\r\n';
  o._.forEach(o.emojis_by_category, function (obj, category) { ;
-__p += '\n    <ul class="emoji-picker emoji-picker-' +
+__p += '\r\n    <ul class="emoji-picker emoji-picker-' +
 __e(category) +
 ' ';
  if (o.current_category !== category) { ;
 __p += ' hidden ';
  } ;
-__p += '">\n        ';
+__p += '">\r\n        ';
  o._.forEach(o.emojis_by_category[category], function (emoji) { ;
-__p += '\n        <li class="emoji insert-emoji ';
+__p += '\r\n        <li class="emoji insert-emoji ';
  if (o.shouldBeHidden(emoji._shortname, o.current_skintone, o.toned_emojis)) { ;
 __p += ' hidden ';
  }; ;
-__p += '"\n            data-emoji="' +
+__p += '"\r\n            data-emoji="' +
 __e(emoji._shortname) +
-'">\n                <a href="#" data-emoji="' +
+'">\r\n                <a href="#" data-emoji="' +
 __e(emoji._shortname) +
 '"> ' +
 ((__t = ( o.transform(emoji._shortname) )) == null ? '' : __t) +
-'  </a>\n        </li>\n        ';
+'  </a>\r\n        </li>\r\n        ';
  }); ;
-__p += '\n    </ul>\n';
+__p += '\r\n    </ul>\r\n';
  }); ;
-__p += '\n<ul class="emoji-toolbar">\n    <li class="emoji-category-picker">\n        <ul>\n            ';
+__p += '\r\n<ul class="emoji-toolbar">\r\n    <li class="emoji-category-picker">\r\n        <ul>\r\n            ';
  o._.forEach(o.emojis_by_category, function (obj, category) { ;
-__p += '\n                <li data-category="' +
+__p += '\r\n                <li data-category="' +
 __e(category) +
 '" class="emoji-category ';
  if (o.current_category === category) { ;
 __p += ' picked ';
  } ;
-__p += '">\n                    <a class="pick-category" href="#" data-category="' +
+__p += '">\r\n                    <a class="pick-category" href="#" data-category="' +
 __e(category) +
 '"> ' +
 ((__t = ( o.transform(o.emojis_by_category[category][0]._shortname) )) == null ? '' : __t) +
-' </a>\n                </li>\n            ';
+' </a>\r\n                </li>\r\n            ';
  }); ;
-__p += '\n        </ul>\n    </li>\n    <li class="emoji-skintone-picker">\n        <ul>\n            ';
+__p += '\r\n        </ul>\r\n    </li>\r\n    <li class="emoji-skintone-picker">\r\n        <ul>\r\n            ';
  o._.forEach(o.skintones, function (skintone) { ;
-__p += '\n                <li data-skintone="' +
+__p += '\r\n                <li data-skintone="' +
 __e(skintone) +
 '" class="emoji-skintone ';
  if (o.current_skintone === skintone) { ;
 __p += ' picked ';
  } ;
-__p += '">\n                    <a class="pick-skintone" href="#" data-skintone="' +
+__p += '">\r\n                    <a class="pick-skintone" href="#" data-skintone="' +
 __e(skintone) +
 '"> ' +
 ((__t = ( o.transform(':'+skintone+':') )) == null ? '' : __t) +
-' </a>\n                </li>\n            ';
+' </a>\r\n                </li>\r\n            ';
  }); ;
-__p += '\n        </ul>\n    </li>\n</ul>\n</div>\n';
+__p += '\r\n        </ul>\r\n    </li>\r\n</ul>\r\n</div>\r\n';
 return __p
 };
 
@@ -93208,7 +93214,7 @@ __p += '<!-- src/templates/error_message.html -->\n<div class="message chat-info
 __e(o.isodate) +
 '">' +
 __e(o.message) +
-'</div>\n';
+'</div>\r\n';
 return __p
 };
 
@@ -93228,7 +93234,7 @@ __p += '<!-- src/templates/file.html -->\n<a target="_blank" rel="noopener" href
 __e(o.url) +
 '">' +
 __e(o.label_download) +
-'</a>\n';
+'</a>\r\n';
 return __p
 };
 
@@ -93248,15 +93254,15 @@ __p += '<!-- src/templates/file_progress.html -->\n<div class="message chat-msg"
 __e(o.time) +
 '" data-msgid="' +
 __e(o.msgid) +
-'">\n    <canvas class="avatar chat-msg__avatar" height="36" width="36"></canvas>\n    <div class="chat-msg__content">\n        <span class="chat-msg__text">' +
+'">\r\n    <canvas class="avatar chat-msg__avatar" height="36" width="36"></canvas>\r\n    <div class="chat-msg__content">\r\n        <span class="chat-msg__text">' +
 __e(o.__('Uploading file:')) +
 ' <strong>' +
 __e(o.filename) +
 '</strong>, ' +
 __e(o.filesize) +
-'</span>\n        <progress value="' +
+'</span>\r\n        <progress value="' +
 __e(o.progress) +
-'"/>\n    </div>\n</div>\n';
+'"/>\r\n    </div>\r\n</div>\r\n';
 return __p
 };
 
@@ -93275,21 +93281,21 @@ var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 __p += '<!-- src/templates/form_captcha.html -->\n';
  if (o.label) { ;
-__p += '\n<label>\n    ' +
+__p += '\r\n<label>\r\n    ' +
 __e(o.label) +
-'\n</label>\n';
+'\r\n</label>\r\n';
  } ;
-__p += '\n<img src="data:' +
+__p += '\r\n<img src="data:' +
 __e(o.type) +
 ';base64,' +
 __e(o.data) +
-'">\n<input name="' +
+'">\r\n<input name="' +
 __e(o.name) +
 '" type="text" ';
  if (o.required) { ;
 __p += ' class="required" ';
  } ;
-__p += ' />\n\n\n';
+__p += ' />\r\n\r\n\r\n';
 return __p
 };
 
@@ -93306,7 +93312,7 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/form_checkbox.html -->\n<div class="form-group">\n    <input id="' +
+__p += '<!-- src/templates/form_checkbox.html -->\n<div class="form-group">\r\n    <input id="' +
 __e(o.id) +
 '" name="' +
 __e(o.name) +
@@ -93316,11 +93322,11 @@ __e(o.checked) +
  if (o.required) { ;
 __p += ' required ';
  } ;
-__p += ' />\n    <label class="form-check-label" for="' +
+__p += ' />\r\n    <label class="form-check-label" for="' +
 __e(o.id) +
 '">' +
 __e(o.label) +
-'</label>\n</div>\n';
+'</label>\r\n</div>\r\n';
 return __p
 };
 
@@ -93337,37 +93343,37 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/form_input.html -->\n<div class="form-group">\n    ';
+__p += '<!-- src/templates/form_input.html -->\n<div class="form-group">\r\n    ';
  if (o.type !== 'hidden') { ;
-__p += '\n        <label for="' +
+__p += '\r\n        <label for="' +
 __e(o.id) +
 '">' +
 __e(o.label) +
-'</label>\n    ';
+'</label>\r\n    ';
  } ;
-__p += '\n    <input class="form-control" name="' +
+__p += '\r\n    <input class="form-control" name="' +
 __e(o.name) +
 '" type="' +
 __e(o.type) +
 '" id="' +
 __e(o.id) +
-'"\n        ';
+'"\r\n        ';
  if (o.placeholder) { ;
 __p += ' placeholder="' +
 __e(o.placeholder) +
 '" ';
  } ;
-__p += '\n        ';
+__p += '\r\n        ';
  if (o.value) { ;
 __p += ' value="' +
 __e(o.value) +
 '" ';
  } ;
-__p += '\n        ';
+__p += '\r\n        ';
  if (o.required) { ;
 __p += ' required ';
  } ;
-__p += ' />\n</div>\n';
+__p += ' />\r\n</div>\r\n';
 return __p
 };
 
@@ -93384,11 +93390,11 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/form_select.html -->\n<div class="form-group">\n    <label for="' +
+__p += '<!-- src/templates/form_select.html -->\n<div class="form-group">\r\n    <label for="' +
 __e(o.id) +
 '">' +
 __e(o.label) +
-'</label>\n    <select class="form-control" id="' +
+'</label>\r\n    <select class="form-control" id="' +
 __e(o.id) +
 '" name="' +
 __e(o.name) +
@@ -93398,7 +93404,7 @@ __p += ' multiple="multiple" ';
  } ;
 __p += '>' +
 ((__t = (o.options)) == null ? '' : __t) +
-'</select>\n</div>\n';
+'</select>\r\n</div>\r\n';
 return __p
 };
 
@@ -93416,11 +93422,11 @@ module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
 __p += '<!-- src/templates/form_textarea.html -->\n<label class="label-ta">' +
 __e(o.label) +
-'</label>\n<textarea name="' +
+'</label>\r\n<textarea name="' +
 __e(o.name) +
 '">' +
 __e(o.value) +
-'</textarea>\n';
+'</textarea>\r\n';
 return __p
 };
 
@@ -93436,13 +93442,13 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
-__p += '<!-- src/templates/form_url.html -->\n<label>\n    ' +
+__p += '<!-- src/templates/form_url.html -->\n<label>\r\n    ' +
 __e(o.label) +
-'\n    <a class="form-url" target="_blank" rel="noopener" href="' +
+'\r\n    <a class="form-url" target="_blank" rel="noopener" href="' +
 __e(o.value) +
 '">' +
 __e(o.value) +
-'</a>\n</label>\n';
+'</a>\r\n</label>\r\n';
 return __p
 };
 
@@ -93459,31 +93465,31 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/form_username.html -->\n<div class="form-group">\n    ';
+__p += '<!-- src/templates/form_username.html -->\n<div class="form-group">\r\n    ';
  if (o.label) { ;
-__p += '\n    <label>\n        ' +
+__p += '\r\n    <label>\r\n        ' +
 __e(o.label) +
-'\n    </label>\n    ';
+'\r\n    </label>\r\n    ';
  } ;
-__p += '\n    <div class="input-group">\n        <div class="input-group-prepend">\n            <input name="' +
+__p += '\r\n    <div class="input-group">\r\n        <div class="input-group-prepend">\r\n            <input name="' +
 __e(o.name) +
 '" type="' +
 __e(o.type) +
-'"\n                ';
+'"\r\n                ';
  if (o.value) { ;
 __p += ' value="' +
 __e(o.value) +
 '" ';
  } ;
-__p += '\n                ';
+__p += '\r\n                ';
  if (o.required) { ;
 __p += ' class="required" ';
  } ;
-__p += ' />\n            <div class="input-group-text col" title="' +
+__p += ' />\r\n            <div class="input-group-text col" title="' +
 __e(o.domain) +
 '">' +
 __e(o.domain) +
-'</div>\n        </div>\n    </div>\n</div>\n';
+'</div>\r\n        </div>\r\n    </div>\r\n</div>\r\n';
 return __p
 };
 
@@ -93502,19 +93508,19 @@ var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 __p += '<!-- src/templates/group_header.html -->\n<a href="#" class="list-toggle group-toggle controlbox-padded" title="' +
 __e(o.desc_group_toggle) +
-'">\n    <span class="fa ';
+'">\r\n    <span class="fa ';
  if (o.toggle_state === o._converse.OPENED) { ;
 __p += ' fa-caret-down ';
  } else { ;
 __p += ' fa-caret-right ';
  } ;
-__p += '">\n    </span> ' +
+__p += '">\r\n    </span> ' +
 __e(o.label_group) +
-'</a>\n<ul class="items-list roster-group-contacts ';
+'</a>\r\n<ul class="items-list roster-group-contacts ';
  if (o.toggle_state === o._converse.CLOSED) { ;
 __p += ' collapsed ';
  } ;
-__p += '"></ul>\n';
+__p += '"></ul>\r\n';
 return __p
 };
 
@@ -93541,7 +93547,7 @@ __p += '" data-isodate="' +
 __e(o.isodate) +
 '">' +
 ((__t = (o.message)) == null ? '' : __t) +
-'</div>\n';
+'</div>\r\n';
 return __p
 };
 
@@ -93561,7 +93567,7 @@ __p += '<!-- src/templates/image.html -->\n<a href="' +
 __e(o.url) +
 '" target="_blank" rel="noopener"><img class="chat-image img-thumbnail" src="' +
 __e(o.url) +
-'"/></a>\n';
+'"/></a>\r\n';
 return __p
 };
 
@@ -93580,9 +93586,9 @@ var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 __p += '<!-- src/templates/info.html -->\n';
  if (o.render_message) { ;
-__p += '\n    <!-- XXX: Should only ever be rendered if the message text has been sanitized already -->\n    <div class="message chat-info ' +
+__p += '\r\n    <!-- XXX: Should only ever be rendered if the message text has been sanitized already -->\r\n    <div class="message chat-info ' +
 __e(o.extra_classes) +
-'"\n        data-isodate="' +
+'"\r\n        data-isodate="' +
 __e(o.isodate) +
 '" ';
  if (o.data_name) { ;
@@ -93594,11 +93600,11 @@ __e(o.data_value) +
  } ;
 __p += '>' +
 ((__t = (o.message)) == null ? '' : __t) +
-'</div>\n';
+'</div>\r\n';
  } else { ;
-__p += '\n    <div class="message chat-info ' +
+__p += '\r\n    <div class="message chat-info ' +
 __e(o.extra_classes) +
-'"\n        data-isodate="' +
+'"\r\n        data-isodate="' +
 __e(o.isodate) +
 '" ';
  if (o.data_name) { ;
@@ -93610,9 +93616,9 @@ __e(o.data_value) +
  } ;
 __p += '>' +
 __e(o.message) +
-'</div>\n';
+'</div>\r\n';
  } ;
-__p += '\n';
+__p += '\r\n';
 return __p
 };
 
@@ -93628,9 +93634,9 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
-__p += '<!-- src/templates/inverse_brand_heading.html -->\n<div class="row">\n    <div class="container brand-heading-container">\n        <h1 class="brand-heading brand-heading--inverse">\n            <svg class="converse-svg-logo"\n                xmlns:svg="http://www.w3.org/2000/svg"\n                xmlns="http://www.w3.org/2000/svg"\n                xmlns:xlink="http://www.w3.org/1999/xlink"\n                viewBox="0 0 364 364">\n                <title>Converse</title>\n                <g class="cls-1" id="g904">\n                    <g data-name="Layer 2">\n                        <g data-name="Layer 7">\n                            <path\n                                class="cls-3"\n                                d="M221.46,103.71c0,18.83-29.36,18.83-29.12,0C192.1,84.88,221.46,84.88,221.46,103.71Z" />\n                            <path\n                                class="cls-4"\n                                d="M179.9,4.15A175.48,175.48,0,1,0,355.38,179.63,175.48,175.48,0,0,0,179.9,4.15Zm-40.79,264.5c-.23-17.82,27.58-17.82,27.58,0S138.88,286.48,139.11,268.65ZM218.6,168.24A79.65,79.65,0,0,1,205.15,174a12.76,12.76,0,0,0-6.29,4.65L167.54,222a1.36,1.36,0,0,1-2.46-.8v-35.8a2.58,2.58,0,0,0-3.06-2.53c-15.43,3-30.23,7.7-42.73,19.94-38.8,38-29.42,105.69,16.09,133.16a162.25,162.25,0,0,1-91.47-67.27C-3.86,182.26,34.5,47.25,138.37,25.66c46.89-9.75,118.25,5.16,123.73,62.83C265.15,120.64,246.56,152.89,218.6,168.24Z" />\n                        </g>\n                    </g>\n                </g>\n            </svg>\n            <span class="brand-name">\n                <span class="brand-name__text">converse<span class="subdued">.js</span></span>\n                <p class="byline">messaging freedom</p>\n            </span>\n        </h1>\n        <p class="brand-subtitle">' +
+__p += '<!-- src/templates/inverse_brand_heading.html -->\n<div class="row">\r\n    <div class="container brand-heading-container">\r\n        <h1 class="brand-heading brand-heading--inverse">\r\n            <svg class="converse-svg-logo"\r\n                xmlns:svg="http://www.w3.org/2000/svg"\r\n                xmlns="http://www.w3.org/2000/svg"\r\n                xmlns:xlink="http://www.w3.org/1999/xlink"\r\n                viewBox="0 0 364 364">\r\n                <title>Converse</title>\r\n                <g class="cls-1" id="g904">\r\n                    <g data-name="Layer 2">\r\n                        <g data-name="Layer 7">\r\n                            <path\r\n                                class="cls-3"\r\n                                d="M221.46,103.71c0,18.83-29.36,18.83-29.12,0C192.1,84.88,221.46,84.88,221.46,103.71Z" />\r\n                            <path\r\n                                class="cls-4"\r\n                                d="M179.9,4.15A175.48,175.48,0,1,0,355.38,179.63,175.48,175.48,0,0,0,179.9,4.15Zm-40.79,264.5c-.23-17.82,27.58-17.82,27.58,0S138.88,286.48,139.11,268.65ZM218.6,168.24A79.65,79.65,0,0,1,205.15,174a12.76,12.76,0,0,0-6.29,4.65L167.54,222a1.36,1.36,0,0,1-2.46-.8v-35.8a2.58,2.58,0,0,0-3.06-2.53c-15.43,3-30.23,7.7-42.73,19.94-38.8,38-29.42,105.69,16.09,133.16a162.25,162.25,0,0,1-91.47-67.27C-3.86,182.26,34.5,47.25,138.37,25.66c46.89-9.75,118.25,5.16,123.73,62.83C265.15,120.64,246.56,152.89,218.6,168.24Z" />\r\n                        </g>\r\n                    </g>\r\n                </g>\r\n            </svg>\r\n            <span class="brand-name">\r\n                <span class="brand-name__text">converse<span class="subdued">.js</span></span>\r\n                <p class="byline">messaging freedom</p>\r\n            </span>\r\n        </h1>\r\n        <p class="brand-subtitle">' +
 __e(o.version_name) +
-'</p>\n        <p class="brand-subtitle"><a target="_blank" rel="nofollow" href="https://conversejs.org">Open Source</a> XMPP chat client brought to you by <a target="_blank" rel="nofollow" href="https://opkode.com">Opkode</a> </p>\n        <p class="brand-subtitle"><a target="_blank" rel="nofollow" href="https://hosted.weblate.org/projects/conversejs/#languages">Translate</a> it into your own language</p>\n    </div>\n</div>\n';
+'</p>\r\n        <p class="brand-subtitle"><a target="_blank" rel="nofollow" href="https://conversejs.org">Open Source</a> XMPP chat client brought to you by <a target="_blank" rel="nofollow" href="https://opkode.com">Opkode</a> </p>\r\n        <p class="brand-subtitle"><a target="_blank" rel="nofollow" href="https://hosted.weblate.org/projects/conversejs/#languages">Translate</a> it into your own language</p>\r\n    </div>\r\n</div>\r\n';
 return __p
 };
 
@@ -93646,17 +93652,17 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
-__p += '<!-- src/templates/list_chatrooms_modal.html -->\n<div class="modal fade" id="list-chatrooms-modal" tabindex="-1" role="dialog" aria-labelledby="list-chatrooms-modal-label" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title"\n                    id="list-chatrooms-modal-label">' +
+__p += '<!-- src/templates/list_chatrooms_modal.html -->\n<div class="modal fade" id="list-chatrooms-modal" tabindex="-1" role="dialog" aria-labelledby="list-chatrooms-modal-label" aria-hidden="true">\r\n    <div class="modal-dialog" role="document">\r\n        <div class="modal-content">\r\n            <div class="modal-header">\r\n                <h5 class="modal-title"\r\n                    id="list-chatrooms-modal-label">' +
 __e(o.heading_list_chatrooms) +
-'</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="Close">\n                    <span aria-hidden="true">×</span>\n                </button>\n            </div>\n            <div class="modal-body">\n                <form class="converse-form list-chatrooms">\n                    <div class="form-group">\n                        <label for="chatroom">' +
+'</h5>\r\n                <button type="button" class="close" data-dismiss="modal" aria-label="Close">\r\n                    <span aria-hidden="true">×</span>\r\n                </button>\r\n            </div>\r\n            <div class="modal-body">\r\n                <form class="converse-form list-chatrooms">\r\n                    <div class="form-group">\r\n                        <label for="chatroom">' +
 __e(o.label_server_address) +
-':</label>\n                        <input type="text" value="' +
+':</label>\r\n                        <input type="text" value="' +
 __e(o.muc_domain) +
 '" required="required" name="server" class="form-control" placeholder="' +
 __e(o.server_placeholder) +
-'"/>\n                    </div>\n                    <input type="submit" class="btn btn-primary" name="join" value="' +
+'"/>\r\n                    </div>\r\n                    <input type="submit" class="btn btn-primary" name="join" value="' +
 __e(o.label_query) +
-'"/>\n                </form>\n                <ul class="available-chatrooms list-group"></ul>\n            </div>\n        </div>\n    </div>\n</div>\n';
+'"/>\r\n                </form>\r\n                <ul class="available-chatrooms list-group"></ul>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n';
 return __p
 };
 
@@ -93673,67 +93679,67 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/login_panel.html -->\n<div id="converse-login-panel" class="controlbox-pane fade-in row no-gutters">\n    <form id="converse-login" class="converse-form" method="post">\n        <div class="conn-feedback fade-in ';
+__p += '<!-- src/templates/login_panel.html -->\n<div id="converse-login-panel" class="controlbox-pane fade-in row no-gutters">\r\n    <form id="converse-login" class="converse-form" method="post">\r\n        <div class="conn-feedback fade-in ';
  if (!o.conn_feedback_subject) { ;
 __p += ' hidden ';
  } ;
 __p += ' ' +
 __e(o.conn_feedback_class) +
-'">\n            <p class="feedback-subject">' +
+'">\r\n            <p class="feedback-subject">' +
 __e( o.conn_feedback_subject ) +
-'</p>\n            <p class="feedback-message ';
+'</p>\r\n            <p class="feedback-message ';
  if (!o.conn_feedback_message) { ;
 __p += ' hidden ';
  } ;
 __p += '">' +
 __e(o.conn_feedback_message) +
-'</p>\n        </div>\n        ';
+'</p>\r\n        </div>\r\n        ';
  if (o.auto_login || o._converse.CONNECTION_STATUS[o.connection_status] === 'CONNECTING') { ;
-__p += '\n            <span class="spinner fa fa-spinner centered"/>\n        ';
+__p += '\r\n            <span class="spinner fa fa-spinner centered"/>\r\n        ';
  } else { ;
-__p += '\n            ';
+__p += '\r\n            ';
  if (o.authentication == o.LOGIN || o.authentication == o.EXTERNAL) { ;
-__p += '\n                <div class="form-group">\n                    <label for="converse-login-jid">' +
+__p += '\r\n                <div class="form-group">\r\n                    <label for="converse-login-jid">' +
 __e(o.__("XMPP Username:")) +
-'</label>\n                    <input id="converse-login-jid" class="form-control" autofocus required="required" type="text" name="jid" placeholder="' +
+'</label>\r\n                    <input id="converse-login-jid" class="form-control" autofocus required="required" type="text" name="jid" placeholder="' +
 __e(o.placeholder_username) +
-'"/>\n                </div>\n                ';
+'"/>\r\n                </div>\r\n                ';
  if (o.authentication !== o.EXTERNAL) { ;
-__p += '\n                <div class="form-group">\n                    <label for="converse-login-password">' +
+__p += '\r\n                <div class="form-group">\r\n                    <label for="converse-login-password">' +
 __e(o.__("Password:")) +
-'</label>\n                    <input id="converse-login-password" class="form-control" required="required" type="password" name="password" placeholder="' +
+'</label>\r\n                    <input id="converse-login-password" class="form-control" required="required" type="password" name="password" placeholder="' +
 __e(o.__('password')) +
-'"/>\n                </div>\n                ';
+'"/>\r\n                </div>\r\n                ';
  } ;
-__p += '\n                ';
+__p += '\r\n                ';
  if (o.show_trust_checkbox) { ;
-__p += '\n                    <div class="form-group form-check login-trusted">\n                        <input id="converse-login-trusted" type="checkbox" class="form-check-input" name="trusted" ';
+__p += '\r\n                    <div class="form-group form-check login-trusted">\r\n                        <input id="converse-login-trusted" type="checkbox" class="form-check-input" name="trusted" ';
  if (o._converse.config.get('trusted')) { ;
 __p += ' checked="checked" ';
  } ;
-__p += '/>\n                        <label for="converse-login-trusted" class="form-check-label login-trusted__desc">' +
+__p += '/>\r\n                        <label for="converse-login-trusted" class="form-check-label login-trusted__desc">' +
 __e(o.__('This is a trusted device')) +
-'</label>\n                        <i class="fa fa-info-circle" data-toggle="popover"\n                           data-title="Trusted device?"\n                           data-content="' +
+'</label>\r\n                        <i class="fa fa-info-circle" data-toggle="popover"\r\n                           data-title="Trusted device?"\r\n                           data-content="' +
 __e(o.__('To improve performance, we cache your data in this browser. Uncheck this box if this is a public computer or if you want your data to be deleted when you log out. It\'s important that you explicitly log out, otherwise not all cached data might be deleted. Please note, when using an untrusted device, OMEMO encryption is NOT available.')) +
-'"></i>\n                    </div>\n                ';
+'"></i>\r\n                    </div>\r\n                ';
  } ;
-__p += '\n\n                <fieldset class="buttons">\n                    <input class="btn btn-primary" type="submit" value="' +
+__p += '\r\n\r\n                <fieldset class="buttons">\r\n                    <input class="btn btn-primary" type="submit" value="' +
 __e(o.__('Log in')) +
-'"/>\n                </fieldset>\n            ';
+'"/>\r\n                </fieldset>\r\n            ';
  } ;
-__p += '\n            ';
+__p += '\r\n            ';
  if (o.authentication == o.ANONYMOUS) { ;
-__p += '\n                <input class="btn btn-primary login-anon" type="submit" value="' +
+__p += '\r\n                <input class="btn btn-primary login-anon" type="submit" value="' +
 __e(o.__('Click here to log in anonymously')) +
-'"/>\n            ';
+'"/>\r\n            ';
  } ;
-__p += '\n            ';
+__p += '\r\n            ';
  if (o.authentication == o.PREBIND) { ;
-__p += '\n                <p>Disconnected.</p>\n            ';
+__p += '\r\n                <p>Disconnected.</p>\r\n            ';
  } ;
-__p += '\n        ';
+__p += '\r\n        ';
  } ;
-__p += '\n    </form>\n</div>\n';
+__p += '\r\n    </form>\r\n</div>\r\n';
 return __p
 };
 
@@ -93758,7 +93764,7 @@ __p += ' chat-msg--action ';
  } ;
 __p += ' ' +
 __e(o.extra_classes) +
-'"\n        data-isodate="' +
+'"\r\n        data-isodate="' +
 __e(o.time) +
 '" data-msgid="' +
 __e(o.msgid) +
@@ -93766,15 +93772,15 @@ __e(o.msgid) +
 __e(o.from) +
 '" data-encrypted="' +
 __e(o.is_encrypted) +
-'">\n    ';
+'">\r\n    ';
  if (o.type !== 'headline' && !o.is_me_message) { ;
-__p += '\n    <canvas class="avatar chat-msg__avatar" height="36" width="36"></canvas>\n    ';
+__p += '\r\n    <canvas class="avatar chat-msg__avatar" height="36" width="36"></canvas>\r\n    ';
  } ;
-__p += '\n    <div class="chat-msg__content ';
+__p += '\r\n    <div class="chat-msg__content ';
  if (o.is_me_message) { ;
 __p += 'chat-msg__content--action';
  } ;
-__p += '">\n        <span class="chat-msg__heading">\n            ';
+__p += '">\r\n        <span class="chat-msg__heading">\r\n            ';
  if (o.is_me_message) { ;
 __p += '<time timestamp="' +
 __e(o.isodate) +
@@ -93782,7 +93788,7 @@ __e(o.isodate) +
 __e(o.pretty_time) +
 '</time>';
  } ;
-__p += '\n            <span class="chat-msg__author chat-msg__' +
+__p += '\r\n            <span class="chat-msg__author chat-msg__' +
 __e(o.sender) +
 '">';
  if (o.is_me_message) { ;
@@ -93790,69 +93796,69 @@ __p += '**';
  }; ;
 __p +=
 __e(o.username) +
-'</span>\n            ';
+'</span>\r\n            ';
  if (!o.is_me_message) { ;
-__p += '\n                ';
+__p += '\r\n                ';
 o.roles.forEach(function (role) { ;
 __p += ' <span class="badge badge-secondary">' +
 __e(role) +
 '</span> ';
  }); ;
-__p += '\n                <time timestamp="' +
+__p += '\r\n                <time timestamp="' +
 __e(o.isodate) +
 '" class="chat-msg__time">' +
 __e(o.pretty_time) +
-'</time>\n            ';
+'</time>\r\n            ';
  } ;
-__p += '\n            ';
+__p += '\r\n            ';
  if (o.is_encrypted) { ;
 __p += '<span class="fa fa-lock"></span>';
  } ;
-__p += '\n        </span>\n        ';
+__p += '\r\n        </span>\r\n        ';
  if (!o.is_me_message) { ;
 __p += '<div class="chat-msg__body">';
  } ;
-__p += '\n            ';
+__p += '\r\n            ';
  if (o.received) { ;
 __p += ' <span class="fa fa-check chat-msg__receipt"></span> ';
  } ;
-__p += '\n            ';
+__p += '\r\n            ';
  if (o.edited) { ;
 __p += ' <i title="' +
 __e(o.__('This message has been edited')) +
 '" class="fa fa-edit chat-msg__edit-modal"></i> ';
  } ;
-__p += '\n            ';
+__p += '\r\n            ';
  if (!o.is_me_message) { ;
 __p += '<div class="chat-msg__message">';
  } ;
-__p += '\n                ';
+__p += '\r\n                ';
  if (o.is_spoiler) { ;
-__p += '\n                    <div class="chat-msg__spoiler-hint">\n                        <span class="spoiler-hint">' +
+__p += '\r\n                    <div class="chat-msg__spoiler-hint">\r\n                        <span class="spoiler-hint">' +
 __e(o.spoiler_hint) +
-'</span>\n                        <a class="badge badge-info spoiler-toggle" data-toggle-state="closed" href="#"><i class="fa fa-eye"></i>' +
+'</span>\r\n                        <a class="badge badge-info spoiler-toggle" data-toggle-state="closed" href="#"><i class="fa fa-eye"></i>' +
 __e(o.label_show) +
-'</a>\n                    </div>\n                ';
+'</a>\r\n                    </div>\r\n                ';
  } ;
-__p += '\n                <div class="chat-msg__text';
+__p += '\r\n                <div class="chat-msg__text';
  if (o.is_spoiler) { ;
 __p += ' spoiler collapsed';
  } ;
-__p += '"><!-- message gets added here via renderMessage --></div>\n                <div class="chat-msg__media"></div>\n            ';
+__p += '"><!-- message gets added here via renderMessage --></div>\r\n                <div class="chat-msg__media"></div>\r\n            ';
  if (!o.is_me_message) { ;
 __p += '</div>';
  } ;
-__p += '\n            ';
+__p += '\r\n            ';
  if (o.type !== 'headline' && !o.is_me_message && o.sender === 'me') { ;
-__p += '\n            <div class="chat-msg__actions">\n                <button class="chat-msg__action chat-msg__action-edit fa fa-pencil-alt" title="' +
+__p += '\r\n            <div class="chat-msg__actions">\r\n                <button class="chat-msg__action chat-msg__action-edit fa fa-pencil-alt" title="' +
 __e(o.__('Edit this message')) +
-'"></button>\n            </div>\n            ';
+'"></button>\r\n            </div>\r\n            ';
  } ;
-__p += '\n\n        ';
+__p += '\r\n\r\n        ';
  if (!o.is_me_message) { ;
 __p += '</div>';
  } ;
-__p += '\n    </div>\n</div>\n';
+__p += '\r\n    </div>\r\n</div>\r\n';
 return __p
 };
 
@@ -93869,21 +93875,21 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/message_versions_modal.html -->\n<div class="modal fade" id="message-versions-modal" tabindex="-1" role="dialog" aria-labelledby="message-versions-modal-label" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h4 class="modal-title" id="message-versions-modal-label">' +
+__p += '<!-- src/templates/message_versions_modal.html -->\n<div class="modal fade" id="message-versions-modal" tabindex="-1" role="dialog" aria-labelledby="message-versions-modal-label" aria-hidden="true">\r\n    <div class="modal-dialog" role="document">\r\n        <div class="modal-content">\r\n            <div class="modal-header">\r\n                <h4 class="modal-title" id="message-versions-modal-label">' +
 __e(o.__('Message versions')) +
-'</h4>\n                <button type="button" class="close" data-dismiss="modal" aria-label="' +
+'</h4>\r\n                <button type="button" class="close" data-dismiss="modal" aria-label="' +
 __e(o.label_close) +
-'"><span aria-hidden="true">×</span></button>\n            </div>\n            <div class="modal-body">\n                <h4>Older versions</h4>\n                ';
+'"><span aria-hidden="true">×</span></button>\r\n            </div>\r\n            <div class="modal-body">\r\n                <h4>Older versions</h4>\r\n                ';
 o.older_versions.forEach(function (text) { ;
 __p += ' <p class="older-msg">' +
 __e(text) +
 '</p> ';
  }); ;
-__p += '\n                <hr/>\n                <h4>Current version</h4>\n                <p>' +
+__p += '\r\n                <hr/>\r\n                <h4>Current version</h4>\r\n                <p>' +
 __e(o.message) +
-'</p>\n            </div>\n            <div class="modal-footer">\n                <button type="button" class="btn btn-secondary" data-dismiss="modal">' +
+'</p>\r\n            </div>\r\n            <div class="modal-footer">\r\n                <button type="button" class="btn btn-secondary" data-dismiss="modal">' +
 __e(o.__('Close')) +
-'</button>\n            </div>\n        </div>\n    </div>\n</div>\n';
+'</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n';
 return __p
 };
 
@@ -93901,11 +93907,11 @@ module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
 __p += '<!-- src/templates/new_day.html -->\n<div class="message date-separator" data-isodate="' +
 __e(o.isodate) +
-'">\n    <hr class="separator"/>\n    <time class="separator-text" datetime="' +
+'">\r\n    <hr class="separator"/>\r\n    <time class="separator-text" datetime="' +
 __e(o.isodate) +
 '"><span>' +
 __e(o.datestring) +
-'</span></time>\n</div>\n';
+'</span></time>\r\n</div>\r\n';
 return __p
 };
 
@@ -93924,81 +93930,81 @@ var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 __p += '<!-- src/templates/occupant.html -->\n<li class="occupant" id="' +
 __e( o.id ) +
-'"\n    ';
+'"\r\n    ';
  if (o.role === "moderator") { ;
-__p += '\n       title="' +
+__p += '\r\n       title="' +
 __e( o.jid ) +
 ' ' +
 __e( o.desc_moderator ) +
 ' ' +
 __e( o.hint_occupant ) +
-'"\n    ';
+'"\r\n    ';
  } ;
-__p += '\n    ';
+__p += '\r\n    ';
  if (o.role === "participant") { ;
-__p += '\n       title="' +
+__p += '\r\n       title="' +
 __e( o.jid ) +
 ' ' +
 __e( o.desc_participant ) +
 ' ' +
 __e( o.hint_occupant ) +
-'"\n    ';
+'"\r\n    ';
  } ;
-__p += '\n    ';
+__p += '\r\n    ';
  if (o.role === "visitor") { ;
-__p += '\n       title="' +
+__p += '\r\n       title="' +
 __e( o.jid ) +
 ' ' +
 __e( o.desc_visitor ) +
 ' ' +
 __e( o.hint_occupant ) +
-'"\n    ';
+'"\r\n    ';
  } ;
-__p += '\n    ';
+__p += '\r\n    ';
  if (!o._.includes(["visitor", "participant", "moderator"], o.role)) { ;
-__p += '\n       title="' +
+__p += '\r\n       title="' +
 __e( o.jid ) +
 ' ' +
 __e( o.hint_occupant ) +
-'"\n    ';
+'"\r\n    ';
  } ;
-__p += '>\n    <div class="row no-gutters">\n        <div class="col-auto">\n            <div class="occupant-status occupant-' +
+__p += '>\r\n    <div class="row no-gutters">\r\n        <div class="col-auto">\r\n            <div class="occupant-status occupant-' +
 __e(o.show) +
 ' circle" title="' +
 __e(o.hint_show) +
-'"></div>\n        </div>\n        <div class="col occupant-nick-badge">\n            <span class="occupant-nick">' +
+'"></div>\r\n        </div>\r\n        <div class="col occupant-nick-badge">\r\n            <span class="occupant-nick">' +
 __e(o.nick || o.jid) +
-'</span>\n            <span class="occupant-badges">\n                ';
+'</span>\r\n            <span class="occupant-badges">\r\n                ';
  if (o.affiliation === "owner") { ;
-__p += '\n                    <span class="badge badge-groupchat">' +
+__p += '\r\n                    <span class="badge badge-groupchat">' +
 __e(o.label_owner) +
-'</span>\n                ';
+'</span>\r\n                ';
  } ;
-__p += '\n                ';
+__p += '\r\n                ';
  if (o.affiliation === "admin") { ;
-__p += '\n                    <span class="badge badge-info">' +
+__p += '\r\n                    <span class="badge badge-info">' +
 __e(o.label_admin) +
-'</span>\n                ';
+'</span>\r\n                ';
  } ;
-__p += '\n                ';
+__p += '\r\n                ';
  if (o.affiliation === "member") { ;
-__p += '\n                    <span class="badge badge-info">' +
+__p += '\r\n                    <span class="badge badge-info">' +
 __e(o.label_member) +
-'</span>\n                ';
+'</span>\r\n                ';
  } ;
-__p += '\n\n                ';
+__p += '\r\n\r\n                ';
  if (o.role === "moderator") { ;
-__p += '\n                    <span class="badge badge-info">' +
+__p += '\r\n                    <span class="badge badge-info">' +
 __e(o.label_moderator) +
-'</span>\n                ';
+'</span>\r\n                ';
  } ;
-__p += '\n                ';
+__p += '\r\n                ';
  if (o.role === "visitor") { ;
-__p += '\n                    <span class="badge badge-secondary">' +
+__p += '\r\n                    <span class="badge badge-secondary">' +
 __e(o.label_visitor) +
-'</span>\n                ';
+'</span>\r\n                ';
  } ;
-__p += '\n            </span>\n        </div>\n    </div>\n</li>\n';
+__p += '\r\n            </span>\r\n        </div>\r\n    </div>\r\n</li>\r\n';
 return __p
 };
 
@@ -94017,19 +94023,19 @@ var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 __p += '<!-- src/templates/pending_contact.html -->\n';
  if (o.allow_chat_pending_contacts)  { ;
-__p += '\n<a class="list-item-link open-chat w-100" href="#">\n';
+__p += '\r\n<a class="list-item-link open-chat w-100" href="#">\r\n';
  } ;
-__p += '\n<span class="pending-contact-name" title="JID: ' +
-__e(o.jid) +
+__p += '\r\n<span class="pending-contact-name" title="Id: ' +
+__e(o.display_name) +
 '">' +
 __e(o.display_name) +
-'</span> \n';
+'</span> \r\n';
  if (o.allow_chat_pending_contacts)  { ;
 __p += '</a>';
  } ;
-__p += '\n<a class="list-item-action remove-xmpp-contact far fa-trash-alt" title="' +
+__p += '\r\n<a class="list-item-action remove-xmpp-contact far fa-trash-alt" title="' +
 __e(o.desc_remove) +
-'" href="#"></a>\n';
+'" href="#"></a>\r\n';
 return __p
 };
 
@@ -94046,107 +94052,89 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/profile_modal.html -->\n<div class="modal fade" id="user-profile-modal" tabindex="-1" role="dialog" aria-labelledby="user-profile-modal-label" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title" id="user-profile-modal-label">' +
+__p += '<!-- src/templates/profile_modal.html -->\n<div class="modal fade" id="user-profile-modal" tabindex="-1" role="dialog" aria-labelledby="user-profile-modal-label" aria-hidden="true">\r\n    <div class="modal-dialog" role="document">\r\n        <div class="modal-content">\r\n            <div class="modal-header">\r\n                <h5 class="modal-title" id="user-profile-modal-label">' +
 __e(o.heading_profile) +
-'</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="' +
+'</h5>\r\n                <button type="button" class="close" data-dismiss="modal" aria-label="' +
 __e(o.label_close) +
-'"><span aria-hidden="true">×</span></button>\n            </div>\n            <div class="modal-body">\n                ';
+'"><span aria-hidden="true">×</span></button>\r\n            </div>\r\n            <div class="modal-body">\r\n                ';
  if (o._converse.pluggable.plugins['converse-omemo'].enabled(o._converse)) { ;
-__p += '\n                <ul class="nav nav-pills justify-content-center">\n                    <li role="presentation" class="nav-item">\n                        <a class="nav-link active" id="profile-tab" href="#profile-tabpanel" aria-controls="profile-tabpanel" role="tab" data-toggle="tab">Profile</a>\n                    </li>\n                    <li role="presentation" class="nav-item">\n                        <a class="nav-link" id="omemo-tab" href="#omemo-tabpanel" aria-controls="omemo-tabpanel" role="tab" data-toggle="tab">OMEMO</a>\n                    </li>\n                </ul>\n                ';
+__p += '\r\n                <ul class="nav nav-pills justify-content-center">\r\n                    <li role="presentation" class="nav-item">\r\n                        <a class="nav-link active" id="profile-tab" href="#profile-tabpanel" aria-controls="profile-tabpanel" role="tab" data-toggle="tab">Profile</a>\r\n                    </li>\r\n                    <li role="presentation" class="nav-item">\r\n                        <a class="nav-link" id="omemo-tab" href="#omemo-tabpanel" aria-controls="omemo-tabpanel" role="tab" data-toggle="tab">OMEMO</a>\r\n                    </li>\r\n                </ul>\r\n                ';
  } ;
-__p += '\n                <div class="tab-content">\n                    <div class="tab-pane fade show active" id="profile-tabpanel" role="tabpanel" aria-labelledby="profile-tab">\n                        <form class="converse-form converse-form--modal profile-form" action="#">\n                            <div class="row">\n                                <div class="col-auto">\n                                    <a class="change-avatar" href="#">\n                                        ';
+__p += '\r\n                <div class="tab-content">\r\n                    <div class="tab-pane fade show active" id="profile-tabpanel" role="tabpanel" aria-labelledby="profile-tab">\r\n                        <form class="converse-form converse-form--modal profile-form" action="#">\r\n                            <div class="row">\r\n                                <div class="col-auto">\r\n                                    <a class="change-avatar" href="#">\r\n                                        ';
  if (o.image) { ;
-__p += '\n                                            <img alt="' +
+__p += '\r\n                                            <img alt="' +
 __e(o.alt_avatar) +
 '" class="img-thumbnail avatar align-self-center" height="100px" width="100px" src="data:' +
 __e(o.image_type) +
 ';base64,' +
 __e(o.image) +
-'"/>\n                                        ';
+'"/>\r\n                                        ';
  } ;
-__p += '\n                                        ';
+__p += '\r\n                                        ';
  if (!o.image) { ;
-__p += '\n                                            <canvas class="avatar" height="100px" width="100px"></canvas>\n                                        ';
+__p += '\r\n                                            <canvas class="avatar" height="100px" width="100px"></canvas>\r\n                                        ';
  } ;
-__p += '\n                                    </a>\n                                    <input class="hidden" name="image" type="file"/>\n                                </div>\n                                <div class="col">\n                                    <div class="form-group">\n                                        <label class="col-form-label">' +
+__p += '\r\n                                    </a>\r\n                                    <input class="hidden" name="image" type="file"/>\r\n                                </div>\r\n                                <div class="col">\r\n                                    <div class="form-group">\r\n                                        <label class="col-form-label">' +
 __e(o.label_jid) +
-':</label>\n                                        <div>' +
+':</label>\r\n                                        <div>' +
 __e(o.jid) +
-'</div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class="form-group">\n                                <label for="vcard-fullname" class="col-form-label">' +
-__e(o.label_fullname) +
-':</label>\n                                <input id="vcard-fullname" type="text" class="form-control" name="fn" value="' +
-__e(o.fullname) +
-'"/>\n                            </div>\n                            <div class="form-group">\n                                <label for="vcard-nickname" class="col-form-label">' +
+'</div>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n                            <div class="form-group">\r\n                                <label for="vcard-nickname" class="col-form-label">' +
 __e(o.label_nickname) +
-':</label>\n                                <input id="vcard-nickname" type="text" class="form-control" name="nickname" value="' +
-__e(o.nickname) +
-'"/>\n                            </div>\n                            <div class="form-group">\n                                <label for="vcard-url" class="col-form-label">' +
-__e(o.label_url) +
-':</label>\n                                <input id="vcard-url" type="url" class="form-control" name="url" value="' +
-__e(o.url) +
-'"/>\n                            </div>\n                            <div class="form-group">\n                                <label for="vcard-email" class="col-form-label">' +
-__e(o.label_email) +
-':</label>\n                                <input id="vcard-email" type="email" class="form-control" name="email" value="' +
-__e(o.email) +
-'"/>\n                            </div>\n                            <div class="form-group">\n                                <label for="vcard-role" class="col-form-label">' +
-__e(o.label_role) +
-':</label>\n                                <input id="vcard-role" type="text" class="form-control" name="role" value="' +
-__e(o.role) +
-'" aria-describedby="vcard-role-help"/>\n                                <small id="vcard-role-help" class="form-text text-muted">' +
-__e(o.label_role_help) +
-'</small>\n                            </div>\n                            <hr/>\n                            <div class="form-group">\n                                <button type="submit" class="save-form btn btn-primary">' +
+':</label>\r\n                                <input id="vcard-fullname" type="text" class="form-control" name="fn" value="' +
+__e(o.fullname) +
+'"/>\r\n                            </div>\r\n                            <hr/>\r\n                            <div class="form-group">\r\n                                <button type="submit" class="save-form btn btn-primary">' +
 __e(o.__('Save and close')) +
-'</button>\n                            </div>\n                        </form>\n                    </div>\n                    ';
+'</button>\r\n                            </div>\r\n                        </form>\r\n                    </div>\r\n                    ';
  if (o._converse.pluggable.plugins['converse-omemo'].enabled(o._converse)) { ;
-__p += '\n                        <div class="tab-pane fade" id="omemo-tabpanel" role="tabpanel" aria-labelledby="omemo-tab">\n                            <form class="converse-form fingerprint-removal">\n                                <ul class="list-group fingerprints">\n                                    <li class="list-group-item active">' +
+__p += '\r\n                        <div class="tab-pane fade" id="omemo-tabpanel" role="tabpanel" aria-labelledby="omemo-tab">\r\n                            <form class="converse-form fingerprint-removal">\r\n                                <ul class="list-group fingerprints">\r\n                                    <li class="list-group-item active">' +
 __e(o.__("This device's OMEMO fingerprint")) +
-'</li>\n                                    <li class="list-group-item">\n                                    ';
+'</li>\r\n                                    <li class="list-group-item">\r\n                                    ';
  if (o.view.current_device && o.view.current_device.get('bundle') && o.view.current_device.get('bundle').fingerprint) { ;
-__p += '\n                                        <span class="fingerprint">' +
+__p += '\r\n                                        <span class="fingerprint">' +
 __e(o.utils.formatFingerprint(o.view.current_device.get('bundle').fingerprint)) +
-'</span>\n                                    ';
+'</span>\r\n                                    ';
  } else {;
-__p += '\n                                        <span class="spinner fa fa-spinner centered"/>\n                                    ';
+__p += '\r\n                                        <span class="spinner fa fa-spinner centered"/>\r\n                                    ';
  } ;
-__p += '\n                                    </li>\n                                </ul>\n                                <div class="form-group">\n                                    <button type="button" class="generate-bundle btn btn-danger">' +
+__p += '\r\n                                    </li>\r\n                                </ul>\r\n                                <div class="form-group">\r\n                                    <button type="button" class="generate-bundle btn btn-danger">' +
 __e(o.__('Generate new keys and fingerprint')) +
-'</button>\n                                </div>\n\n                                ';
+'</button>\r\n                                </div>\r\n\r\n                                ';
  if (o.view.other_devices.length) { ;
-__p += '\n                                    <ul class="list-group fingerprints">\n                                        <li class="list-group-item nopadding active">\n                                            <label>\n                                            <input type="checkbox" class="select-all" title="' +
+__p += '\r\n                                    <ul class="list-group fingerprints">\r\n                                        <li class="list-group-item nopadding active">\r\n                                            <label>\r\n                                            <input type="checkbox" class="select-all" title="' +
 __e(o.__('Select all')) +
-'"\n                                                   aria-label="' +
+'"\r\n                                                   aria-label="' +
 __e(o.__('Checkbox to select fingerprints of all other OMEMO devices')) +
-'"/>\n                                            ' +
+'"/>\r\n                                            ' +
 __e(o.__('Other OMEMO-enabled devices')) +
-'\n                                            </label>\n                                        </li>\n                                        ';
+'\r\n                                            </label>\r\n                                        </li>\r\n                                        ';
  o._.forEach(o.view.other_devices, function (device) { ;
-__p += '\n                                            ';
+__p += '\r\n                                            ';
  if (device.get('bundle') && device.get('bundle').fingerprint) { ;
-__p += '\n                                            <li class="fingerprint-removal-item list-group-item nopadding">\n                                                <label>\n                                                <input type="checkbox" value="' +
+__p += '\r\n                                            <li class="fingerprint-removal-item list-group-item nopadding">\r\n                                                <label>\r\n                                                <input type="checkbox" value="' +
 __e(device.get('id')) +
-'"\n                                                       aria-label="' +
+'"\r\n                                                       aria-label="' +
 __e(o.__('Checkbox for selecting the following fingerprint')) +
-'"/>\n                                                <span class="fingerprint">' +
+'"/>\r\n                                                <span class="fingerprint">' +
 __e(o.utils.formatFingerprint(device.get('bundle').fingerprint)) +
-'</span>\n                                                </label>\n                                            </li>\n                                            ';
+'</span>\r\n                                                </label>\r\n                                            </li>\r\n                                            ';
  } else {;
-__p += '\n                                            <li class="fingerprint-removal-item list-group-item nopadding">\n                                                <label>\n                                                <input type="checkbox" value="' +
+__p += '\r\n                                            <li class="fingerprint-removal-item list-group-item nopadding">\r\n                                                <label>\r\n                                                <input type="checkbox" value="' +
 __e(device.get('id')) +
-'"\n                                                       aria-label="' +
+'"\r\n                                                       aria-label="' +
 __e(o.__('Checkbox for selecting the following fingerprint')) +
-'"/>\n                                                <span>' +
+'"/>\r\n                                                <span>' +
 __e(o.__('Device without a fingerprint')) +
-'</span>\n                                                </label>\n                                            </li>\n                                            ';
+'</span>\r\n                                                </label>\r\n                                            </li>\r\n                                            ';
  } ;
-__p += '\n                                        ';
+__p += '\r\n                                        ';
  }); ;
-__p += '\n                                    </ul>\n                                    <div class="form-group">\n                                        <button type="submit" class="save-form btn btn-primary">' +
+__p += '\r\n                                    </ul>\r\n                                    <div class="form-group">\r\n                                        <button type="submit" class="save-form btn btn-primary">' +
 __e(o.__('Remove checked devices and close')) +
-'</button>\n                                    </div>\n                                ';
+'</button>\r\n                                    </div>\r\n                                ';
  } ;
-__p += '\n                            </form>\n                        </div>\n                    ';
+__p += '\r\n                            </form>\r\n                        </div>\r\n                    ';
  } ;
-__p += '\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n';
+__p += '\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n';
 return __p
 };
 
@@ -94163,45 +94151,37 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/profile_view.html -->\n<div class="userinfo controlbox-padded">\n<div class="controlbox-section profile d-flex">\n    <a class="show-profile" href="#">\n        <canvas class="avatar align-self-center" height="40" width="40"></canvas>\n    </a>\n    <span class="username w-100 align-self-center">' +
+__p += '<!-- src/templates/profile_view.html -->\n<div class="userinfo controlbox-padded">\r\n<div class="controlbox-section profile d-flex">\r\n    <a class="show-profile" href="#">\r\n        <canvas class="avatar align-self-center" height="40" width="40"></canvas>\r\n    </a>\r\n    <span class="username w-100 align-self-center">' +
 __e(o.fullname) +
-'</span>\n    <a class="controlbox-heading__btn show-client-info fa fa-info-circle align-self-center" title="' +
-__e(o.info_details) +
-'"></a>\n    ';
- if (o._converse.allow_logout) { ;
-__p += '\n        <a class="controlbox-heading__btn logout fa fa-sign-out-alt align-self-center" title="' +
-__e(o.title_log_out) +
-'"></a>\n    ';
- } ;
-__p += '\n</div>\n<div class="d-flex xmpp-status">\n    <span class="' +
+'</span>\r\n</div>\r\n<div class="d-flex xmpp-status">\r\n    <span class="' +
 __e(o.chat_status) +
 ' w-100 align-self-center" data-value="' +
 __e(o.chat_status) +
-'">\n        <span class="\n            ';
+'">\r\n        <span class="\r\n            ';
  if (o.chat_status === 'online') { ;
 __p += ' fa fa-circle chat-status chat-status--online';
  } ;
-__p += '\n            ';
+__p += '\r\n            ';
  if (o.chat_status === 'dnd') { ;
 __p += ' fa fa-minus-circle chat-status chat-status--busy ';
  } ;
-__p += '\n            ';
+__p += '\r\n            ';
  if (o.chat_status === 'away') { ;
 __p += ' fa fa-circle chat-status chat-status--away';
  } ;
-__p += '\n            ';
+__p += '\r\n            ';
  if (o.chat_status === 'xa') { ;
 __p += ' far fa-circle chat-status chat-status--xa ';
  } ;
-__p += '\n            ';
+__p += '\r\n            ';
  if (o.chat_status === 'offline') { ;
 __p += ' fa fa-circle chat-status chat-status--offline';
  } ;
 __p += '"></span> ' +
 __e(o.status_message) +
-'</span>\n    <a class="controlbox-heading__btn change-status fa fa-pencil-alt" title="' +
+'</span>\r\n    <a class="controlbox-heading__btn change-status fa fa-pencil-alt" title="' +
 __e(o.title_change_status) +
-'" data-toggle="modal" data-target="#changeStatusModal"></a>\n</div>\n</div>\n';
+'" data-toggle="modal" data-target="#changeStatusModal"></a>\r\n</div>\r\n</div>\r\n';
 return __p
 };
 
@@ -94218,15 +94198,15 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/register_link.html -->\n<fieldset class="switch-form">\n    ';
+__p += '<!-- src/templates/register_link.html -->\n<fieldset class="switch-form">\r\n    ';
  if (!o._converse.auto_login && o._converse.CONNECTION_STATUS[o.connection_status] !== 'CONNECTING') { ;
-__p += '\n        <p>' +
+__p += '\r\n        <p>' +
 __e( o.__("Don't have a chat account?") ) +
-'</p>\n        <p><a class="register-account toggle-register-login" href="#converse/register">' +
+'</p>\r\n        <p><a class="register-account toggle-register-login" href="#converse/register">' +
 __e(o.__("Create an account")) +
-'</a></p>\n    ';
+'</a></p>\r\n    ';
  } ;
-__p += '\n</fieldset>\n';
+__p += '\r\n</fieldset>\r\n';
 return __p
 };
 
@@ -94243,33 +94223,33 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/register_panel.html -->\n<div>\n    <form id="converse-register" class="converse-form">\n        <legend class="col-form-label">' +
+__p += '<!-- src/templates/register_panel.html -->\n<div>\r\n    <form id="converse-register" class="converse-form">\r\n        <legend class="col-form-label">' +
 __e(o.__("Create your account")) +
-'</legend>\n\n        <div class="form-group">\n            <label>' +
+'</legend>\r\n\r\n        <div class="form-group">\r\n            <label>' +
 __e(o.__("Please enter the XMPP provider to register with:")) +
-'</label>\n            <div class="form-errors hidden"></div>\n\n            ';
+'</label>\r\n            <div class="form-errors hidden"></div>\r\n\r\n            ';
  if (o.default_domain) { ;
-__p += '\n                ' +
+__p += '\r\n                ' +
 __e(o.default_domain) +
-'\n            </div>\n            ';
+'\r\n            </div>\r\n            ';
  } else { ;
-__p += '\n                <input class="form-control" autofocus="autofocus" required="required" type="text" name="domain" placeholder="' +
+__p += '\r\n                <input class="form-control" autofocus="autofocus" required="required" type="text" name="domain" placeholder="' +
 __e(o.domain_placeholder) +
-'"/>\n                <p class="form-text text-muted">' +
+'"/>\r\n                <p class="form-text text-muted">' +
 __e(o.help_providers) +
 ' <a href="' +
 __e(o.href_providers) +
 '" class="url" target="_blank" rel="noopener">' +
 __e(o.help_providers_link) +
-'</a>.</p>\n            </div>\n            <fieldset class="buttons">\n                <input class="btn btn-primary" type="submit" value="' +
+'</a>.</p>\r\n            </div>\r\n            <fieldset class="buttons">\r\n                <input class="btn btn-primary" type="submit" value="' +
 __e(o.label_register) +
-'"/>\n                <div class="switch-form">\n                    <p>' +
+'"/>\r\n                <div class="switch-form">\r\n                    <p>' +
 __e( o.__("Already have a chat account?") ) +
-'</p>\n                    <p><a class="login-here toggle-register-login" href="#converse/login">' +
+'</p>\r\n                    <p><a class="login-here toggle-register-login" href="#converse/login">' +
 __e(o.__("Log in here")) +
-'</a></p>\n                </div>\n            </fieldset>\n            ';
+'</a></p>\r\n                </div>\r\n            </fieldset>\r\n            ';
  } ;
-__p += '\n        <!--</div>-->\n    </form>\n</div>\n';
+__p += '\r\n        <!--</div>-->\r\n    </form>\r\n</div>\r\n';
 return __p
 };
 
@@ -94290,23 +94270,23 @@ __p += '<!-- src/templates/registration_form.html -->\n<legend class="col-form-l
 __e(o.__("Account Registration:")) +
 ' ' +
 __e(o.domain) +
-'</legend>\n<p class="title">' +
+'</legend>\r\n<p class="title">' +
 __e(o.title) +
-'</p>\n<p class="form-help instructions">' +
+'</p>\r\n<p class="form-help instructions">' +
 __e(o.instructions) +
-'</p>\n<div class="form-errors hidden"></div>\n\n<fieldset class="buttons">\n    <input type="submit" class="btn btn-primary" value="' +
+'</p>\r\n<div class="form-errors hidden"></div>\r\n\r\n<fieldset class="buttons">\r\n    <input type="submit" class="btn btn-primary" value="' +
 __e(o.__('Register')) +
-'"/>\n    ';
+'"/>\r\n    ';
  if (!o.registration_domain) { ;
-__p += '\n        <input type="button" class="btn btn-secondary button-cancel" value="' +
+__p += '\r\n        <input type="button" class="btn btn-secondary button-cancel" value="' +
 __e(o.__('Choose a different provider')) +
-'"/>\n    ';
+'"/>\r\n    ';
  } ;
-__p += '\n    <div class="switch-form">\n        <p>' +
+__p += '\r\n    <div class="switch-form">\r\n        <p>' +
 __e( o.__("Already have a chat account?") ) +
-'</p>\n        <p><a class="login-here toggle-register-login" href="#converse/login">' +
+'</p>\r\n        <p><a class="login-here toggle-register-login" href="#converse/login">' +
 __e(o.__("Log in here")) +
-'</a></p>\n    </div>\n</fieldset>\n';
+'</a></p>\r\n    </div>\r\n</fieldset>\r\n';
 return __p
 };
 
@@ -94323,15 +94303,15 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/registration_request.html -->\n<span class="spinner login-submit fa fa-spinner"></span>\n<p class="info">' +
+__p += '<!-- src/templates/registration_request.html -->\n<span class="spinner login-submit fa fa-spinner"></span>\r\n<p class="info">' +
 __e(o.__("Hold tight, we're fetching the registration form…")) +
-'</p>\n';
+'</p>\r\n';
  if (o.cancel) { ;
-__p += '\n    <button class="btn btn-secondary button-cancel hor_centered">' +
+__p += '\r\n    <button class="btn btn-secondary button-cancel hor_centered">' +
 __e(o.__('Cancel')) +
-'</button>\n';
+'</button>\r\n';
  } ;
-__p += '\n';
+__p += '\r\n';
 return __p
 };
 
@@ -94350,25 +94330,25 @@ var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 __p += '<!-- src/templates/requesting_contact.html -->\n';
  if (o.allow_chat_pending_contacts)  { ;
-__p += '\n<a class="open-chat w-100"href="#">\n';
+__p += '\r\n<a class="open-chat w-100"href="#">\r\n';
  } ;
-__p += '\n<span class="req-contact-name w-100" title="JID: ' +
+__p += '\r\n<span class="req-contact-name w-100" title="JID: ' +
 __e(o.jid) +
 '">' +
 __e(o.display_name) +
-'</span>\n';
+'</span>\r\n';
  if (o.allow_chat_pending_contacts)  { ;
-__p += '\n</a>\n';
+__p += '\r\n</a>\r\n';
  } ;
-__p += '\n<a class="accept-xmpp-request list-item-action list-item-action--visible fa fa-check"\n   aria-label="' +
+__p += '\r\n<a class="accept-xmpp-request list-item-action list-item-action--visible fa fa-check"\r\n   aria-label="' +
 __e(o.desc_accept) +
 '" title="' +
 __e(o.desc_accept) +
-'" href="#"></a>\n<a class="decline-xmpp-request list-item-action list-item-action--visible  fa fa-times"\n   aria-label="' +
+'" href="#"></a>\r\n<a class="decline-xmpp-request list-item-action list-item-action--visible  fa fa-times"\r\n   aria-label="' +
 __e(o.desc_decline) +
 '" title="' +
 __e(o.desc_decline) +
-'" href="#"></a>\n';
+'" href="#"></a>\r\n';
 return __p
 };
 
@@ -94385,87 +94365,87 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/room_description.html -->\n<!-- FIXME: check markup in mockup -->\n<div class="room-info">\n<p class="room-info"><strong>' +
+__p += '<!-- src/templates/room_description.html -->\n<!-- FIXME: check markup in mockup -->\r\n<div class="room-info">\r\n<p class="room-info"><strong>' +
 __e(o.label_jid) +
 '</strong> ' +
 __e(o.jid) +
-'</p>\n<p class="room-info"><strong>' +
+'</p>\r\n<p class="room-info"><strong>' +
 __e(o.label_desc) +
 '</strong> ' +
 __e(o.desc) +
-'</p>\n<p class="room-info"><strong>' +
+'</p>\r\n<p class="room-info"><strong>' +
 __e(o.label_occ) +
 '</strong> ' +
 __e(o.occ) +
-'</p>\n<p class="room-info"><strong>' +
+'</p>\r\n<p class="room-info"><strong>' +
 __e(o.label_features) +
-'</strong>\n    <ul>\n        ';
+'</strong>\r\n    <ul>\r\n        ';
  if (o.passwordprotected) { ;
-__p += '\n        <li class="room-info locked">' +
+__p += '\r\n        <li class="room-info locked">' +
 __e(o.label_requires_auth) +
-'</li>\n        ';
+'</li>\r\n        ';
  } ;
-__p += '\n        ';
+__p += '\r\n        ';
  if (o.hidden) { ;
-__p += '\n        <li class="room-info">' +
+__p += '\r\n        <li class="room-info">' +
 __e(o.label_hidden) +
-'</li>\n        ';
+'</li>\r\n        ';
  } ;
-__p += '\n        ';
+__p += '\r\n        ';
  if (o.membersonly) { ;
-__p += '\n        <li class="room-info">' +
+__p += '\r\n        <li class="room-info">' +
 __e(o.label_requires_invite) +
-'</li>\n        ';
+'</li>\r\n        ';
  } ;
-__p += '\n        ';
+__p += '\r\n        ';
  if (o.moderated) { ;
-__p += '\n        <li class="room-info">' +
+__p += '\r\n        <li class="room-info">' +
 __e(o.label_moderated) +
-'</li>\n        ';
+'</li>\r\n        ';
  } ;
-__p += '\n        ';
+__p += '\r\n        ';
  if (o.nonanonymous) { ;
-__p += '\n        <li class="room-info">' +
+__p += '\r\n        <li class="room-info">' +
 __e(o.label_non_anon) +
-'</li>\n        ';
+'</li>\r\n        ';
  } ;
-__p += '\n        ';
+__p += '\r\n        ';
  if (o.open) { ;
-__p += '\n        <li class="room-info">' +
+__p += '\r\n        <li class="room-info">' +
 __e(o.label_open_room) +
-'</li>\n        ';
+'</li>\r\n        ';
  } ;
-__p += '\n        ';
+__p += '\r\n        ';
  if (o.persistent) { ;
-__p += '\n        <li class="room-info">' +
+__p += '\r\n        <li class="room-info">' +
 __e(o.label_permanent_room) +
-'</li>\n        ';
+'</li>\r\n        ';
  } ;
-__p += '\n        ';
+__p += '\r\n        ';
  if (o.publicroom) { ;
-__p += '\n        <li class="room-info">' +
+__p += '\r\n        <li class="room-info">' +
 __e(o.label_public) +
-'</li>\n        ';
+'</li>\r\n        ';
  } ;
-__p += '\n        ';
+__p += '\r\n        ';
  if (o.semianonymous) { ;
-__p += '\n        <li class="room-info">' +
+__p += '\r\n        <li class="room-info">' +
 __e(o.label_semi_anon) +
-'</li>\n        ';
+'</li>\r\n        ';
  } ;
-__p += '\n        ';
+__p += '\r\n        ';
  if (o.temporary) { ;
-__p += '\n        <li class="room-info">' +
+__p += '\r\n        <li class="room-info">' +
 __e(o.label_temp_room) +
-'</li>\n        ';
+'</li>\r\n        ';
  } ;
-__p += '\n        ';
+__p += '\r\n        ';
  if (o.unmoderated) { ;
-__p += '\n        <li class="room-info">' +
+__p += '\r\n        <li class="room-info">' +
 __e(o.label_unmoderated) +
-'</li>\n        ';
+'</li>\r\n        ';
  } ;
-__p += '\n    </ul>\n</p>\n</div>\n';
+__p += '\r\n    </ul>\r\n</p>\r\n</div>\r\n';
 return __p
 };
 
@@ -94481,19 +94461,19 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
-__p += '<!-- src/templates/room_item.html -->\n<li class="room-item list-group-item">\n  <div class="available-chatroom d-flex flex-row">\n    <a class="open-room available-room w-100"\n       data-room-jid="' +
+__p += '<!-- src/templates/room_item.html -->\n<li class="room-item list-group-item">\r\n  <div class="available-chatroom d-flex flex-row">\r\n    <a class="open-room available-room w-100"\r\n       data-room-jid="' +
 __e(o.jid) +
-'"\n       data-room-name="' +
+'"\r\n       data-room-name="' +
 __e(o.name) +
-'"\n       title="' +
+'"\r\n       title="' +
 __e(o.open_title) +
-'"\n       href="#">' +
+'"\r\n       href="#">' +
 __e(o.name) +
-'</a>\n    <a class="right room-info icon-room-info"\n       data-room-jid="' +
+'</a>\r\n    <a class="right room-info icon-room-info"\r\n       data-room-jid="' +
 __e(o.jid) +
-'"\n       title="' +
+'"\r\n       title="' +
 __e(o.info_title) +
-'" href="#"></a>\n  </div>\n</li>\n';
+'" href="#"></a>\r\n  </div>\r\n</li>\r\n';
 return __p
 };
 
@@ -94509,13 +94489,13 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
-__p += '<!-- src/templates/room_panel.html -->\n<!-- <div id="chatrooms"> -->\n<div class="d-flex controlbox-padded">\n    <span class="w-100 controlbox-heading controlbox-heading--groupchats">' +
+__p += '<!-- src/templates/room_panel.html -->\n<!-- <div id="chatrooms"> -->\r\n<div class="d-flex controlbox-padded">\r\n    <span class="w-100 controlbox-heading controlbox-heading--groupchats">' +
 __e(o.heading_chatrooms) +
-'</span>\n    <a class="controlbox-heading__btn show-list-muc-modal fa fa-list-ul" title="' +
+'</span>\r\n    <a class="controlbox-heading__btn show-list-muc-modal fa fa-list-ul" title="' +
 __e(o.title_list_rooms) +
-'" data-toggle="modal" data-target="#list-chatrooms-modal"></a>\n    <a class="controlbox-heading__btn show-add-muc-modal fa fa-plus" title="' +
+'" data-toggle="modal" data-target="#list-chatrooms-modal"></a>\r\n    <a class="controlbox-heading__btn show-add-muc-modal fa fa-plus" title="' +
 __e(o.title_new_room) +
-'" data-toggle="modal" data-target="#add-chatrooms-modal"></a>\n</div>\n<div class="list-container open-rooms-list rooms-list-container"></div>\n<div class="list-container bookmarks-list rooms-list-container"></div>\n<!-- </div> -->\n';
+'" data-toggle="modal" data-target="#add-chatrooms-modal"></a>\r\n</div>\r\n<div class="list-container open-rooms-list rooms-list-container"></div>\r\n<!-- </div> -->\r\n';
 return __p
 };
 
@@ -94534,15 +94514,15 @@ var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 __p += '<!-- src/templates/rooms_list.html -->\n<a href="#" class="list-toggle open-rooms-toggle controlbox-padded" title="' +
 __e(o.desc_rooms) +
-'">\n    <span class="fa ';
+'">\r\n    <span class="fa ';
  if (o.toggle_state === o._converse.OPENED) { ;
 __p += ' fa-caret-down ';
  } else { ;
 __p += ' fa-caret-right ';
  } ;
-__p += '">\n    </span> ' +
+__p += '">\r\n    </span> ' +
 __e(o.label_rooms) +
-'</a>\n<div class="items-list rooms-list open-rooms-list"></div>\n';
+'</a>\r\n<div class="items-list rooms-list open-rooms-list"></div>\r\n';
 return __p
 };
 
@@ -94559,41 +94539,41 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/rooms_list_item.html -->\n<div class="list-item controlbox-padded available-chatroom d-flex flex-row\n    ';
+__p += '<!-- src/templates/rooms_list_item.html -->\n<div class="list-item controlbox-padded available-chatroom d-flex flex-row\r\n    ';
  if (o.currently_open) { ;
 __p += ' open ';
  } ;
-__p += '\n    ';
+__p += '\r\n    ';
  if (o.num_unread_general) { ;
 __p += ' unread-msgs ';
  } ;
-__p += '"\n    data-room-jid="' +
+__p += '"\r\n    data-room-jid="' +
 __e(o.jid) +
-'">\n\n';
+'">\r\n\r\n';
  if (o.num_unread) { ;
-__p += '\n    <span class="list-item-badge badge badge-room-color msgs-indicator">' +
+__p += '\r\n    <span class="list-item-badge badge badge-room-color msgs-indicator">' +
 __e( o.num_unread ) +
-'</span>\n';
+'</span>\r\n';
  } ;
-__p += '\n<a class="list-item-link open-room available-room w-100"\n    data-room-jid="' +
+__p += '\r\n<a class="list-item-link open-room available-room w-100"\r\n    data-room-jid="' +
 __e(o.jid) +
-'"\n    title="' +
+'"\r\n    title="' +
 __e(o.open_title) +
 '" href="#">' +
 __e(o.name || o.jid) +
-'</a>\n\n';
+'</a>\r\n\r\n';
  if (o.allow_bookmarks) { ;
-__p += '\n<a class="list-item-action fa ';
+__p += '\r\n<a class="list-item-action fa ';
  if (o.bookmarked) { ;
 __p += ' fa-bookmark remove-bookmark button-on ';
  } else { ;
 __p += ' add-bookmark fa-bookmark ';
  } ;
-__p += '"\n   data-room-jid="' +
+__p += '"\r\n   data-room-jid="' +
 __e(o.jid) +
 '" data-bookmark-name="' +
 __e(o.name) +
-'"\n   title="';
+'"\r\n   title="';
  if (o.bookmarked) { ;
 __p += ' ' +
 __e(o.info_remove_bookmark) +
@@ -94603,19 +94583,19 @@ __p += ' ' +
 __e(o.info_add_bookmark) +
 ' ';
  } ;
-__p += '"\n   href="#"></a>\n';
+__p += '"\r\n   href="#"></a>\r\n';
  } ;
-__p += '\n\n<a class="list-item-action room-info fa fa-info-circle" data-room-jid="' +
+__p += '\r\n\r\n<a class="list-item-action room-info fa fa-info-circle" data-room-jid="' +
 __e(o.jid) +
-'"\n   title="' +
+'"\r\n   title="' +
 __e(o.info_title) +
-'" href="#"></a>\n\n<a class="list-item-action fa fa-sign-out-alt close-room"\n   data-room-jid="' +
+'" href="#"></a>\r\n\r\n<a class="list-item-action fa fa-sign-out-alt close-room"\r\n   data-room-jid="' +
 __e(o.jid) +
-'"\n   data-room-name="' +
+'"\r\n   data-room-name="' +
 __e(o.name || o.jid) +
-'"\n   title="' +
+'"\r\n   title="' +
 __e(o.info_leave_room) +
-'" href="#"></a>\n\n</div>\n';
+'" href="#"></a>\r\n\r\n</div>\r\n';
 return __p
 };
 
@@ -94633,7 +94613,7 @@ module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
 __p += '<!-- src/templates/rooms_results.html -->\n<li class="list-group-item active">' +
 __e( o.feedback_text ) +
-'</li>\n';
+'</li>\r\n';
 return __p
 };
 
@@ -94648,19 +94628,12 @@ return __p
 
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
-var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
-function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/roster.html -->\n<div class="d-flex controlbox-padded">\n    <span class="w-100 controlbox-heading controlbox-heading--contacts">' +
+var __t, __p = '', __e = _.escape;
+__p += '<!-- src/templates/roster.html -->\n<div class="d-flex controlbox-padded">\r\n    <span class="w-100 controlbox-heading controlbox-heading--contacts">' +
 __e(o.heading_contacts) +
-'</span>\n    <a class="controlbox-heading__btn sync-contacts fa fa-sync" title="' +
+'</span>\r\n    <a class="controlbox-heading__btn sync-contacts fa fa-sync" title="' +
 __e(o.title_sync_contacts) +
-'"></a>\n    ';
- if (o.allow_contact_requests) { ;
-__p += '\n        <a class="controlbox-heading__btn add-contact fa fa-user-plus"\n           title="' +
-__e(o.title_add_contact) +
-'"\n           data-toggle="modal"\n           data-target="#add-contact-modal"></a>\n    ';
- } ;
-__p += '\n</div>\n\n<form class="roster-filter-form"></form>\n\n<div class="list-container roster-contacts"></div>\n';
+'"></a>\r\n</div>\r\n\r\n<form class="roster-filter-form"></form>\r\n\r\n<div class="list-container roster-contacts"></div>\r\n';
 return __p
 };
 
@@ -94681,89 +94654,89 @@ __p += '<!-- src/templates/roster_filter.html -->\n<form class="controlbox-padde
  if (!o.visible) { ;
 __p += ' hidden ';
  } ;
-__p += '">\n    <div class="form-inline flex-nowrap">\n        <div class="btn-group">\n            <input ';
+__p += '">\r\n    <div class="form-inline flex-nowrap">\r\n        <div class="btn-group">\r\n            <input ';
  if (o.filter_text) { ;
 __p += ' value="' +
 __e(o.filter_text) +
 '" ';
  } ;
-__p += '\n                class="roster-filter form-control ';
+__p += '\r\n                class="roster-filter form-control ';
  if (o.filter_type === 'state') { ;
 __p += ' hidden ';
  } ;
-__p += '"\n                placeholder="' +
+__p += '"\r\n                placeholder="' +
 __e(o.placeholder) +
-'"/>\n            <span class="clear-input fa fa-times ';
+'"/>\r\n            <span class="clear-input fa fa-times ';
  if (!o.filter_text || o.filter_type === 'state') { ;
 __p += ' hidden ';
  } ;
-__p += '"></span>\n        </div>\n\n        <select class="form-control state-type ';
+__p += '"></span>\r\n        </div>\r\n\r\n        <select class="form-control state-type ';
  if (o.filter_type !== 'state') { ;
 __p += ' hidden ';
  } ;
-__p += '">\n            <option value="">' +
+__p += '">\r\n            <option value="">' +
 __e(o.label_any) +
-'</option>\n            <option ';
+'</option>\r\n            <option ';
  if (o.chat_state === 'unread_messages') { ;
 __p += ' selected="selected" ';
  } ;
-__p += '\n                value="unread_messages">' +
+__p += '\r\n                value="unread_messages">' +
 __e(o.label_unread_messages) +
-'</option>\n            <option ';
+'</option>\r\n            <option ';
  if (o.chat_state === 'online') { ;
 __p += ' selected="selected" ';
  } ;
-__p += '\n                value="online">' +
+__p += '\r\n                value="online">' +
 __e(o.label_online) +
-'</option>\n            <option ';
+'</option>\r\n            <option ';
  if (o.chat_state === 'chat') { ;
 __p += ' selected="selected" ';
  } ;
-__p += '\n                value="chat">' +
+__p += '\r\n                value="chat">' +
 __e(o.label_chatty) +
-'</option>\n            <option ';
+'</option>\r\n            <option ';
  if (o.chat_state === 'dnd') { ;
 __p += ' selected="selected" ';
  } ;
-__p += '\n                value="dnd">' +
+__p += '\r\n                value="dnd">' +
 __e(o.label_busy) +
-'</option>\n            <option ';
+'</option>\r\n            <option ';
  if (o.chat_state === 'away') { ;
 __p += ' selected="selected" ';
  } ;
-__p += '\n                value="away">' +
+__p += '\r\n                value="away">' +
 __e(o.label_away) +
-'</option>\n            <option ';
+'</option>\r\n            <option ';
  if (o.chat_state === 'xa') { ;
 __p += ' selected="selected" ';
  } ;
-__p += '\n                value="xa">' +
+__p += '\r\n                value="xa">' +
 __e(o.label_xa) +
-'</option>\n            <option ';
+'</option>\r\n            <option ';
  if (o.chat_state === 'offline') { ;
 __p += ' selected="selected" ';
  } ;
-__p += '\n                value="offline">' +
+__p += '\r\n                value="offline">' +
 __e(o.label_offline) +
-'</option>\n        </select>\n\n        <div class="filter-by d-flex flex-nowrap">\n            <span class="fa fa-user ';
+'</option>\r\n        </select>\r\n\r\n        <div class="filter-by d-flex flex-nowrap">\r\n            <span class="fa fa-user ';
  if (o.filter_type === 'contacts') { ;
 __p += ' selected ';
  } ;
 __p += '" data-type="contacts" title="' +
 __e(o.title_contact_filter) +
-'"></span>\n            <span class="fa fa-users ';
+'"></span>\r\n            <span class="fa fa-users ';
  if (o.filter_type === 'groups') { ;
 __p += ' selected ';
  } ;
 __p += '" data-type="groups" title="' +
 __e(o.title_group_filter) +
-'"></span>\n            <span class="fa fa-circle ';
+'"></span>\r\n            <span class="fa fa-circle ';
  if (o.filter_type === 'state') { ;
 __p += ' selected ';
  } ;
 __p += '" data-type="state" title="' +
 __e(o.title_status_filter) +
-'"></span>\n        </div>\n    </div>\n</form>\n';
+'"></span>\r\n        </div>\r\n    </div>\r\n</form>\r\n';
 return __p
 };
 
@@ -94784,31 +94757,31 @@ __p += '<!-- src/templates/roster_item.html -->\n<a class="list-item-link cbox-l
  if (o.num_unread) { ;
 __p += ' unread-msgs ';
  } ;
-__p += '"\n   title="' +
+__p += '"\r\n   title="' +
 __e(o.desc_chat) +
-'" href="#">\n    <span class="' +
+'" href="#">\r\n    <span class="' +
 __e(o.status_icon) +
 '" title="' +
 __e(o.desc_status) +
-'"></span>\n    ';
+'"></span>\r\n    ';
  if (o.num_unread) { ;
-__p += '\n    <span class="msgs-indicator">' +
+__p += '\r\n    <span class="msgs-indicator">' +
 __e( o.num_unread ) +
-'</span>\n    ';
+'</span>\r\n    ';
  } ;
-__p += '\n    <span class="contact-name ';
+__p += '\r\n    <span class="contact-name ';
  if (o.num_unread) { ;
 __p += ' unread-msgs ';
  } ;
 __p += '">' +
 __e(o.display_name) +
-'</span></a>\n';
+'</span></a>\r\n';
  if (o.allow_contact_removal) { ;
-__p += '\n<a class="list-item-action remove-xmpp-contact far fa-trash-alt" title="' +
+__p += '\r\n<a class="list-item-action remove-xmpp-contact far fa-trash-alt" title="' +
 __e(o.desc_remove) +
-'" href="#"></a>\n';
+'" href="#"></a>\r\n';
  } ;
-__p += '\n';
+__p += '\r\n';
 return __p
 };
 
@@ -94824,11 +94797,11 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
-__p += '<!-- src/templates/search_contact.html -->\n<li>\n    <form class="search-xmpp-contact">\n        <input type="text"\n            name="identifier"\n            class="username"\n            placeholder="' +
+__p += '<!-- src/templates/search_contact.html -->\n<li>\r\n    <form class="search-xmpp-contact">\r\n        <input type="text"\r\n            name="identifier"\r\n            class="username"\r\n            placeholder="' +
 __e(o.label_contact_name) +
-'"/>\n        <button type="submit">' +
+'"/>\r\n        <button type="submit">' +
 __e(o.label_search) +
-'</button>\n    </form>\n</li>\n';
+'</button>\r\n    </form>\r\n</li>\r\n';
 return __p
 };
 
@@ -94853,7 +94826,7 @@ __p += ' selected="selected" ';
  } ;
 __p += ' >' +
 __e(o.label) +
-'</option>\n';
+'</option>\r\n';
 return __p
 };
 
@@ -94869,7 +94842,7 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '';
-__p += '<!-- src/templates/spinner.html -->\n<span class="spinner fa fa-spinner centered"/>\n';
+__p += '<!-- src/templates/spinner.html -->\n<span class="spinner fa fa-spinner centered"/>\r\n';
 return __p
 };
 
@@ -94894,9 +94867,9 @@ __p += ' ';
  if (!o.composing_spoiler)  { ;
 __p += ' fa-eye ';
  } ;
-__p += '"\n    title="' +
+__p += '"\r\n    title="' +
 ((__t = ( o.label_toggle_spoiler )) == null ? '' : __t) +
-'">\n</li>\n';
+'">\r\n</li>\r\n';
 return __p
 };
 
@@ -94912,13 +94885,13 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
-__p += '<!-- src/templates/status_message.html -->\n<div class="message chat-info chat-status"\n     data-isodate="' +
+__p += '<!-- src/templates/status_message.html -->\n<div class="message chat-info chat-status"\r\n     data-isodate="' +
 __e(o.isodate) +
-'"\n     data-status="' +
+'"\r\n     data-status="' +
 __e(o.from) +
 '">' +
 __e(o.message) +
-'</div>\n';
+'</div>\r\n';
 return __p
 };
 
@@ -94934,15 +94907,15 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
-__p += '<!-- src/templates/status_option.html -->\n<li>\n    <a href="#" class="' +
+__p += '<!-- src/templates/status_option.html -->\n<li>\r\n    <a href="#" class="' +
 __e( o.value ) +
 '" data-value="' +
 __e( o.value ) +
-'">\n        <span class="icon-' +
+'">\r\n        <span class="icon-' +
 __e( o.value ) +
-'"></span>\n        ' +
+'"></span>\r\n        ' +
 __e( o.text ) +
-'\n    </a>\n</li>\n';
+'\r\n    </a>\r\n</li>\r\n';
 return __p
 };
 
@@ -94963,13 +94936,13 @@ __p += '<!-- src/templates/toggle_chats.html -->\n' +
 __e(o.num_minimized) +
 ' ' +
 __e(o.Minimized) +
-'\n<span class="unread-message-count ';
+'\r\n<span class="unread-message-count ';
  if (!o.num_unread) { ;
 __p += ' unread-message-count-hidden ';
  } ;
 __p += '" href="#">' +
 __e(o.num_unread) +
-'</span>\n';
+'</span>\r\n';
 return __p
 };
 
@@ -94988,29 +94961,29 @@ var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 __p += '<!-- src/templates/toolbar.html -->\n';
  if (o.use_emoji)  { ;
-__p += '\n<li class="toggle-toolbar-menu toggle-smiley dropup">\n    <a class="toggle-smiley far fa-smile" title="' +
+__p += '\r\n<li class="toggle-toolbar-menu toggle-smiley dropup">\r\n    <a class="toggle-smiley far fa-smile" title="' +
 __e(o.tooltip_insert_smiley) +
-'" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a> \n    <div class="emoji-picker dropdown-menu toolbar-menu"></div>\n</li>\n';
+'" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a> \r\n    <div class="emoji-picker dropdown-menu toolbar-menu"></div>\r\n</li>\r\n';
  } ;
-__p += '\n';
+__p += '\r\n';
  if (o.show_call_button)  { ;
-__p += '\n<li class="toggle-call fa fa-phone" title="' +
+__p += '\r\n<li class="toggle-call fa fa-phone" title="' +
 __e(o.label_start_call) +
-'"></li>\n';
+'"></li>\r\n';
  } ;
-__p += '\n';
+__p += '\r\n';
  if (o.show_occupants_toggle)  { ;
-__p += '\n<li class="toggle-occupants fa ';
+__p += '\r\n<li class="toggle-occupants fa ';
  if (o.hidden_occupants)  { ;
 __p += ' fa-angle-double-left ';
  } else { ;
 __p += ' fa-angle-double-right ';
  } ;
-__p += '"\n    title="' +
+__p += '"\r\n    title="' +
 __e(o.label_hide_occupants) +
-'"></li>\n';
+'"></li>\r\n';
  } ;
-__p += '\n';
+__p += '\r\n';
 return __p
 };
 
@@ -95026,9 +94999,9 @@ return __p
 var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./node_modules/lodash/escape.js")};
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
-__p += '<!-- src/templates/toolbar_fileupload.html -->\n<li class="upload-file">\n    <a class="fa fa-paperclip" title="' +
+__p += '<!-- src/templates/toolbar_fileupload.html -->\n<li class="upload-file">\r\n    <a class="fa fa-paperclip" title="' +
 __e(o.tooltip_upload_file) +
-'"></a>\n    <input type="file" class="fileupload" multiple="" style="display:none"/>\n</li> \n';
+'"></a>\r\n    <input type="file" class="fileupload" multiple="" style="display:none"/>\r\n</li> \r\n';
 return __p
 };
 
@@ -95045,19 +95018,19 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/toolbar_omemo.html -->\n<li class="toggle-omemo fa \n        ';
+__p += '<!-- src/templates/toolbar_omemo.html -->\n<li class="toggle-omemo fa \r\n        ';
  if (!o.omemo_supported) { ;
 __p += ' disabled ';
  } ;
-__p += '\n        ';
+__p += '\r\n        ';
  if (o.omemo_active) { ;
 __p += ' fa-lock ';
  } else { ;
 __p += ' fa-unlock ';
  } ;
-__p += '"\n    title="' +
+__p += '"\r\n    title="' +
 __e(o.__('Messages are being sent in plaintext')) +
-'"></li>\n';
+'"></li>\r\n';
 return __p
 };
 
@@ -95076,15 +95049,15 @@ var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 __p += '<!-- src/templates/trimmed_chat.html -->\n<a href="#" class="restore-chat w-100 align-self-center" title="' +
 __e(o.tooltip) +
-'">\n    ';
+'">\r\n    ';
  if (o.num_unread) { ;
-__p += ' \n        <span class="message-count badge badge-light">' +
+__p += ' \r\n        <span class="message-count badge badge-light">' +
 __e(o.num_unread) +
-'</span>\n    ';
+'</span>\r\n    ';
  } ;
-__p += '\n    ' +
+__p += '\r\n    ' +
 __e(o.title || o.jid ) +
-'\n</a>\n<a class="chatbox-btn close-chatbox-button fa fa-times"></a>\n';
+'\r\n</a>\r\n<a class="chatbox-btn close-chatbox-button fa fa-times"></a>\r\n';
 return __p
 };
 
@@ -95101,133 +95074,133 @@ var _ = {escape:__webpack_require__(/*! ./node_modules/lodash/escape.js */ "./no
 module.exports = function(o) {
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
-__p += '<!-- src/templates/user_details_modal.html -->\n<div class="modal fade" id="user-details-modal" tabindex="-1" role="dialog" aria-labelledby="user-details-modal-label" aria-hidden="true">\n    <div class="modal-dialog" role="document">\n        <div class="modal-content">\n            <div class="modal-header">\n                <h5 class="modal-title" id="user-details-modal-label">' +
+__p += '<!-- src/templates/user_details_modal.html -->\n<div class="modal fade" id="user-details-modal" tabindex="-1" role="dialog" aria-labelledby="user-details-modal-label" aria-hidden="true">\r\n    <div class="modal-dialog" role="document">\r\n        <div class="modal-content">\r\n            <div class="modal-header">\r\n                <h5 class="modal-title" id="user-details-modal-label">' +
 __e(o.display_name) +
-'</h5>\n                <button type="button" class="close" data-dismiss="modal" aria-label="' +
+'</h5>\r\n                <button type="button" class="close" data-dismiss="modal" aria-label="' +
 __e(o.__('Close')) +
-'"><span aria-hidden="true">×</span></button>\n            </div>\n            <div class="modal-body">\n                ';
+'"><span aria-hidden="true">×</span></button>\r\n            </div>\r\n            <div class="modal-body">\r\n                ';
  if (o.image) { ;
-__p += '\n                <img alt="' +
+__p += '\r\n                <img alt="' +
 __e(o.__('The User\'s Profile Image')) +
-'"\n                    class="img-thumbnail avatar align-self-center mb-3"\n                    height="100" width="100" src="data:' +
+'"\r\n                    class="img-thumbnail avatar align-self-center mb-3"\r\n                    height="100" width="100" src="data:' +
 __e(o.image_type) +
 ';base64,' +
 __e(o.image) +
-'"/>\n                ';
+'"/>\r\n                ';
  } ;
-__p += '\n                ';
+__p += '\r\n                ';
  if (o.fullname) { ;
-__p += '\n                <p><label>' +
+__p += '\r\n                <p><label>' +
 __e(o.__('Full Name:')) +
 '</label> ' +
 __e(o.fullname) +
-'</p>\n                ';
+'</p>\r\n                ';
  } ;
-__p += '\n                <p><label>' +
+__p += '\r\n                <p><label>' +
 __e(o.__('XMPP Address:')) +
 '</label> <a href="xmpp:' +
 __e(o.jid) +
 '">' +
 __e(o.jid) +
-'</a></p>\n                ';
+'</a></p>\r\n                ';
  if (o.nickname) { ;
-__p += '\n                <p><label>' +
+__p += '\r\n                <p><label>' +
 __e(o.__('Nickname:')) +
 '</label> ' +
 __e(o.nickname) +
-'</p>\n                ';
+'</p>\r\n                ';
  } ;
-__p += '\n                ';
+__p += '\r\n                ';
  if (o.url) { ;
-__p += '\n                <p><label>' +
+__p += '\r\n                <p><label>' +
 __e(o.__('URL:')) +
 '</label> <a target="_blank" rel="noopener" href="' +
 __e(o.url) +
 '">' +
 __e(o.url) +
-'</a></p>\n                ';
+'</a></p>\r\n                ';
  } ;
-__p += '\n                ';
+__p += '\r\n                ';
  if (o.email) { ;
-__p += '\n                <p><label>' +
+__p += '\r\n                <p><label>' +
 __e(o.__('Email:')) +
 '</label> <a href="mailto:' +
 __e(o.email) +
 '">' +
 __e(o.email) +
-'</a></p>\n                ';
+'</a></p>\r\n                ';
  } ;
-__p += '\n                ';
+__p += '\r\n                ';
  if (o.role) { ;
-__p += '\n                <p><label>' +
+__p += '\r\n                <p><label>' +
 __e(o.__('Role:')) +
 '</label> ' +
 __e(o.role) +
-'</p>\n                ';
+'</p>\r\n                ';
  } ;
-__p += '\n\n                ';
+__p += '\r\n\r\n                ';
  if (o._converse.pluggable.plugins['converse-omemo'].enabled(o._converse)) { ;
-__p += '\n                    <hr/>\n                    <ul class="list-group fingerprints">\n                        <li class="list-group-item active">' +
+__p += '\r\n                    <hr/>\r\n                    <ul class="list-group fingerprints">\r\n                        <li class="list-group-item active">' +
 __e(o.__('OMEMO Fingerprints')) +
-'</li>\n                        ';
+'</li>\r\n                        ';
  if (!o.view.devicelist.devices) { ;
-__p += '\n                            <li class="list-group-item"><span class="spinner fa fa-spinner centered"/></li>\n                        ';
+__p += '\r\n                            <li class="list-group-item"><span class="spinner fa fa-spinner centered"/></li>\r\n                        ';
  } ;
-__p += '\n                        ';
+__p += '\r\n                        ';
  if (o.view.devicelist.devices) { ;
-__p += '\n                            ';
+__p += '\r\n                            ';
  o.view.devicelist.devices.each(function (device) { ;
-__p += '\n                                ';
+__p += '\r\n                                ';
  if (device.get('bundle') && device.get('bundle').fingerprint) { ;
-__p += '\n                                <li class="list-group-item">\n                                    <form class="fingerprint-trust">\n                                    <div class="btn-group btn-group-toggle">\n                                        <label class="btn btn--small ';
+__p += '\r\n                                <li class="list-group-item">\r\n                                    <form class="fingerprint-trust">\r\n                                    <div class="btn-group btn-group-toggle">\r\n                                        <label class="btn btn--small ';
  if (device.get('trusted') !== -1) { ;
 __p += ' btn-primary active ';
  } else { ;
 __p += '  btn-secondary ';
  } ;
-__p += '">\n                                            <input type="radio" name="' +
+__p += '">\r\n                                            <input type="radio" name="' +
 __e(device.get('id')) +
-'" value="1"\n                                                ';
+'" value="1"\r\n                                                ';
  if (device.get('trusted') !== -1) { ;
 __p += ' checked="checked" ';
  } ;
 __p += '/>' +
 __e(o.__('Trusted')) +
-'\n                                        </label>\n                                        <label class="btn btn--small ';
+'\r\n                                        </label>\r\n                                        <label class="btn btn--small ';
  if (device.get('trusted') === -1) { ;
 __p += ' btn-primary active ';
  } else { ;
 __p += ' btn-secondary ';
  } ;
-__p += '">\n                                            <input type="radio" name="' +
+__p += '">\r\n                                            <input type="radio" name="' +
 __e(device.get('id')) +
-'" value="-1"\n                                                ';
+'" value="-1"\r\n                                                ';
  if (device.get('trusted') === -1) { ;
 __p += ' checked="checked" ';
  } ;
 __p += '/>' +
 __e(o.__('Untrusted')) +
-'\n                                        </label>\n                                    </div>\n                                    <span class="fingerprint">' +
+'\r\n                                        </label>\r\n                                    </div>\r\n                                    <span class="fingerprint">' +
 __e(o.utils.formatFingerprint(device.get('bundle').fingerprint)) +
-'</span>\n                                    </form>\n                                </li>\n                                ';
+'</span>\r\n                                    </form>\r\n                                </li>\r\n                                ';
  } ;
-__p += '\n                            ';
+__p += '\r\n                            ';
  }); ;
-__p += '\n                        ';
+__p += '\r\n                        ';
  } ;
-__p += '\n                    </ul>\n                ';
+__p += '\r\n                    </ul>\r\n                ';
  } ;
-__p += '\n            </div>\n            <div class="modal-footer">\n                <button type="button" class="btn btn-warning" data-dismiss="modal">' +
+__p += '\r\n            </div>\r\n            <div class="modal-footer">\r\n                <button type="button" class="btn btn-warning" data-dismiss="modal">' +
 __e(o.__('Close')) +
-'</button>\n                <button type="button" class="btn btn-info refresh-contact"><i class="fa fa-refresh"> </i>' +
+'</button>\r\n                <button type="button" class="btn btn-info refresh-contact"><i class="fa fa-refresh"> </i>' +
 __e(o.__('Refresh')) +
-'</button>\n                ';
+'</button>\r\n                ';
  if (o.allow_contact_removal && o.is_roster_contact) { ;
-__p += '\n                    <button type="button" class="btn btn-danger remove-contact"><i class="far fa-trash-alt"> </i>' +
+__p += '\r\n                    <button type="button" class="btn btn-danger remove-contact"><i class="far fa-trash-alt"> </i>' +
 __e(o.__('Remove as contact')) +
-'</button>\n                ';
+'</button>\r\n                ';
  } ;
-__p += '\n            </div>\n        </div>\n    </div>\n</div>\n';
+__p += '\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n';
 return __p
 };
 
@@ -95245,11 +95218,11 @@ module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
 __p += '<!-- src/templates/video.html -->\n<video controls src="' +
 __e(o.url) +
-'" style="max-height: 50vh"></video>\n<a target="_blank" rel="noopener" href="' +
+'" style="max-height: 50vh"></video>\r\n<a target="_blank" rel="noopener" href="' +
 __e(o.url) +
 '">' +
 __e(o.label_download) +
-'</a>\n';
+'</a>\r\n';
 return __p
 };
 

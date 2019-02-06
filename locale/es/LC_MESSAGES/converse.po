@@ -804,7 +804,7 @@ msgstr "Asunto limpiado por %1$s"
 
 #: dist/converse-no-dependencies.js:37394
 msgid "Groupchats"
-msgstr "Conversaciones en grupo"
+msgstr "Salas"
 
 #: dist/converse-no-dependencies.js:37395
 msgid "Add a new groupchat"

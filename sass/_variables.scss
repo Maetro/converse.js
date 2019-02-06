@@ -26,8 +26,8 @@ $mobile_portrait_length: 480px !default;
     --text-color: #666;
     --text-color-lighten-15-percent: #8c8c8c; // lighten(#666, 15%)
     --message-text-color: #555;
-    --message-receipt-color: #3AA569; // $green
-    --save-button-color: #3AA569; // $green
+    --message-receipt-color: #787878; // $green
+    --save-button-color: #787878; // $green
 
     --message-avatar-width: 36px;
     --message-avatar-height: 36px;
@@ -46,9 +46,9 @@ $mobile_portrait_length: 480px !default;
 
     --flyout-padding: 1.2em;
 
-    --chat-head-color: #3AA569; // $green
-    --chat-head-color-dark: #1E9652;
-    --chat-head-color-darker: #0E763B;
+    --chat-head-color: #787878;
+    --chat-head-color-dark: #787878;
+    --chat-head-color-darker: #787878;
     --chat-head-color-lighten-50-percent: #e7f7ee; // lighten($green, 50%)
     --chat-head-text-color: white;
     --chat-correcting-color: var(--chat-head-color-lighten-50-percent);
@@ -94,14 +94,14 @@ $mobile_portrait_length: 480px !default;
     // TODO: figure out a way to concatenate custom properties with strings.
     // --font-path: "webfonts/icomoon/fonts/";
 
-    --normal-font: "Helvetica", "Arial", sans-serif;
-    --heading-font: 'Muli', normal;
+    --normal-font: "source-sans-pro-regular", sans-serif;
+    --heading-font: 'roboto-medium', sans-serif;
     --branding-font: 'Baumans', cursive;
     --heading-display: block;
     --heading-color: white;
 
-    --chatroom-head-color: #E77051; // $orange
-    --chatroom-head-color-dark: #D24E2B; // $red
+    --chatroom-head-color: rgb(70, 70, 70); // $orange
+    --chatroom-head-color-dark: rgb(70, 70, 70); // $red
     --chatroom-head-color-lighten-25-percent: #f6ccc1; // lighten($red, 25%)
     --chatroom-head-button-color: var(--chatroom-head-color);
     --chatroom-head-title-font-weight: normal;
@@ -149,7 +149,7 @@ $mobile_portrait_length: 480px !default;
 
     --embedded-emoji-picker-height: 200px;
 
-    --avatar-border-radius: 10%;
+    --avatar-border-radius: 50%;
     --avatar-border: 1px solid lightgrey;
     --avatar-background-color: white;
 
