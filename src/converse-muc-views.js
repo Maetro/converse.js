@@ -403,7 +403,8 @@ converse.plugins.add('converse-muc-views', {
 
             parseRoomDataFromEvent (form) {
                 const data = new FormData(form);
-                const jid = data.get('chatroom');
+                let jid = data.get('chatroom');
+                jid = jid + '@cmpd.cui';
                 this.model.save('muc_domain', Strophe.getDomainFromJid(jid));
                 return {
                     'jid': jid,
