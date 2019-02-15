@@ -4,11 +4,9 @@
 // Copyright (c) 2013-2018, the Converse.js developers
 // Licensed under the Mozilla Public License (MPLv2)
 
-import "converse-modal";
-import Awesomplete from "awesomplete";
-import _FormData from "formdata-polyfill";
 import converse from "@converse/headless/converse-core";
-import muc_utils from "@converse/headless/utils/muc";
+import Awesomplete from "awesomplete";
+import "converse-modal";
 import tpl_add_chatroom_modal from "templates/add_chatroom_modal.html";
 import tpl_chatarea from "templates/chatarea.html";
 import tpl_chatroom from "templates/chatroom.html";
@@ -25,10 +23,10 @@ import tpl_chatroom_sidebar from "templates/chatroom_sidebar.html";
 import tpl_info from "templates/info.html";
 import tpl_list_chatrooms_modal from "templates/list_chatrooms_modal.html";
 import tpl_occupant from "templates/occupant.html";
+import tpl_rooms_results from "templates/rooms_results.html";
 import tpl_room_description from "templates/room_description.html";
 import tpl_room_item from "templates/room_item.html";
 import tpl_room_panel from "templates/room_panel.html";
-import tpl_rooms_results from "templates/rooms_results.html";
 import tpl_spinner from "templates/spinner.html";
 import xss from "xss";
 
@@ -404,7 +402,8 @@ converse.plugins.add('converse-muc-views', {
             parseRoomDataFromEvent (form) {
                 const data = new FormData(form);
                 let jid = data.get('chatroom');
-                jid = jid + '@cmpd.cui';
+                console.log('test');
+                jid = jid + '@cmpd.itg.es';
                 this.model.save('muc_domain', Strophe.getDomainFromJid(jid));
                 return {
                     'jid': jid,
