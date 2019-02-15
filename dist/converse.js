@@ -49346,13 +49346,13 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_3__["default"].plugins
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var converse_chatboxviews__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! converse-chatboxviews */ "./src/converse-chatboxviews.js");
-/* harmony import */ var converse_message_view__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! converse-message-view */ "./src/converse-message-view.js");
-/* harmony import */ var converse_modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! converse-modal */ "./src/converse-modal.js");
-/* harmony import */ var twemoji__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! twemoji */ "./node_modules/twemoji/2/esm.js");
-/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap.native/dist/bootstrap-native-v4.js");
-/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @converse/headless/converse-core */ "./src/headless/converse-core.js");
+/* harmony import */ var _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @converse/headless/converse-core */ "./src/headless/converse-core.js");
+/* harmony import */ var _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @converse/headless/utils/emoji */ "./src/headless/utils/emoji.js");
+/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap.native/dist/bootstrap-native-v4.js");
+/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var converse_chatboxviews__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! converse-chatboxviews */ "./src/converse-chatboxviews.js");
+/* harmony import */ var converse_message_view__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! converse-message-view */ "./src/converse-message-view.js");
+/* harmony import */ var converse_modal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! converse-modal */ "./src/converse-modal.js");
 /* harmony import */ var templates_alert_html__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! templates/alert.html */ "./src/templates/alert.html");
 /* harmony import */ var templates_alert_html__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(templates_alert_html__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var templates_chatbox_html__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! templates/chatbox.html */ "./src/templates/chatbox.html");
@@ -49383,7 +49383,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var templates_toolbar_fileupload_html__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(templates_toolbar_fileupload_html__WEBPACK_IMPORTED_MODULE_19__);
 /* harmony import */ var templates_user_details_modal_html__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! templates/user_details_modal.html */ "./src/templates/user_details_modal.html");
 /* harmony import */ var templates_user_details_modal_html__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(templates_user_details_modal_html__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @converse/headless/utils/emoji */ "./src/headless/utils/emoji.js");
+/* harmony import */ var twemoji__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! twemoji */ "./node_modules/twemoji/2/esm.js");
 /* harmony import */ var xss__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! xss */ "./node_modules/xss/dist/xss.js");
 /* harmony import */ var xss__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(xss__WEBPACK_IMPORTED_MODULE_22__);
 // Converse.js
@@ -49414,7 +49414,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const _converse$env = _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].env,
+const _converse$env = _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_0__["default"].env,
       $msg = _converse$env.$msg,
       Backbone = _converse$env.Backbone,
       Promise = _converse$env.Promise,
@@ -49424,7 +49424,7 @@ const _converse$env = _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_
       f = _converse$env.f,
       sizzle = _converse$env.sizzle,
       moment = _converse$env.moment;
-_converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins.add('converse-chatview', {
+_converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_0__["default"].plugins.add('converse-chatview', {
   /* Plugin dependencies are other plugins which might be
    * overridden or relied upon, and therefore need to be loaded before
    * this plugin.
@@ -49445,7 +49445,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
           __ = _converse.__;
 
     _converse.api.settings.update({
-      'emoji_image_path': twemoji__WEBPACK_IMPORTED_MODULE_3__["default"].base,
+      'emoji_image_path': twemoji__WEBPACK_IMPORTED_MODULE_21__["default"].base,
       'show_send_button': false,
       'show_toolbar': true,
       'time_format': 'HH:mm',
@@ -49458,7 +49458,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
       }
     });
 
-    twemoji__WEBPACK_IMPORTED_MODULE_3__["default"].base = _converse.emoji_image_path;
+    twemoji__WEBPACK_IMPORTED_MODULE_21__["default"].base = _converse.emoji_image_path;
 
     function onWindowStateChanged(data) {
       if (_converse.chatboxviews) {
@@ -49494,9 +49494,9 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
       toHTML() {
         return templates_emojis_html__WEBPACK_IMPORTED_MODULE_10___default()(_.extend(this.model.toJSON(), {
           '_': _,
-          'transform': _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].getEmojiRenderer(_converse),
-          'emojis_by_category': _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].getEmojisByCategory(_converse),
-          'toned_emojis': _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].getTonedEmojis(_converse),
+          'transform': _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].getEmojiRenderer(_converse),
+          'emojis_by_category': _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].getEmojisByCategory(_converse),
+          'toned_emojis': _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].getTonedEmojis(_converse),
           'skintones': ['tone1', 'tone2', 'tone3', 'tone4', 'tone5'],
           'shouldBeHidden': this.shouldBeHidden
         }));
@@ -49600,7 +49600,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
           'allow_contact_removal': _converse.allow_contact_removal,
           'display_name': this.model.getDisplayName(),
           'is_roster_contact': !_.isUndefined(this.model.contact),
-          'utils': _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"]
+          'utils': _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"]
         }));
       },
 
@@ -49621,7 +49621,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
         }
 
         const refresh_icon = this.el.querySelector('.fa-refresh');
-        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].addClass('fa-spin', refresh_icon);
+        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].addClass('fa-spin', refresh_icon);
 
         try {
           await _converse.api.vcard.update(this.model.contact.vcard, true);
@@ -49634,7 +49634,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
           }));
         }
 
-        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].removeClass('fa-spin', refresh_icon);
+        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].removeClass('fa-spin', refresh_icon);
       },
 
       removeContact(ev) {
@@ -49951,7 +49951,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
          *      This element must have a "data-isodate" attribute
          *      which specifies its creation date.
          */
-        const prev_msg_el = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].getPreviousElement(next_msg_el, ".message:not(.chat-state-notification)"),
+        const prev_msg_el = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].getPreviousElement(next_msg_el, ".message:not(.chat-state-notification)"),
               prev_msg_date = _.isNull(prev_msg_el) ? null : prev_msg_el.getAttribute('data-isodate'),
               next_msg_date = next_msg_el.getAttribute('data-isodate');
 
@@ -49963,7 +49963,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
           const day_date = moment(next_msg_date).startOf('day');
           next_msg_el.insertAdjacentHTML('beforeBegin', templates_new_day_html__WEBPACK_IMPORTED_MODULE_14___default()({
             'isodate': day_date.format(),
-            'datestring': day_date.format("dddd MMM Do YYYY")
+            'datestring': day_date.format("dddd DD MM YYYY")
           }));
         }
       },
@@ -49975,14 +49975,14 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
          *  (Object) cutoff: Moment Date cutoff date. The last
          *      message received cutoff this date will be returned.
          */
-        const first_msg = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].getFirstChildElement(this.content, '.message:not(.chat-state-notification)'),
+        const first_msg = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].getFirstChildElement(this.content, '.message:not(.chat-state-notification)'),
               oldest_date = first_msg ? first_msg.getAttribute('data-isodate') : null;
 
         if (!_.isNull(oldest_date) && moment(oldest_date).isAfter(cutoff)) {
           return null;
         }
 
-        const last_msg = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].getLastChildElement(this.content, '.message:not(.chat-state-notification)'),
+        const last_msg = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].getLastChildElement(this.content, '.message:not(.chat-state-notification)'),
               most_recent_date = last_msg ? last_msg.getAttribute('data-isodate') : null;
 
         if (_.isNull(most_recent_date) || moment(most_recent_date).isBefore(cutoff)) {
@@ -50019,7 +50019,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
          * up when using infinite scroll).
          */
         if (this.model.get('scrolled')) {
-          const next_msg_el = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].getNextElement(message_el, ".chat-msg");
+          const next_msg_el = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].getNextElement(message_el, ".chat-msg");
 
           if (next_msg_el) {
             // The currently received message is not new, there
@@ -50060,14 +50060,14 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
 
       clearChatStateNotification(message, isodate) {
         if (isodate) {
-          _.each(sizzle(`.chat-state-notification[data-csn="${message.get('from')}"][data-isodate="${isodate}"]`, this.content), _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].removeElement);
+          _.each(sizzle(`.chat-state-notification[data-csn="${message.get('from')}"][data-isodate="${isodate}"]`, this.content), _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].removeElement);
         } else {
-          _.each(sizzle(`.chat-state-notification[data-csn="${message.get('from')}"]`, this.content), _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].removeElement);
+          _.each(sizzle(`.chat-state-notification[data-csn="${message.get('from')}"]`, this.content), _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].removeElement);
         }
       },
 
       shouldShowOnTextMessage() {
-        return !_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].isVisible(this.el);
+        return !_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].isVisible(this.el);
       },
 
       insertMessage(view) {
@@ -50094,7 +50094,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
         } else {
           const previous_msg_el = sizzle(`[data-isodate="${previous_msg_date}"]:last`, this.content).pop();
 
-          if (view.model.get('type') === 'error' && _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].hasClass('chat-error', previous_msg_el) && previous_msg_el.textContent === view.model.get('message')) {
+          if (view.model.get('type') === 'error' && _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].hasClass('chat-error', previous_msg_el) && previous_msg_el.textContent === view.model.get('message')) {
             // We don't show a duplicate error message
             return;
           }
@@ -50125,18 +50125,18 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
               date = moment(el.getAttribute('data-isodate')),
               next_el = el.nextElementSibling;
 
-        if (!_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].hasClass('chat-msg--action', el) && !_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].hasClass('chat-msg--action', previous_el) && previous_el.getAttribute('data-from') === from && date.isBefore(moment(previous_el.getAttribute('data-isodate')).add(10, 'minutes')) && el.getAttribute('data-encrypted') === previous_el.getAttribute('data-encrypted')) {
-          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].addClass('chat-msg--followup', el);
+        if (!_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].hasClass('chat-msg--action', el) && !_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].hasClass('chat-msg--action', previous_el) && previous_el.getAttribute('data-from') === from && date.isBefore(moment(previous_el.getAttribute('data-isodate')).add(10, 'minutes')) && el.getAttribute('data-encrypted') === previous_el.getAttribute('data-encrypted')) {
+          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].addClass('chat-msg--followup', el);
         }
 
         if (!next_el) {
           return;
         }
 
-        if (!_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].hasClass('chat-msg--action', 'el') && next_el.getAttribute('data-from') === from && moment(next_el.getAttribute('data-isodate')).isBefore(date.add(10, 'minutes')) && el.getAttribute('data-encrypted') === next_el.getAttribute('data-encrypted')) {
-          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].addClass('chat-msg--followup', next_el);
+        if (!_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].hasClass('chat-msg--action', 'el') && next_el.getAttribute('data-from') === from && moment(next_el.getAttribute('data-isodate')).isBefore(date.add(10, 'minutes')) && el.getAttribute('data-encrypted') === next_el.getAttribute('data-encrypted')) {
+          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].addClass('chat-msg--followup', next_el);
         } else {
-          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].removeClass('chat-msg--followup', next_el);
+          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].removeClass('chat-msg--followup', next_el);
         }
       },
 
@@ -50165,14 +50165,14 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
         this.insertDayIndicator(view.el);
         this.setScrollPosition(view.el);
 
-        if (_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].isNewMessage(message)) {
+        if (_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].isNewMessage(message)) {
           if (message.get('sender') === 'me') {
             // We remove the "scrolled" flag so that the chat area
             // gets scrolled down. We always want to scroll down
             // when the user writes a message as opposed to when a
             // message is received.
             this.model.set('scrolled', false);
-          } else if (this.model.get('scrolled', true) && !_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].isOnlyChatStateNotification(message)) {
+          } else if (this.model.get('scrolled', true) && !_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].isOnlyChatStateNotification(message)) {
             this.showNewMessagesIndicator();
           }
         }
@@ -50265,13 +50265,13 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
           spoiler_hint = hint_el.value;
         }
 
-        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].addClass('disabled', textarea);
+        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].addClass('disabled', textarea);
         textarea.setAttribute('disabled', 'disabled');
 
         if (this.parseMessageForCommands(message) || (await this.model.sendMessage(this.model.getOutgoingMessageAttributes(message, spoiler_hint)))) {
           hint_el.value = '';
           textarea.value = '';
-          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].removeClass('correcting', textarea); // Trigger input event, so that the textarea resizes
+          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].removeClass('correcting', textarea); // Trigger input event, so that the textarea resizes
 
           const event = document.createEvent('Event');
           event.initEvent('input', true, true);
@@ -50304,7 +50304,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
           } else if (ev.keyCode === _converse.keycodes.ESCAPE) {
             return this.onEscapePressed(ev);
           } else if (ev.keyCode === _converse.keycodes.ENTER) {
-            if (this.emoji_dropdown && _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].isVisible(this.emoji_dropdown.el.querySelector('.emoji-picker'))) {
+            if (this.emoji_dropdown && _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].isVisible(this.emoji_dropdown.el.querySelector('.emoji-picker'))) {
               this.emoji_dropdown.toggle();
             }
 
@@ -50349,7 +50349,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
         ev.preventDefault();
         const idx = this.model.messages.findLastIndex('correcting'),
               currently_correcting = idx >= 0 ? this.model.messages.at(idx) : null,
-              message_el = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].ancestor(ev.target, '.chat-msg'),
+              message_el = _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].ancestor(ev.target, '.chat-msg'),
               message = this.model.messages.findWhere({
           'msgid': message_el.getAttribute('data-msgid')
         });
@@ -50360,7 +50360,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
           }
 
           message.save('correcting', true);
-          this.insertIntoTextArea(_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].prefixMentions(message), true, true);
+          this.insertIntoTextArea(_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].prefixMentions(message), true, true);
         } else {
           message.save('correcting', false);
           this.insertIntoTextArea('', true, false);
@@ -50450,9 +50450,9 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
         const textarea = this.el.querySelector('.chat-textarea');
 
         if (correcting) {
-          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].addClass('correcting', textarea);
+          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].addClass('correcting', textarea);
         } else {
-          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].removeClass('correcting', textarea);
+          _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].removeClass('correcting', textarea);
         }
 
         if (replace) {
@@ -50469,7 +50469,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
           textarea.value = existing + value + ' ';
         }
 
-        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].putCurserAtEnd(textarea);
+        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].putCurserAtEnd(textarea);
       },
 
       createEmojiPicker() {
@@ -50504,7 +50504,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
           this.insertEmojiPicker();
           this.renderEmojiPicker();
           const dropdown_el = this.el.querySelector('.toggle-smiley.dropup');
-          this.emoji_dropdown = new bootstrap__WEBPACK_IMPORTED_MODULE_4___default.a.Dropdown(dropdown_el, true);
+          this.emoji_dropdown = new bootstrap__WEBPACK_IMPORTED_MODULE_2___default.a.Dropdown(dropdown_el, true);
           this.emoji_dropdown.el = dropdown_el;
           this.emoji_dropdown.toggle();
         }
@@ -50532,7 +50532,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
 
         const toggle_el = ev.target,
               icon_el = toggle_el.firstElementChild;
-        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].slideToggleElement(toggle_el.parentElement.parentElement.querySelector('.spoiler'));
+        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].slideToggleElement(toggle_el.parentElement.parentElement.querySelector('.spoiler'));
 
         if (toggle_el.getAttribute("data-toggle-state") == "closed") {
           toggle_el.textContent = 'Show less';
@@ -50554,7 +50554,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
               fullname = this.model.getDisplayName();
         let text;
 
-        if (_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].isVisible(this.el)) {
+        if (_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].isVisible(this.el)) {
           if (show === 'offline') {
             text = __('%1$s has gone offline', fullname);
           } else if (show === 'away') {
@@ -50643,16 +50643,16 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
 
       _show(f) {
         /* Inner show method that gets debounced */
-        if (_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].isVisible(this.el)) {
+        if (_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].isVisible(this.el)) {
           this.focus();
           return;
         }
 
-        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].fadeIn(this.el, _.bind(this.afterShown, this));
+        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].fadeIn(this.el, _.bind(this.afterShown, this));
       },
 
       showNewMessagesIndicator() {
-        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].showElement(this.el.querySelector('.new-msgs-indicator'));
+        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].showElement(this.el.querySelector('.new-msgs-indicator'));
       },
 
       hideNewMessagesIndicator() {
@@ -50682,7 +50682,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
           this.onScrolledDown();
         }
 
-        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].safeSave(this.model, {
+        _converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].safeSave(this.model, {
           'scrolled': scrolled,
           'top_visible_message': null
         });
@@ -50702,7 +50702,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_5__["default"].plugins
           return;
         }
 
-        if (_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_21__["default"].isVisible(this.content) && !this.model.get('scrolled')) {
+        if (_converse_headless_utils_emoji__WEBPACK_IMPORTED_MODULE_1__["default"].isVisible(this.content) && !this.model.get('scrolled')) {
           this.content.scrollTop = this.content.scrollHeight;
         }
       },
@@ -53820,8 +53820,8 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_0__["default"].plugins
       parseRoomDataFromEvent(form) {
         const data = new FormData(form);
         let jid = data.get('chatroom');
-        console.log('test');
         jid = jid + '@cmpd.itg.es';
+        console.log('test: ' + jid);
         this.model.save('muc_domain', Strophe.getDomainFromJid(jid));
         return {
           'jid': jid,
@@ -92868,13 +92868,7 @@ var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 __p += '<!-- src/templates/chatroom_head.html -->\n<div class="chatbox-navback"><i class="fa fa-arrow-left"></i></div>\r\n<div class="chatbox-title">\r\n    <div class="chat-title" title="' +
 __e(o.jid) +
-'">\r\n            ' +
-__e(o.name) +
-' --- ' +
-__e(o.Strophe.getNodeFromJid(o.jid)) +
-' --- ' +
-__e( o.Strophe.getDomainFromJid(o.jid) ) +
-'\r\n        ';
+'">\r\n        ';
  if (o.name && o.name !== o.Strophe.getNodeFromJid(o.jid)) { ;
 __p += '\r\n            ' +
 __e( o.name ) +
@@ -92896,9 +92890,7 @@ __p += '\r\n    <a class="chatbox-btn configure-chatroom-button fa fa-wrench" ti
 __e(o.info_configure) +
 ' "></a>\r\n    ';
  } ;
-__p += '\r\n    <a class="chatbox-btn show-room-details-modal fa fa-info-circle" title="' +
-__e(o.info_details) +
-'"></a>\r\n</div>\r\n';
+__p += '\r\n</div>\r\n';
 return __p
 };
 
@@ -93651,7 +93643,7 @@ module.exports = function(o) {
 var __t, __p = '', __e = _.escape;
 __p += '<!-- src/templates/list_chatrooms_modal.html -->\n<div class="modal fade" id="list-chatrooms-modal" tabindex="-1" role="dialog" aria-labelledby="list-chatrooms-modal-label" aria-hidden="true">\r\n    <div class="modal-dialog" role="document">\r\n        <div class="modal-content">\r\n            <div class="modal-header">\r\n                <h5 class="modal-title"\r\n                    id="list-chatrooms-modal-label">' +
 __e(o.heading_list_chatrooms) +
-'</h5>\r\n                <button type="button" class="close" data-dismiss="modal" aria-label="Close">\r\n                    <span aria-hidden="true">×</span>\r\n                </button>\r\n            </div>\r\n            <div class="modal-body">\r\n                <form class="converse-form list-chatrooms">\r\n                    <div class="form-group">\r\n                        <label for="chatroom">' +
+'</h5>\r\n                <button type="button" class="close" data-dismiss="modal" aria-label="Close">\r\n                    <span aria-hidden="true">×</span>\r\n                </button>\r\n            </div>\r\n            <div class="modal-body">\r\n                <form class="converse-form list-chatrooms">\r\n                    <div class="form-group" style="display: none;">\r\n                        <label for="chatroom">' +
 __e(o.label_server_address) +
 ':</label>\r\n                        <input type="text" value="' +
 __e(o.muc_domain) +
@@ -94490,9 +94482,7 @@ __p += '<!-- src/templates/room_panel.html -->\n<!-- <div id="chatrooms"> -->\r\
 __e(o.heading_chatrooms) +
 '</span>\r\n    <a class="controlbox-heading__btn show-list-muc-modal fa fa-list-ul" title="' +
 __e(o.title_list_rooms) +
-'" data-toggle="modal" data-target="#list-chatrooms-modal"></a>\r\n    <a class="controlbox-heading__btn show-add-muc-modal fa fa-plus" title="' +
-__e(o.title_new_room) +
-'" data-toggle="modal" data-target="#add-chatrooms-modal"></a>\r\n</div>\r\n<div class="list-container open-rooms-list rooms-list-container"></div>\r\n<!-- </div> -->\r\n';
+'" data-toggle="modal" data-target="#list-chatrooms-modal"></a>\r\n</div>\r\n<div class="list-container open-rooms-list rooms-list-container"></div>\r\n<div class="list-container bookmarks-list rooms-list-container"></div>\r\n<!-- </div> -->\r\n';
 return __p
 };
 
@@ -94582,11 +94572,7 @@ __e(o.info_add_bookmark) +
  } ;
 __p += '"\r\n   href="#"></a>\r\n';
  } ;
-__p += '\r\n\r\n<a class="list-item-action room-info fa fa-info-circle" data-room-jid="' +
-__e(o.jid) +
-'"\r\n   title="' +
-__e(o.info_title) +
-'" href="#"></a>\r\n\r\n<a class="list-item-action fa fa-sign-out-alt close-room"\r\n   data-room-jid="' +
+__p += '\r\n\r\n<a class="list-item-action fa fa-sign-out-alt close-room"\r\n   data-room-jid="' +
 __e(o.jid) +
 '"\r\n   data-room-name="' +
 __e(o.name || o.jid) +
