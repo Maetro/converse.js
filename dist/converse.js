@@ -53713,6 +53713,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_0__["default"].plugins
       roomStanzaItemToHTMLElement(groupchat) {
         const name = Strophe.unescapeNode(groupchat.getAttribute('name') || groupchat.getAttribute('jid'));
         const div = document.createElement('div');
+        console.log(groupchat);
         div.innerHTML = templates_room_item_html__WEBPACK_IMPORTED_MODULE_21___default()({
           'name': Strophe.xmlunescape(name),
           'jid': groupchat.getAttribute('jid'),
@@ -53767,8 +53768,9 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_0__["default"].plugins
       updateRoomsList() {
         /* Send an IQ stanza to the server asking for all groupchats
          */
+        console.log(this.model.get('muc_domain'));
         const iq = $iq({
-          'to': this.model.get('muc_domain'),
+          'to': 'cmpd.itg.es',
           'from': _converse.connection.jid,
           'type': "get"
         }).c("query", {

@@ -299,6 +299,7 @@ converse.plugins.add('converse-muc-views', {
             roomStanzaItemToHTMLElement (groupchat) {
                 const name = Strophe.unescapeNode(groupchat.getAttribute('name') || groupchat.getAttribute('jid'));
                 const div = document.createElement('div');
+                console.log(groupchat);
                 div.innerHTML = tpl_room_item({
                     'name': Strophe.xmlunescape(name),
                     'jid': groupchat.getAttribute('jid'),
@@ -350,8 +351,10 @@ converse.plugins.add('converse-muc-views', {
             updateRoomsList () {
                 /* Send an IQ stanza to the server asking for all groupchats
                  */
+                
+                console.log(this.model.get('muc_domain'));
                 const iq = $iq({
-                    'to': this.model.get('muc_domain'),
+                    'to': 'cmpd.itg.es',
                     'from': _converse.connection.jid,
                     'type': "get"
                 }).c("query", {xmlns: Strophe.NS.DISCO_ITEMS});
