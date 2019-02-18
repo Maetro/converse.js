@@ -351,10 +351,9 @@ converse.plugins.add('converse-muc-views', {
             updateRoomsList () {
                 /* Send an IQ stanza to the server asking for all groupchats
                  */
-                
                 console.log(this.model.get('muc_domain'));
                 const iq = $iq({
-                    'to': 'cmpd.itg.es',
+                    'to': this.model.get('muc_domain'),
                     'from': _converse.connection.jid,
                     'type': "get"
                 }).c("query", {xmlns: Strophe.NS.DISCO_ITEMS});

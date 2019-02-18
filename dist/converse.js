@@ -53770,7 +53770,7 @@ _converse_headless_converse_core__WEBPACK_IMPORTED_MODULE_0__["default"].plugins
          */
         console.log(this.model.get('muc_domain'));
         const iq = $iq({
-          'to': 'cmpd.itg.es',
+          'to': this.model.get('muc_domain'),
           'from': _converse.connection.jid,
           'type': "get"
         }).c("query", {
