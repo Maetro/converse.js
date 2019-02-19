@@ -1,7 +1,7 @@
 // Converse.js
 // http://conversejs.org
 //
-// Copyright (c) 2013-2018, the Converse.js developers
+// Copyright (c) 2013-2019, the Converse.js developers
 // Licensed under the Mozilla Public License (MPLv2)
 
 import "@converse/headless/converse-roster";
@@ -813,7 +813,7 @@ converse.plugins.add('converse-rosterview', {
             createRosterFilter () {
                 // Create a model on which we can store filter properties
                 const model = new _converse.RosterFilter();
-                model.id = b64_sha1(`_converse.rosterfilter${_converse.bare_jid}`);
+                model.id = `_converse.rosterfilter${_converse.bare_jid}`;
                 model.browserStorage = new Backbone.BrowserStorage.local(this.filter.id);
                 this.filter_view = new _converse.RosterFilterView({'model': model});
                 this.filter_view.model.on('change', this.updateFilter, this);
@@ -930,7 +930,7 @@ converse.plugins.add('converse-rosterview', {
                 if (view) {
                     return view.model;
                 }
-                return this.model.create({name, id: b64_sha1(name)});
+                return this.model.create({name, 'id': b64_sha1(name)});
             },
 
             addContactToGroup (contact, name, options) {

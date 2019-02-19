@@ -1,5 +1,28 @@
 # Changelog
 
+## 4.1.1 (2019-02-18)
+
+- Updated translations: af, cz, de, es, eu, ga, he, hi, ja, nb, nl_BE, zh_CN
+- New language supported: Esperanto
+- Accessibility: Tag the chat-content as an ARIA live region, for screen readers
+- Set releases URL to new Github repo
+- Rudimentary support for XEP-0333 chat markers
+- Better support for XEP-0359 `stanza-id` and `origin-id` elements.
+- Bugfix: restore textarea size after sending a message
+- Bugfix: MUC invite form not appearing
+- #1369 Don't wrongly interpret message with `subject` as a topic change.
+- #1405 Status of contacts list are not displayed properly
+- #1408 New config option `roomconfig_whitelist`
+- #1410 HTTP upload not working if conversations push proxy is used
+- #1412 MUC moderator commands can be disabled selectively by config
+- #1413 Fix moderator commands that change affiliation
+- #1414 Prevent duplicate messages on MUC join
+- #1417 Margin between nickname and badge
+- #1421 Fix direct invite for membersonly room
+- #1422 Resurrect the `muc_show_join_leave` option
+- #1438 Update contact nickname when receiving a roster push
+- #1442 MUC read receipts causing empty lines
+
 ## 4.1.0 (2019-01-11)
 
 - Bugfix: MUC commands were being ignored
@@ -10,7 +33,7 @@
 - Use `publish-options` with `pubsub#access_model` set to `open` when publishing OMEMO public keys and devices
 - Add a new `converse-pubsub` plugin, for generic PubSub operations
 - #1180 It's now possible to use OMEMO in a MUC (if it's members-only and non-anonymous)
-- #1334 Force avatar refetch when receiving vcard-temp:x:update
+- #1334 Force avatar refetch when receiving `vcard-temp:x:update`
 - #1337 `send_chat_state_notifications` doesn't work in MUCs
 - #1353 Message Delivery Receipts not working because of the message "type" attribute
 - #1356 Make triangle icon usable 

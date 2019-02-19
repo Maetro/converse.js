@@ -551,7 +551,7 @@ The server behind ``credentials_url`` should return a JSON encoded object::
 
     {
         "jid": "me@example.com/resource",
-        "password": "Ilikecats!",
+        "password": "Ilikecats!"
     }
 
 
@@ -918,6 +918,16 @@ muc_disable_moderator_commands
 * Default: ``false``
 
 Allows you to disable the moderator commands such as ``/kick`` or ``/ban``.
+Ìf set to ``true`` all commands will be disabled.
+
+You can also selectively disable some moderator commands by setting it to an
+array of commands you don't want.
+
+The following example will disable 'mute' and 'voice' command:
+
+.. code-block:: javascript
+
+    muc_disable_moderator_commands: ['mute', 'voice'],
 
 muc_domain
 ----------
@@ -1169,6 +1179,23 @@ For example:
             }]
         });
 
+
+.. _`roomconfig_whitelist`:
+
+roomconfig_whitelist
+--------------------
+
+* Default: ``[]``
+
+A list of room config-option names. If this list is non-empty, only the corresponding room
+config-options will be shown in the room configuration form. The default will show all options.
+
+In the following example the user can only see (and thus change) the roomname and nothing else:
+
+.. code-block:: javascript
+
+    roomconfig_whitelist: ['muc#roomconfig_roomname'],
+
 root
 ----
 
@@ -1202,10 +1229,9 @@ For example:
 roster_groups
 -------------
 
-* Default:  ``false``
+* Default:  ``true``
 
-If set to ``true``, Converse will show any roster groups you might have
-configured.
+If set to ``true``, Converse will show any roster groups you might have configured.
 
 .. note::
     It's currently not possible to use Converse to assign contacts to groups.
@@ -1540,7 +1566,7 @@ The ``view_mode`` setting configures Converse's mode and resulting behavior.
     longer exist. Instead the standard ``converse.js`` build is used, together with
     the appropriate ``view_mode`` value.
 
-    Since verseion 4.0.0, there is now also only one CSS file to be used for all
+    Since version 4.0.0, there is now also only one CSS file to be used for all
     the different view modes, ``converse.css``.
 
     The ``converse-muc-embedded.js`` build can still be built, because it's smaller
