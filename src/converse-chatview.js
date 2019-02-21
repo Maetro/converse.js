@@ -6,7 +6,7 @@
 
 import converse from "@converse/headless/converse-core";
 import u from "@converse/headless/utils/emoji";
-import bootstrap from "bootstrap";
+import bootstrap from "bootstrap.native";
 import "converse-chatboxviews";
 import "converse-message-view";
 import "converse-modal";
@@ -569,7 +569,7 @@ converse.plugins.add('converse-chatview', {
                     next_msg_el.insertAdjacentHTML('beforeBegin',
                         tpl_new_day({
                             'isodate': day_date.format(),
-                            'datestring': day_date.format("dddd DD MM YYYY")
+                            'datestring': day_date.format("dddd DD/MM/YYYY")
                         })
                     );
                 }

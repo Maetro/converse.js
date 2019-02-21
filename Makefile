@@ -142,6 +142,7 @@ css: dev sass/*.scss css/converse.css css/converse.min.css css/website.css css/w
 css/converse.css:: dev sass
 	$(SASS) --source-map true --include-path $(BOURBON) --include-path $(BOOTSTRAP) sass/converse.scss css/converse.css
 	cp css/converse.css ../frontend/src/assets/styles/
+
 css/website.css:: dev sass
 	$(SASS) --source-map true --include-path $(BOURBON) --include-path $(BOOTSTRAP) sass/website.scss $@
 
