@@ -4,12 +4,12 @@
 // Copyright (c) 2013-2019, the Converse.js developers
 // Licensed under the Mozilla Public License (MPLv2)
 
+import converse from "@converse/headless/converse-core";
+import u from "@converse/headless/utils/emoji";
+import bootstrap from "bootstrap.native";
 import "converse-chatboxviews";
 import "converse-message-view";
 import "converse-modal";
-import * as twemoji from "twemoji";
-import bootstrap from "bootstrap.native";
-import converse from "@converse/headless/converse-core";
 import tpl_alert from "templates/alert.html";
 import tpl_chatbox from "templates/chatbox.html";
 import tpl_chatbox_head from "templates/chatbox_head.html";
@@ -25,7 +25,7 @@ import tpl_status_message from "templates/status_message.html";
 import tpl_toolbar from "templates/toolbar.html";
 import tpl_toolbar_fileupload from "templates/toolbar_fileupload.html";
 import tpl_user_details_modal from "templates/user_details_modal.html";
-import u from "@converse/headless/utils/emoji";
+import * as twemoji from "twemoji";
 import xss from "xss";
 
 const { $msg, Backbone, Promise, Strophe, _, b64_sha1, f, sizzle, moment } = converse.env;

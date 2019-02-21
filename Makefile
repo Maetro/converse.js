@@ -141,7 +141,8 @@ css: dev sass/*.scss css/converse.css css/converse.min.css css/website.css css/w
 
 css/converse.css:: dev sass
 	$(SASS) --source-map true --include-path $(BOURBON) --include-path $(BOOTSTRAP) sass/converse.scss css/converse.css
-    cp css/converse.css ../frontend/src/assets/styles/
+    
+	cp css/converse.css ../frontend/src/assets/styles/
 
 css/website.css:: dev sass
 	$(SASS) --source-map true --include-path $(BOURBON) --include-path $(BOOTSTRAP) sass/website.scss $@
@@ -199,7 +200,7 @@ BUILDS = dist/converse.js \
 	dist/converse-no-dependencies-es2015.js
 
 dist/converse.js: src webpack.config.js stamp-npm @converse/headless
-	$(NPX)  webpack --mode=development
+	$(NPX)  webpack --mode=development 
 	cp dist/converse.js ../frontend/src/assets/javascript
 dist/converse.min.js: src webpack.config.js stamp-npm @converse/headless
 	$(NPX)  webpack --mode=production

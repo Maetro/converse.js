@@ -18,10 +18,10 @@
   font-weight: normal;
   src: url('webfonts/fa-brands-400.eot');
   src: url('webfonts/fa-brands-400.eot?#iefix') format('embedded-opentype'),
-  url('webfonts/fa-brands-400.woff2') format('woff2'),
-  url('webfonts/fa-brands-400.woff') format('woff'),
-  url('webfonts/fa-brands-400.ttf') format('truetype'),
-  url('webfonts/fa-brands-400.svg#fontawesome') format('svg');
+    url('webfonts/fa-brands-400.woff2') format('woff2'),
+    url('webfonts/fa-brands-400.woff') format('woff'),
+    url('webfonts/fa-brands-400.ttf') format('truetype'),
+    url('webfonts/fa-brands-400.svg#fontawesome') format('svg');
 }
 
 @font-face {
@@ -44,32 +44,38 @@
   font-weight: 900;
   src: url('webfonts/fa-solid-900.eot');
   src: url('webfonts/fa-solid-900.eot?#iefix') format('embedded-opentype'),
-  url('webfonts/fa-solid-900.woff2') format('woff2'),
-  url('webfonts/fa-solid-900.woff') format('woff'),
-  url('webfonts/fa-solid-900.ttf') format('truetype'),
-  url('webfonts/fa-solid-900.svg#fontawesome') format('svg');
+    url('webfonts/fa-solid-900.woff2') format('woff2'),
+    url('webfonts/fa-solid-900.woff') format('woff'),
+    url('webfonts/fa-solid-900.ttf') format('truetype'),
+    url('webfonts/fa-solid-900.svg#fontawesome') format('svg');
 }
 
-.far {
-  font-family: 'ConverseFontAwesomeRegular' !important;
-  font-weight: 400;
-}
-.fa,
-.fas {
-  font-family: 'ConverseFontAwesomeSolid' !important;
-  font-weight: 900;
-}
+#conversejs {
+  .far {
+    font-family: 'ConverseFontAwesomeRegular' !important;
+    font-weight: 400;
+  }
 
-.fab {
-  font-family: 'ConverseFontAwesomeBrands';
-}
+  .fa,
+  .fas {
+    font-family: 'ConverseFontAwesomeSolid' !important;
+    font-weight: 900;
+  }
 
-.fa, .far, .fas, .fab {
+  .fab {
+    font-family: 'ConverseFontAwesomeBrands';
+  }
+
+  .fa,
+  .far,
+  .fas,
+  .fab {
     display: inline-block;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
 }
 
 @import "@fortawesome/fontawesome-free/scss/variables";
@@ -87,7 +93,7 @@
 
 /* Apparent font-awesome bug? The circle has some kind of bottom margin */
 #conversejs {
-    .fa-info-circle {
-        height: 1em;
-    }
+  .fa-info-circle {
+    height: 1em;
+  }
 }
